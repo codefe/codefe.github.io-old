@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="gradX.css">
+<link rel="stylesheet" href="colorpicker.css">
+<style>
+.btn {
+    display: inline-block;
+    padding: 4px 10px 4px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 4px;
+}
+.btn-default {
+    color: #333333;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    background-color: #f5f5f5;
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+    border: 1px solid #cccccc;
+}
+.targets { margin: 0 auto; text-align: center; border: 1px solid #ccc; background: #f8f8f8; margin: 0 auto; border-radius: 4px; width: 600px; padding: 10px; }
+.target { border: 1px solid; margin: 0px 10%; width: 150px; height: 150px; display: inline-block; }
+#target { border-radius: 150px; }
+.result { text-align: center; text-transform: uppercase; font-weight: bold; padding: 12px; padding-left: 15px; margin: 10px 0px; background: #f8f8f8; }
+#gradX { height: 200px; margin: 0px 34% 100px; }
+</style>
+<div class="kePublic">
+  <div id="gradX"> </div>
+  <div class="result">结果</div>
+  <div class="targets">
+    <div class="target" id="target"></div>
+    <div class="target" id="target2"></div>
+  </div>
+</div>
+<script src="/app/lib/jquery-1.9.1.min.js"></script> 
+<script src="colorpicker.min.js"></script> 
+<script src="dom-drag.js"></script> 
+<script src="gradX.js"></script> 
+<script>
+gradX("#gradX", {
+	targets: [".target"]
+
+});
+</script> 

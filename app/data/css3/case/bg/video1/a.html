@@ -1,0 +1,177 @@
+<link href="topvemove.css" rel="stylesheet" type="text/css">
+<style>
+*{margin:0;padding:0;}
+#main{
+	background: #666 url("bg1.jpg") no-repeat scroll center center;
+	background-size: cover;
+	position: relative;
+	height: 560px;
+	overflow: hidden;
+}
+/*TOPVE主屏旋转线条*/
+.mainline{position:absolute;z-index: 6;top:0;left:0;width:100%;height:100%;}
+.mainl1{
+	position:absolute;top:50%;left:50%;
+	background:#5ce55c;
+	margin:-180px 0 0 198px;
+	width:200px;
+	height:1px;
+}
+.mainl2{
+	position:absolute;top:50%;left:50%;
+	background:#5ce55c;
+	margin:-215px 0 0 155px;
+	width:80px;
+	height:1px;
+}
+.mainl3{
+	position:absolute;top:50%;left:50%;
+	background:#5ce55c;
+	margin:-147px 0 0 226px;
+	width:60px;
+	height:1px;
+}
+.mainl4{
+	position:absolute;top:50%;left:50%;
+	background:#5ce55c;
+	margin:200px 0 0 -180px;
+	width:220px;
+	height:1px;
+}
+.mainl5{
+	position:absolute;top:50%;left:50%;
+	background:#5ce55c;
+	margin:160px 0 0 -218px;
+	width:100px;
+	height:1px;
+}
+.mainl6{
+	position:absolute;top:50%;left:50%;
+	background:#5ce55c;
+	margin:224px 0 0 -143px;
+	width:70px;
+	height:1px;
+}
+.mainline2{
+ position:absolute;z-index: 6;top:50%;left:50%;
+ margin:-500px 0 0 -500px;width:1000px;height:1000px;
+ border-left: 1px solid rgba(255,255,255,.2);
+ border-right: 1px solid rgba(255,255,255,.2);
+ border-bottom: 1px solid rgba(255,255,255,.06);
+ border-top: 1px solid rgba(255,255,255,.06);
+ border-radius: 100%;
+ transform: rotate(90deg);
+ -ms-transform: rotate(90deg);
+ -webkit-transform: rotate(90deg);
+ -o-transform: rotate(90deg);
+}
+
+.mainla{position:absolute;top:50%;left:50%;background:#fff;margin:0 0 0 -550px;width:200px;height:1px;opacity:.2;}
+.mainlb{position:absolute;top:50%;left:50%;background:#fff;margin:0 0 0 350px;width:200px;height:1px;opacity:.2;}
+
+.mainld1{position:absolute;top:50%;left:50%;background:#fff;margin:-2px 0 0 -502px;width:4px;height:4px;border-radius: 100%;opacity:.2;}
+.mainld2{position:absolute;top:50%;left:50%;background:#fff;margin:-2px 0 0 498px;width:4px;height:4px;border-radius: 100%;opacity:.2;}
+.mainld3{position:absolute;top:50%;left:50%;background:#fff;margin:-2px 0 0 -401px;width:4px;height:4px;border-radius: 100%;opacity:.2;}
+.mainld4{position:absolute;top:50%;left:50%;background:#fff;margin:-2px 0 0 399px;width:4px;height:4px;border-radius: 100%;opacity:.2;}
+
+.mainlr{
+ position:absolute;top:50%;left:50%;
+ background:rgba(0,10,50,.05);
+ margin:-400px 0 0 -400px;width:800px;height:800px;
+ border-left: 1px solid rgba(255,255,255,.2);
+ border-right: 1px solid rgba(255,255,255,.2);
+ border-bottom: 1px solid rgba(255,255,255,.06);
+ border-top: 1px solid rgba(255,255,255,.06);
+ border-radius: 100%;
+}
+/*TOPVE主屏背景遮罩层*/
+.mainzz1{
+ background:#08244d linear-gradient(to bottom right, rgba(13,70,128,1) , rgba(5,20,50,1));
+ width:100%;
+ height:100%;
+ position:absolute;
+ z-index:2;
+ left:0;
+ top:0;
+ opacity: .5;
+}
+.mainzz2{
+ background: rgba(0, 0, 0, 0) url("prx1.png") repeat scroll center 0;
+ opacity: 0.06;
+ min-width: 100%;
+ min-height: 100%;
+ width:auto;
+ height:auto;
+ position:absolute;
+ z-index: 4;
+}
+.mainzz3 {
+ background: rgba(0, 0, 0, 0) url("prx2.png") repeat scroll center 0;
+ opacity: 0.03;
+ min-width: 100%;
+ min-height: 100%;
+ width:auto;
+ height:auto;
+ position:absolute;
+ z-index: 3;
+}
+
+/*TOPVE主屏背景视频层*/
+.homevideo{}
+.homevideo video{
+ position: absolute;
+ z-index:1;
+ left:50%;
+ top:50%;
+ -webkit-transform:translate(-50.01%,-50.01%);
+ -moz-transform:translate(-50.01%,-50.01%);
+ -ms-transform:translate(-50.01%,-50.01%);
+ -o-transform:translate(-50.01%,-50.01%);
+ transform:translate(-50.01%,-50.01%);
+ min-width: 100%;
+ min-height:100%;
+ width:auto;
+ height:auto;
+}
+</style>
+
+<div id="main">
+	<div class="mainline">
+		<div class="mainl1"></div>
+		<div class="mainl2"></div>
+		<div class="mainl3"></div>
+		<div class="mainl4"></div>
+		<div class="mainl5"></div>
+		<div class="mainl6"></div>
+	</div>
+	<div class="mainline2">
+		<div class="mainla"></div>
+		<div class="mainlb"></div>
+		<div class="mainld1"></div>
+		<div class="mainld2"></div>
+		<div class="mainld3"></div>
+		<div class="mainld4"></div>
+		<div class="mainlr"></div>
+	</div>
+	<div class="mainxza">
+		<div class="mainxz1">
+			<div clss="mainxz1con"><img src="mainxz1.png" alt="正向旋转线条"></div>
+		</div>
+	</div>
+	<div class="mainxzb">
+		<div class="mainxz2">
+			<div clss="mainxz2con"><img src="mainxz2.png" alt="反向旋转线条"></div>
+		</div>
+	</div>
+	<div class="mainzz1"></div>
+	<div class="mainzz2"></div>
+	<div class="mainzz3"></div>
+	<div class="homevideo">
+		<video autoplay="" loop="" muted="">
+			<source src="video/home.webm" type="video/webm">
+			<source src="video/home.mp4" type="video/mp4">
+		</video>
+	</div>
+	
+	
+</div>

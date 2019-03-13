@@ -1,0 +1,19 @@
+<div id="city"></div>
+<div id="code"></div>
+<script src="/app/lib/jquery-2.1.0.js"></script>
+<script>
+$(function(){
+	//获取城市ajax
+	$.ajax({
+	url: 'http://api.map.baidu.com/location/ip?ak=ia6HfFL660Bvh43exmH9LrI6',  
+	type: 'POST',  
+	dataType: 'jsonp',
+	success:function(data) {  
+		//console.log(JSON.stringify(data))
+		//console.log(JSON.stringify(data.content.address_detail.province + "," + data.content.address_detail.city));
+		$('#city').html(JSON.stringify(data.content.address_detail.province + "," + data.content.address_detail.city))
+		$('#code').html(JSON.stringify(data))
+	}
+	});
+})
+</script>

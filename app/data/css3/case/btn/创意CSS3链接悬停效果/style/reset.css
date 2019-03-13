@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*
+date:       2015-10-16
+copyright:  moyu-edu.com
+*/
+
+html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
+body,dd,dl,figure,form,h1,h2,h3,h4,h5,h6,input,ol,p,select,textarea,ul { margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6 { font-weight: 400; }
+img { border: none; vertical-align: top; }
+ol,ul { list-style: none; }
+input,select,textarea { outline: 0; border: none; background-color: transparent; }
+textarea { resize: none; }
+a { text-decoration: none; blr: expression(this.onFocus=this.blur()); outline: 0; -webkit-tap-highlight-color: transparent; }
+em,i { font-style: normal; }
+.clearfix:after,
+.clearfix:before { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.fl { float: left; }
+.fr { float: right; }
+body{ font-family: punctuation, PingFangSC-Regular, Microsoft YaHei, "Î¢ÈíÑÅºÚ"; font-size: 14px; }

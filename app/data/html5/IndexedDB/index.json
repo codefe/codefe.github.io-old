@@ -1,0 +1,23 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "HTML5",
+		"name": "IndexedDB",
+		"subType": "html5-IndexedDB",
+		"title": "浏览器里内置的数据库IndexedDB",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "IndexedDB是HTML5规范里新出现的浏览器里内置的数据库。对于在浏览器里存储数据，你可以使用cookies或local storage，但它们都是比较简单的技术，而IndexedDB提供了类似数据库风格的数据存储和使用方式。存储在IndexedDB里的数据是永久保存，不像cookies那样只是临时的。IndexedDB里提供了查询数据的功能，在online和offline模式下都能使用。你可以用IndexedDB存储大型数据。<br>IndexedDB里数据以对象的形式存储，每个对象都有一个key值索引。IndexedDB里的操作都是事务性的。一种对象存储在一个objectStore里，objectStore就相当于关系数据库里的表。IndexedDB可以有很多objectStore，objectStore里可以有很多对象。每个对象可以用key值获取。",
+		"arr": "one",
+		"items": [
+			{"title":"IndexedDB vs LocalStorage","url":"s1"},
+			{"title":"IndexedDB vs Web SQL","url":"s2"},
+			{"title":"IndexedDB vs Cookies","url":"s3"},
+			{"title":"打开一个IndexedDB数据库","url":"s4"},
+			{"title":"往ObjectStore里新增对象","url":"s5"},
+			{"title":"从ObjectStore里删除对象","url":"s6"},
+			{"title":"通过key取出对象","url":"s7"},
+			{"title":"更新一个对象","url":"s8"}
+		]
+	}
+}

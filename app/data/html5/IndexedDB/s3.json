@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"IndexedDB vs Cookies","content":"<p>Cookies(小甜点)听起来很好吃，但实际上并不是。每次HTTP接受和发送都会传递Cookies数据，它会占用额外的流量。例如，如果你有一个10KB的Cookies数据，发送10次请求，那么，总计就会有100KB的数据在网络上传输。Cookies只能是字符串。浏览器里存储Cookies的空间有限，很多用户禁止浏览器使用Cookies。所以，Cookies只能用来存储小量的非关键的数据。&nbsp;&nbsp;<br></p>"}}

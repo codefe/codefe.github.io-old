@@ -1,0 +1,122 @@
+/*
+* 功能:javascript翻译工具
+* 日期:2017/10/26
+* 作者:loho
+*/
+html,body{background-image:linear-gradient(#3d4b0e,#93b523);height:100%;}
+body,html,section,main,header,div,button,ul,li,span,textarea,footer{
+	margin: 0;padding: 0;
+}
+body,html,section,main,header,div,button,ul,li,span,textarea,footer{
+	box-sizing: border-box;
+}
+body,html,section,main,header,div,button,ul,li,textarea,footer{
+	display: block;
+}
+main,.content,.t-header{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+.lang-panel{
+	position: absolute;
+}
+button,textarea{
+	outline: none;
+}
+ul,li{
+	list-style: none;
+}
+.title,.result {
+	font-size: 20px;
+	line-height: 45px;
+	color: rgb(33, 32, 32,0.99);
+}
+body{
+	font: 16px "微软雅黑";
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	background-color: #eee;
+}
+main{
+	width: calc(100% - 60px);
+	height: auto;
+	border: 8px solid rgba(255,255,255,.5);
+	box-shadow:  0 5px 10px rgba(255, 255, 255, 0.16);
+	background-color: rgba(16, 2, 2, 0.31);
+	margin-top: 50px;
+}
+main .t-header{
+	width: 100%;
+	height: 45px;
+	background-color: rgba(23, 26, 28, 0.82);
+	border-bottom: 1px solid #f2f2f2;
+}
+.t-header .title{
+	text-align: left;
+	color: #e544a7;
+}
+.t-header .result{
+	text-align: right;
+	color: #e33535;
+}
+.lang-panel {
+	width: calc(80% - 20px);
+	height: 42px;
+	top: 0;left: 200px;
+}
+.lang-panel li{
+	width: 15%;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	margin-left: 16px;
+	color: #fff;
+	float: left;
+	cursor: pointer;
+}
+.lang-panel li:hover{
+	background-color: rgba(255, 255, 255, 0.21);
+}
+main .content{
+	width: 100%;
+	height: 400px;
+	background-color: transparent;
+}
+.content textarea{
+	border: 1px solid #ccc;
+	display: inline-block;
+	width: 49.5%;height: 100%;
+	float: left;
+	font-size: 18px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.output{margin-left:1%;}
+.content textarea:focus{
+	border: 1px solid rgba(121, 178, 214, 0.82);
+	box-shadow: 0 0 10px rgba(121, 178, 214, 0.82);	
+}
+.t-footer {
+	width: 100%;
+	height: 45px;
+	border-top: 1px solid #f2f2f2;
+}
+.t-footer button{
+	width: 60px;
+	height: 45px;
+	background-color: rgba(49, 196, 240, 0.92);
+	color: #efebf2;
+	text-align: center;
+	line-height: 45px;
+	border: 1px solid rgba(238, 238, 238, 0.17);
+	margin-left: 25px;
+	margin-right: 15px;
+	margin-top: 5px;
+	float: right;
+	cursor: pointer;
+}
+.t-footer button:hover{
+	transform: scale(1.1);
+}

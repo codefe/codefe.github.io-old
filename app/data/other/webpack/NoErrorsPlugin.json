@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"NoErrorsPlugin","content":"<p>NoErrorsPlugin插件，用来跳过编译时出错的代码并记录，使编译后运行时的包不会发生错误&nbsp;</p><p><pre>&nbsp;new webpack.NoErrorsPlugin(), //允许错误不打断程序</pre><br></p>"}}

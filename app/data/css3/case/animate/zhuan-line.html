@@ -1,0 +1,26 @@
+<style>
+.bg{
+	position: absolute;
+	z-index: 1;
+	background:url(zhuan-line.png) 0px 0px no-repeat;
+	background-size:452px auto;
+	width:452px;
+	height:510px; 
+	max-height:100%; 
+	left:50%;
+	margin-left:-226px;
+	top:-25px;
+}
+.bg.rotate{-webkit-animation: rotate 10s  infinite  linear;}
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform:rotate(0deg);
+    }
+    100% {
+        -webkit-transform:rotate(360deg);
+    }
+
+}
+</style>
+
+<div class="bg rotate"></div>

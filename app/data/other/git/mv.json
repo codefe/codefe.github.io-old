@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"移动或重命名一个文件,目录,软连接(mv)","content":"<h3>git mv</h3><p>git mv 命令用于移动或重命名一个文件、目录、软连接。</p><p>我们先把刚移除的 README 添加回来：</p><pre><span>$ git add README </span></pre><p>然后对其重名:</p><pre><span>$ git mv README  README</span><span>.</span><span>md\n$ ls\nREADME</span><span>.</span><span>md</span></pre>"}}

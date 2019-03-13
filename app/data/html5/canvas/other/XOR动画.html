@@ -1,0 +1,23 @@
+<canvas id="xor" width="256" height="256"></canvas>
+<script>
+  var canvas = document.getElementById('xor');
+  var context = canvas.getContext('2d');
+  var pix = function(x, y, grey) {
+    context.fillStyle = "rgb(0,"+grey+",0)";
+    context.fillRect(x*4, y*4, 4, 4);
+   }
+
+  var t = 0;
+
+  var draw = function() {
+    for(x=0;x<=63;x++) {
+      for(y=0;y<=63;y++) {
+        pix(x,y,(x^y^t)*4);
+      }
+    }
+    t = (t+4)%64;
+  }
+
+ window.setInterval(draw, 100);
+
+</script>

@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"脚本执行优化","content":"<p>脚本处理不当会阻塞页面加载、渲染，因此在使用时需当注意</p><p><strong>· CSS写在头部，JavaScript写在尾部或异步</strong></p><p><strong>· 避免图片和iFrame等的空Src</strong><br>空Src会重新加载当前页面，影响速度和效率</p><p>· 尽量避免重设图片大小<br>重设图片大小是指在页面、CSS、JavaScript等中多次重置图片大小，多次重设图片大小会引发图片的多次重绘，影响性能</p><p><strong>·&nbsp;图片尽量避免使用DataURL</strong><br>DataURL图片没有使用图片的压缩算法文件会变大，并且要解码后再渲染，加载慢耗时长</p>"}}

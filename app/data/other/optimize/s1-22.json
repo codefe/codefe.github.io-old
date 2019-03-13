@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"同域跨域","content":"<p>避免跳转</p><ul><li>同域：注意避免反斜杠 “/” 的跳转；</li><li>跨域：使用Alias或者mod_rewirte建立CNAME（保存域名与域名之间关系的DNS记录）</li></ul>"}}

@@ -1,0 +1,74 @@
+<style>
+img {
+    width: 200px;
+}
+.contrast{filter: contrast(20%);}
+.blur{filter: blur(3px);}
+.brightness{filter: brightness(200%);}
+.hue-rotate{filter: hue-rotate(90deg);}
+.saturate{filter: saturate(10);}
+.sepia{filter: sepia(100%);}
+.grayscale{filter: grayscale(100%);}
+.brightness{filter: brightness(2) invert(1) grayscale(1)}
+.drop-shadow{filter: drop-shadow(3px 3px 5px black);}
+.invert{ filter: invert(1);}
+.myFilter{ filter: url(#myFilter);}//#myFilter 或 myFilters.xml#effect
+</style>
+
+<h1>css 滤镜</h1>
+
+<h3>原图</h3>
+<p><img class="org" src="normal1.jpg"></p>
+
+<h3>1. 对比度滤镜</h3>
+<p>filter: contrast(40%);</p>
+<p><img class="contrast" src="normal1.jpg"></p>
+
+<h3>2. 模糊滤镜</h3>
+<p>filter: blur(3px);</p>
+<p><img class="blur" src="normal1.jpg"></p>
+
+<h3>3. 亮度滤镜</h3>
+<p>filter: brightness(200%);</p>
+<p><img class="brightness" src="normal1.jpg"></p>
+
+<h3>4. 色轮滤镜(色相旋转滤镜)</h3>
+<p>filter: hue-rotate(90deg);</p>
+<p><img class="hue-rotate" src="normal1.jpg"></p>
+
+<h3>5. 饱和度滤镜（电影海报特效）</h3>
+<p>filter: saturate(10);</p>
+<p><img class="saturate" src="normal1.jpg"></p>
+
+
+<h3>6. 发黄滤镜（旧照片特效）</h3>
+<p>filter: sepia(100%);</p>
+<p><img class="sepia" src="normal1.jpg"></p>
+
+
+<h3>7. 灰度滤镜（黑白照片效果）</h3>
+<p>filter: grayscale(100%);</p>
+<p><img class="grayscale" src="normal1.jpg"></p>
+
+<h3>8. 时光机（蜡笔 | 彩笔）</h3>
+<p>filter: brightness(2) invert(1) grayscale(1)</p>
+<p><img class="brightness" src="normal1.jpg"></p>
+
+
+<h3>9. 投影滤镜</h3>
+<p>filter: drop-shadow(3px 3px 5px black);</p>
+<p><img class="drop-shadow" src="normal1.jpg"></p>
+
+
+<h3>10. 颜色反转滤镜</h3>
+<p>filter: invert(1);</p>
+<p><img class="invert" src="normal1.jpg"></p>
+
+<h3>11. url滤镜</h3>
+<p>filter: url(*.xml);</p>
+<p><img class="myFilter" src="normal1.jpg"></p>
+<svg height="0" xmlns="http://www.w3.org/2000/svg">
+  <filter id="myFilter" x="-5%" y="-5%" width="110%" height="110%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="8"/>
+  </filter>
+</svg>

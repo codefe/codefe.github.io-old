@@ -1,0 +1,369 @@
+<style>
+*{margin:0;padding:0;}
+ul{list-style:none;}
+
+.liveBox{
+	width:1200px;
+	margin:0 auto;
+}
+.liveBox .liveList {
+	padding-top: 50px;
+	margin-left: -3px;
+	margin-right: -3px
+}
+
+.liveBox .liveList li {
+	float: left;
+	width: 239px;
+	height: 164px;
+	margin: 1px
+}
+.flip-container {
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-ms-perspective: 1000px;
+	-o-perspective: 1000px;
+	perspective: 1000px
+}
+
+.flip-container:hover .back {
+	z-index: 2;
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg)
+}
+
+.flip-container:hover .front {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	*transform: rotateY(180deg);
+	z-index: 1
+}
+
+.flipper {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	perspective: 500;
+	-webkit-perspective: 500;
+	transition: transform .8s ease-in-out;
+	-webkit-transition: transform .8s ease-in-out;
+	-moz-transition: transform .8s ease-in-out;
+	-ms-transition: transform .8s ease-in-out;
+	-o-transition: transform .8s ease-in-out;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d
+}
+
+.front,.back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	backface-visibility: hidden;
+	transition: .6s ease-out;
+	-webkit-transition: .6s ease-out;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d
+}
+
+.liveList .front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	background-color: #f9fafb
+}
+
+.liveList .front .btn-pic {
+	width: 60px;
+	height: 44px;
+	margin: 43px auto 22px
+}
+
+.liveList .front .img1 {
+	background-image: url(./img/muban4_32.png)
+}
+
+.liveList .front .img2 {
+	background-image: url(./img/muban4_34.png)
+}
+
+.liveList .front .img3 {
+	background-image: url(./img/muban4_37.png)
+}
+
+.liveList .front .img4 {
+	background-image: url(./img/muban4_40.png)
+}
+
+.liveList .front .img5 {
+	background-image: url(./img/muban4_42.png)
+}
+
+.liveList .front .img6 {
+	background-image: url(./img/muban4_49.png)
+}
+
+.liveList .front .img7 {
+	background-image: url(./img/muban4_50.png)
+}
+
+.liveList .front .img8 {
+	background-image: url(./img/muban4_52.png)
+}
+.liveList .front .img9 {
+	background-image: url(./img/muban4_53.png)
+}
+
+.liveList .front .img10 {
+	background-image: url(./img/muban4_54.png)
+}
+
+.liveList .front .img11 {
+	background-image: url(./img/muban4_60.png)
+}
+
+.liveList .front .img12 {
+	background-image: url(./img/muban4_61.png)
+}
+
+.liveList .front .img13 {
+	background-image: url(./img/muban4_62.png)
+}
+
+.liveList .front .img14 {
+	background-image: url(./img/muban.png)
+}
+
+.liveList .front .img15 {
+	background-image: url(./img/muban_64.png)
+}
+
+.liveList .front p {
+	color: #666;
+	font-size: 14px;
+	text-align: center
+}
+
+.liveList .back {
+	z-index: 1;
+	box-shadow: 0 0 10px rgba(80,197,242,0.75);
+	transform: rotateY(-180deg);
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	background: -webkit-linear-gradient(left top, #2f80ed, #56ccf2);
+	background: -o-linear-gradient(bottom right, #2f80ed, #56ccf2);
+	background: -moz-linear-gradient(bottom right, #2f80ed, #56ccf2);
+	background: linear-gradient(to bottom right, #2f80ed, #56ccf2)
+}
+
+.liveList .back p {
+	font-size: 12px;
+	color: #fff;
+	line-height: 28px;
+	margin: 40px 22px 0
+}
+
+.liveBut {
+	text-align: center;
+	padding-top: 60px
+}
+
+.functionBg {
+	width: 100%;
+	height: 882px;
+	background-image: url(./img/fun/fun_01.png);
+	background-repeat: no-repeat;
+	background-position: center 6px;
+	background-size: cover
+}
+</style>
+
+<div class="liveBox">
+                    <ul class="liveList clear">
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img1"></div>
+                                    <p>3分屏教学互动直播</p>
+                                </div>
+                                <div class="back">
+                                    <p>模拟真实课堂的教学环境,老师与学员实现互动，简单易用的授课工具支持PPT、视频、语音、文字等</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img2"></div>
+                                    <p>电子白板与PPT随意切换</p>
+                                </div>
+                                <div class="back">
+                                    <p>电子白板与课件PPT自由切换，重点内容标注支持画笔工具、字体、橡皮擦、一键清空等工具</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img3"></div>
+                                    <p>直播课程随时回看</p>
+                                </div>
+                                <div class="back">
+                                    <p>直播教学中支持全屏录制，方便学员复习和未能到场的学员补习，随时回看上课内容，按需查漏补缺</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img4"></div>
+                                    <p>调研问卷电子投票</p>
+                                </div>
+                                <div class="back">
+                                    <p>老师发起投票后实时统计投票结果查看，投票人数统计，个人选项查看，人数占比统计，选项占比统计</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img5"></div>
+                                    <p>学生举手在线答疑</p>
+                                </div>
+                                <div class="back">
+                                    <p>课堂反馈的机制：学员对课程有问题时可以举手提问，经过允许后发言老师或助教进行在线答疑</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img6"></div>
+                                    <p>课程内容资料共享</p>
+                                </div>
+                                <div class="back">
+                                    <p>老师可以在直播教室里面共享课程资料给学员，支持ppt，word，excel，pdf,swf等常用电子文件格式</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img7"></div>
+                                    <p>桌面共享界面同步</p>
+                                </div>
+                                <div class="back">
+                                    <p>老师可将自己电脑桌面共享给学员，随时使用本地MP3、MP4多媒体文件辅助教学或进行软件操作的演示</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img8"></div>
+                                    <p>把控集体讨论内容</p>
+                                </div>
+                                <div class="back">
+                                    <p>教师为直接教室里最高权限人，讨论区后台可监控学员文字交流信息，设置全部学员查看或老师单独查看</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img9"></div>
+                                    <p>视频/音频在线互动</p>
+                                </div>
+                                <div class="back">
+                                    <p>师生间多元化沟通交流：学员可以通过视频或语音与老师进行沟通交流，课堂互动提高直播教学质量</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img10"></div>
+                                    <p>助教老师辅助教学</p>
+                                </div>
+                                <div class="back">
+                                    <p>直播课程过程中助教可以辅助直播老师把控课程进程，对学员进行课堂秩序维护或问题答疑</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img11"></div>
+                                    <p>1对1视频互动教学</p>
+                                </div>
+                                <div class="back">
+                                    <p>专属私教的高端教学，封闭式、无打扰、无延时、全方面，可以实时共享各类课件和沟通工具</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img12"></div>
+                                    <p>300万人同时在线</p>
+                                </div>
+                                <div class="back">
+                                    <p>强大系统能力可同时承载万人在线直播依然高清流畅，视频互动语音交流，让所有人都可以参与进来</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img13"></div>
+                                    <p>海量教学视频空间</p>
+                                </div>
+                                <div class="back">
+                                    <p>自动录制永久存储，直播系统标配10T存储空间，可无限扩展全运营商视频加速支持，超过1.2T自有带宽储备</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img14"></div>
+                                    <p>两大操作系统全兼容</p>
+                                </div>
+                                <div class="back">
+                                    <p>教师无需安装客户端，无论Windows、MAC操系统，打开网页即可使用，IE、Safari、Chrome主流浏览器全兼容</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flip-container">
+                            <div class="flipper">
+                                <div class="front">
+                                    <div class="btn-pic img15"></div>
+                                    <p>手机移动终端支持</p>
+                                </div>
+                                <div class="back">
+                                    <p>支持电脑、iPad和手机的使用，实现碎片化学习和碎片化管理</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>

@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"平滑返回顶部","content":"<p>代码如下：</p><pre><code>const scrollToTop = () =&gt; {\n  const c = document.documentElement.scrollTop || document.body.scrollTop;\n  if (c &gt; 0) {\n    window.requestAnimationFrame(scrollToTop);\n    window.scrollTo(0, c - c / 8);\n  }\n};\n// scrollToTop()</code></pre><p><br></p><p><br></p>"}}

@@ -1,0 +1,22 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "HTML5",
+		"name": "Cache",
+		"subType": "html5-applicationCache",
+		"title": "Javascript缓存API",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "JavaScript ServiceWorker API的好处就是让WEB开发人员轻松的控制缓存。虽然使用ETags等技术也是一种控制缓存的技术，按使用JavaScript让程序来控制缓存功能更强大，更自由。当然，强大有强大的好处，也有弊处——你需要做善后处理，所谓的善后处理，就是要清理缓存。",
+		"arr": "one",
+		"items": [
+			{"title":"检查浏览器是否支持Cache API","url":"s1"},
+			{"title":"创建一个缓存对象","url":"s2"},
+			{"title":"添加缓存数据","url":"s3"},
+			{"title":"访问缓存数据","url":"s4"},
+			{"title":"删除缓存里的数据","url":"s5"},
+			{"title":"获取现有的缓存里的缓存名称","url":"s6"},
+			{"title":"删除一个缓存对象","url":"s7"}
+		]
+	}
+}

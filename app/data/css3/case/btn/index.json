@@ -1,0 +1,30 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "实例演示",
+		"name": "CSS3",
+		"subType": "case/css/btn",
+		"title": "CSS按钮效果",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "",
+		"arr": "one",
+		"items": [
+			{"title":"扁平化按钮点击动画","url":"/app/data/css3/case/btn/1.html","flag":"true"},
+			{"title":"带...的动画按钮","url":"/app/data/css3/case/btn/2.html","flag":"true"},
+			{"title":"自定义复选框","url":"/app/data/css3/case/btn/3.html","flag":"true"},
+			{"title":"鼠标悬停按钮不同背景变化效果","url":"/app/data/css3/case/btn/4.html","flag":"true"},
+			{"title":"Select选择框","url":"/app/data/css3/case/btn/5.html","flag":"true"},
+			{"title":"创意CSS3链接悬停效果","url":"/app/data/css3/case/btn/创意CSS3链接悬停效果/a.html","flag":"true"},
+			{"title":"自定义Checkbox动画","url":"/app/data/css3/case/btn/自定义Checkbox动画.html","flag":"true"},
+			{"title":"动态气泡按钮","url":"/app/data/css3/case/btn/动态气泡按钮/a.html","flag":"true"},
+			{"title":"鼠标滑过按钮动画过滤","url":"/app/data/css3/case/btn/鼠标滑过按钮动画过滤/a.html","flag":"true"},
+			{"title":"纯CSS3水平控制按钮开关","url":"/app/data/css3/case/btn/纯CSS3水平控制按钮开关/a.html","flag":"true"},
+			{"title":"美化radio","url":"/app/data/css3/case/btn/美化radio/a.html","flag":"true"},
+			{"title":"美化checkbox","url":"/app/data/css3/case/btn/美化checkbox/a.html","flag":"true"},
+			{"title":"按钮水波纹效果","url":"/app/data/css3/case/btn/按钮水波纹效果/a.html","flag":"true"},
+			{"title":"鼠标悬停描边效果","url":"/app/data/css3/case/btn/鼠标悬停描边效果/a.html","flag":"true"},
+			{"title":"炫酷select下拉菜单美化","url":"/app/data/css3/case/btn/炫酷select下拉菜单美化/a.html","flag":"true"}
+		]
+	}
+}

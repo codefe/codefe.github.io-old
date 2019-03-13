@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"某个元素在数组中的位置","content":"<p><code>indexOf()</code>&nbsp;能够告诉你&nbsp;<strong>某个元素在数组中的位置</strong>，它返回的是索引值，如果数组里有重复的元素，它会返回第一个元素的位置。&nbsp;</p><pre><code>var a = [2, 9, 9, 18];<br>\nvar i = a.indexOf(9);\n\nconsole.log('i: ', i);\n\n\n/*\nif (a.indexOf(7) === -1) {\n  // 数组中没有这个元素\n}*/</code></pre><p><br></p>"}}

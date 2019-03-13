@@ -1,0 +1,166 @@
+<!doctype html>
+<html><head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			body{width: 100%;height: 100%;}
+			#main{width: 100%;height: 100vh;}
+			.back_btn{position: absolute;left: 40px;top: 40px;width: 60px;height: 60px;border-radius:50% ;background: #c1c1c1;color: #fff;line-height: 60px;text-align: center;cursor: pointer;display: none;}
+		</style>
+		<script src="/lib/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/china.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/provins.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="main" _echarts_instance_="ec_1528790590264" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 1057px; height: 836px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="1057" height="836" style="position: absolute; left: 0px; top: 0px; width: 1057px; height: 836px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+		<span class="back_btn" style="display: none;">
+			&lt;返回
+		</span>
+		<script>
+			$(function(){
+				creatChinaMap('main');
+				$('.back_btn').click(function(){
+					creatChinaMap('main');
+				})
+				function creatChinaMap(id){
+					var myChart = echarts.init(document.getElementById(id));
+					$('.back_btn').hide();
+				    myChart.setOption({
+				    	title: {
+				            text: '全国各省',
+				            left: 'center',
+				            textStyle: {
+				                color: '#000'
+				            }
+				            ,top:30
+				        },
+					    tooltip: {
+					        trigger: ''
+					    },
+					    series: [
+					        {
+					            name: '产品分布',
+					            type: 'map',
+					            mapType: 'china',
+					            roam: false,
+					            label: {
+					                normal: {
+					                    show: true
+					                },
+					                emphasis: {
+					                    show: true
+					                }
+					            },
+					            data:[
+								    {"name": "北京","value":2656 },
+								    {"name": "天津","value":2342 },
+								    {"name": "上海","value":3523 },
+								    {"name": "重庆","value":423 },
+								    {"name": "河北","value":2 },
+								    {"name": "河南","value":323 },
+								    {"name": "云南","value":54 },
+								    {"name": "辽宁","value":42 },
+								    {"name": "黑龙江","value":6464 },
+								    {"name": "湖南","value":4242 },
+								    {"name": "安徽","value":42 },
+								    {"name": "山东","value":532 },
+								    {"name": "新疆","value":455 },
+								    {"name": "江苏","value":4635 },
+								    {"name": "浙江","value":7534 },
+								    {"name": "江西","value":243 },
+								    {"name": "湖北","value":6345 },
+								    {"name": "广西","value":432 },
+								    {"name": "甘肃","value":45234 },
+								    {"name": "山西","value":4234 },
+								    {"name": "内蒙古","value":42 },
+								    {"name": "陕西","value":4324 },
+								    {"name": "吉林","value":432 },
+								    {"name": "福建","value":4324 },
+								    {"name": "贵州","value": 43},
+								    {"name": "广东","value":4324 },
+								    {"name": "青海","value":434 },
+								    {"name": "西藏","value":7567 },
+								    {"name": "四川","value":7657 },
+								    {"name": "宁夏","value":75 },
+								    {"name": "海南","value":3213 },
+								    {"name": "台湾","value":5634 },
+								    {"name": "香港","value":342 },
+								    {"name": "澳门","value":97 }
+								],
+					            itemStyle: {
+				                    normal: {
+				                        borderColor: '#ccc',
+				                        areaColor: '#ffffff'
+				                    },
+				                    emphasis: {
+				                        areaColor: '#ccc',
+				                        color:'#fff',
+				                        borderWidth: 0,
+				                        show:false,
+				                    } 
+				                },
+					        }
+					    ]
+				    });
+				    myChart.on('click',function(parm){
+				    	creatProvince(parm.name,id);
+				    })
+				}
+				
+				function creatProvince(name,id){
+					var pro = pyChinese(name);
+					if(pro==''){
+						return false;
+					}
+					$('.back_btn').show();
+					var childChart = echarts.init(document.getElementById(id));
+					var seriesdata = [{
+					    type: 'map',
+					    mapType: pro,
+					    label: {
+						    normal: {
+						        show: true
+						    },
+						    emphasis: {
+						        show: true
+						    }
+						},
+						data:[],
+						itemStyle: {
+						    normal: {
+		                        borderColor: '#ccc',
+		                        areaColor: '#ffffff'
+		                    },
+		                    emphasis: {
+		                        areaColor: '#ccc',
+		                        color:'#fff',
+		                        borderWidth: 0,
+		                        show:false,
+		                    } 
+						},
+					    animation: false
+					}];
+				    var option = {
+				        title: {
+				            text: name,
+				            left: 'center',
+				            textStyle: {
+				                color: '#000'
+				            }
+				            ,top:30
+				        },
+				        series: seriesdata
+				    };
+				    $.get('json/'+pro+'.json', function(gdMap) {
+					    echarts.registerMap(pro, gdMap);
+					    childChart.setOption(option, true);
+					
+					});
+				}
+			})
+		</script>
+	
+
+</body></html>

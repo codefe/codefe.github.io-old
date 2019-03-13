@@ -1,0 +1,98 @@
+<style>
+*{margin:0;padding:0;}
+
+@keyframes scrollText1 {
+    0%  {transform: translateY(0px);}
+    20% {transform: translateY(-40px);}
+    40% {transform: translateY(-80px);}
+    60% {transform: translateY(-120px);}
+    80% {transform: translateY(-160px);}
+    100%{transform: translateY(-200px);}
+}
+
+.text-rotater{
+  width: 400px;
+  height: 40px;
+  overflow: hidden;
+  border:1px solid #ccc;
+  margin:100px;
+}
+
+.text-rotater__wrap{
+  animation:scrollText1 8s infinite  cubic-bezier(1,0,0.5,0) ;
+}
+
+.text-rotater__wrap p{
+  height: 40px;
+  line-height:40px;
+}
+
+.text-rotater__wrap:hover{
+  animation-play-state:paused;
+}
+</style>
+<div class="text-rotater">
+  <div class="text-rotater__wrap">
+    <p>HTML/HTML5</p>
+    <p>CSS/CSS3</p>
+    <p>JavaScript</p>
+    <p>Vue/React/Angular</p>
+    <p>NodeJS</p>
+	<p>HTML/HTML5</p>
+  </div>
+</div>
+
+<style>
+@keyframes scrollText2 {
+    0%{
+        transform: translateX(0px);
+    }
+    20%{
+        transform: translateX(-204px);
+    }
+    40%{
+        transform: translateX(-408px);
+    }
+    60%{
+        transform: translateX(-612px);
+    }
+    80%{
+        transform: translateX(-816px);
+    }
+    100%{
+        transform: translateX(-1020px);
+    }
+}
+
+.box4{
+  border:1px solid #ccc;
+  width: 200px;
+  height: 30px;
+  overflow: hidden;
+}
+.border4{
+	width:1400px;
+  -webkit-animation:scrollText2 12s infinite  cubic-bezier(1,0,0.5,0) ;
+  animation:scrollText2 12s infinite  cubic-bezier(1,0,0.5,0) ;
+}
+.border4 div{
+  height: 30px;
+  width: 200px;
+  overflow: hidden;
+  display: inline-block;
+}
+.border4:hover{
+  animation-play-state:paused;
+  -webkit-animation-play-state:paused;
+}
+</style>
+<div class="box4">
+  <div class="border4">
+    <div>This is a test 1.</div>
+    <div>This is a test 2.</div>
+    <div>This is a test 3.</div>
+    <div>This is a test 4.</div>
+    <div>This is a test 5.</div>
+    <div>This is a test 1.</div>
+  </div>
+</div>

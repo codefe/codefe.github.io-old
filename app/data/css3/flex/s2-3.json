@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"flex-flow属性","content":"<p><code>flex-flow</code>属性是<code>flex-direction</code>属性和<code>flex-wrap</code>属性的简写形式，默认值为<code>row nowrap</code>。</p><pre><code><span>.box </span><span>{</span>\n  <span>flex-flow</span><span>:</span> <span>&lt;</span>flex-direction&gt; || <span>&lt;</span>flex-wrap&gt;<span>;</span>\n<span>}</span></code></pre>"}}

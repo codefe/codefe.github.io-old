@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"判断浏览器对振动API的支持情况","content":"<p>一个好的习惯就是在使用之前要检查一下当前你的应用环境、浏览器是否支持振动API。下面就是检测的方法：&nbsp;</p><blockquote>&nbsp;// Standards ftw!&nbsp;<br>var supportsVibrate = \"vibrate\" in navigator;</blockquote><p>在window.navigator对象里就只有一个关于振动的API：vibrate。</p><p><br></p>"}}

@@ -1,0 +1,18 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "实例演示",
+		"name": "SVG",
+		"subType": "case/svg/form",
+		"title": "SVG表单演示",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "",
+		"arr": "one",
+		"items": [
+			{"title":"css3 svg复选框选中动画","url":"app/json/case/svg/form/css3svg复选框选中动画.html","flag":"true"},
+			{"title":"纯CSS SVG单选","url":"app/json/case/svg/icon/纯CSS-SVG单选.html","flag":"true"},
+			{"title":"SVG炫酷复选框动画","url":"app/json/case/svg/form/SVG炫酷复选框动画.html","flag":"true"}
+		]
+	}
+}

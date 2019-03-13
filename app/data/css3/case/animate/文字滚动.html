@@ -1,0 +1,71 @@
+<style>
+.menu-list {
+	list-style:none;
+	width:300px;
+	margin:100px auto;
+}
+.menu-list li {
+	display:block;
+}
+.list {
+	list-style:none;
+	margin-left:-50px;
+	width:300px;
+	height:60px;
+	overflow:hidden;
+}
+.list li {
+	width:300px;
+	height:60px;
+	position:relative;
+	animation:myfirst 4s infinite;
+	line-height:60px;
+	text-align:center;
+	font-size:30px;
+	color:#fff;
+}
+@keyframes myfirst {
+	0% {
+	background-color:#4ec7f3;
+	top:0px;
+}
+25% {
+	background-color:#4ec7f3;
+	top:0px;
+}
+50% {
+	background:#42c58a;
+	top:-60px;
+}
+75% {
+	background:#a0a0a0;
+	top:-120px;
+}
+100% {
+	background:#dc143c;
+	top:-180px;
+}
+}.font30 {
+	font-size:30px;
+	color:#7d7d7d;
+}
+
+</style>
+
+<ul class="menu-list">
+    <li>
+        <p class="font30">今天怎么样?</p>
+    </li>
+    <li>
+        <ul class="list">
+            <li class="one">还行</li>
+            <li class="two">该充电</li>
+            <li class="three">学习一下</li>
+            <li class="four">我想一想</li>
+
+        </ul>
+    </li>
+    <li>
+        <p class="font30">要充电了</p>
+    </li>
+</ul>

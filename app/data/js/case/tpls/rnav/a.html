@@ -1,0 +1,103 @@
+<style>
+* {
+	margin:0;
+	padding:0
+}
+body {
+	height:3000px;
+}
+.rgnotice {
+	position:fixed;
+	top:28%;
+	right:0;
+	background-color:#C2C2C2;
+	-webkit-box-shadow:-5px 5px 8px #EBEBEB;
+	-moz-box-shadow:-5px 5px 8px #EBEBEB;
+	-o-box-shadow:-5px 5px 8px #EBEBEB;
+	-ms-box-shadow:-5px 5px 8px #EBEBEB;
+	box-shadow:-5px 5px 8px #EBEBEB;
+}
+.rgnotice ul {
+	list-style:none;
+	width:55px;
+}
+.rgnotice ul li {
+	height:50px;
+	text-align:center;
+	cursor:pointer;
+}
+.rgnotice ul li:hover {
+	background-color:#DBDBDB
+}
+.rgnotice hr {
+	border:0.5px solid #E0FFFF;
+}
+.rgnotice .content {
+	width:150px;
+	height:206px;
+	background-color:#DBDBDB;
+	position:absolute;
+	top:0;
+	right:56px;
+	display:none;
+}
+.rgnotice ul li:hover + .content {
+	display:block;
+	-webkit-box-shadow:-5px 5px 8px #EBEBEB;
+	-moz-box-shadow:-5px 5px 8px #EBEBEB;
+	-o-box-shadow:-5px 5px 8px #EBEBEB;
+	-ms-box-shadow:-5px 5px 8px #EBEBEB;
+	box-shadow:-5px 5px 8px #EBEBEB;
+}
+.fadeinx {
+	-webkit-animation:flipInX 1s .2s ease both;
+	-moz-animation:flipInX 1s .2s ease both
+}
+@-webkit-keyframes flipInX {
+	0% {
+	-webkit-transform:perspective(400px) rotateX(90deg);
+	opacity:0
+}
+40% {
+	-webkit-transform:perspective(400px) rotateX(-10deg)
+}
+70% {
+	-webkit-transform:perspective(400px) rotateX(10deg)
+}
+100% {
+	-webkit-transform:perspective(400px) rotateX(0deg);
+	opacity:1
+}
+}@-moz-keyframes flipInX {
+	0% {
+	-moz-transform:perspective(400px) rotateX(90deg);
+	opacity:0
+}
+40% {
+	-moz-transform:perspective(400px) rotateX(-10deg)
+}
+70% {
+	-moz-transform:perspective(400px) rotateX(10deg)
+}
+100% {
+	-moz-transform:perspective(400px) rotateX(0deg);
+	opacity:1
+}
+}
+</style>
+
+<div class="rgnotice">
+    <ul>
+        <li>1</li>
+        <li class="content fadeinx">内容一</li>
+        <hr>
+        <li>2</li>
+        <li class="content fadeinx">内容二</li>
+        <hr>
+        <li>3</li>
+        <li class="content fadeinx">内容三</li>
+        <hr>
+        <li>4</li>
+        <li class="content fadeinx">内容四</li>
+    </ul>
+</div>

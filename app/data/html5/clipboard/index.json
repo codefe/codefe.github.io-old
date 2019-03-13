@@ -1,0 +1,21 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "HTML5",
+		"name": "Clipboard",
+		"subType": "html5-clipboard",
+		"title": "JavaScript异步剪贴板 API",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "在过去的几年里我们只能使用 document.execCommand 来操作剪贴板。不过，这种操作剪贴板的操作是同步的，并且只能读取和写入 DOM。现在 Chrome 66 已经支持了新的 Async Clipboard API，作为 execCommand 替代品。这个新的 Async Clipboard API 还可以使用 Promise 来简化剪贴板事件并将它们与 Drag-&-Drop API 一起使用。",
+		"arr": "one",
+		"items": [
+			{"title":"复制：将文本写入剪贴板","url":"s1"},
+			{"title":"粘贴：从剪贴板中读取文本","url":"s2"},
+			{"title":"处理粘贴事件","url":"s3"},
+			{"title":"安全和权限","url":"s4"},
+			{"title":"回顾","url":"s5"},
+			{"title":"检测和回退","url":"s6"}
+		]
+	}
+}

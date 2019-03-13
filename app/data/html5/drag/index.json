@@ -1,0 +1,28 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "HTML5",
+		"name": "Drag",
+		"subType": "html5-drag",
+		"title": "HTML5拖放教程",
+		"author": "网络",
+		"star": "★★★★☆",
+		"desc": "拖拽(Drag/Drop)是个非常普遍的功能。在生活中，拖放物品其实是相当常见的一个动作。标榜“互联网生活尖凿狮”的程序猿也在一直试图用鼠标模拟出“手”的操作，用来给用户以更好的体验，你可以抓住一个对象，并且拖动到你想放置的区域。在HTML5中，拖拽(draganddrop)成为了标准操作，任何元素都支持。",
+		"items": [
+			{"step": "阶段一：拖放概况","item":[
+				{"title":"浏览器支持","url":"s1-1"},
+				{"title":"拖放(Drag 和 Drop)各属性生命周期","url":"s1-2"}
+			]},
+			{"step": "阶段二：拖放详解","item":[
+				{"title":"设置元素为可拖放(draggable)","url":"s2-1"},
+				{"title":"拖动什么 - ondragstart 和 setData()","url":"s2-2"},
+				{"title":"放到何处 - ondragover","url":"s2-3"},
+				{"title":"进行放置 - ondrop","url":"s2-4"},
+				{"title":"写在哪呢？","url":"s2-5"}
+			]},
+			{"step": "阶段三：拖放实例","item":[
+				{"title":"拖动到垃圾箱","url":"/app/data/html5/drag/case/delete.html","flag":"true"}
+			]}
+		]
+	}
+}

@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"命名空间","content":"<p>js是没有命名空间的，因此可以用对象模拟。&nbsp;</p><pre><code>var app = {}; // 命名空间app\n//模块1\napp.module1 = {\n  name: 'allin',\n  f: function(){\n    console.log('hi robot');\n  }\n};\napp.module1.name; // \"allin\"\napp.module1.f(); // hi robot</code></pre><p><br></p><p>&nbsp;<br></p>"}}

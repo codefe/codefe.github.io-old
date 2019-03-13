@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"获取现有的缓存里的缓存名称","content":"<p>想要获取缓存里已经存在的缓存数据的名称，我们需要使用<code>caches.keys()</code>方法：&nbsp;</p><pre><code>caches.keys().then(function(cacheKeys) { <br>  console.log(cacheKeys); // ex: [\"test-cache\"]\n});</code></pre><p>window.caches.keys()返回的也是一个Promise。</p>"}}

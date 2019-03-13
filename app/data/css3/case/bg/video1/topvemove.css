@@ -1,0 +1,456 @@
+﻿/*样式渡效果*/
+.menu2 a,.menuclos a,.bannerbtn ul li a{ /*按钮背景0.5s过渡*/
+	transition:background 0.5s;
+	-moz-transition: background 0.5s; /* Firefox 4 */
+	-webkit-transition: background 0.5s; /* Safari 和 Chrome */
+	-o-transition: background 0.5s;/* Opera */
+}
+
+.nav2 li a,.nav li a{/*NAV边框颜色带透明度0.5过渡*/
+	transition:border 0.5s;
+	-moz-transition: border 0.5s; /* Firefox 4 */
+	-webkit-transition: border 0.5s; /* Safari 和 Chrome */
+	-o-transition: border 0.5s;/* Opera */
+}
+
+.newslist ul li a{/*新闻背景0.8秒过渡*/
+	transition:background 0.8s;/*背景颜色0.8秒过渡*/
+	-moz-transition: background 0.8s; /* Firefox 4 */
+	-webkit-transition: background 0.8s; /* Safari 和 Chrome */
+	-o-transition: background 0.8s;/* Opera */
+}
+
+/*鼠标向下滚动提示动画*/
+
+.scroll{
+	animation:scrollmove ease-out 2s infinite ;
+	-webkit-animation:scrollmove ease-out 2s infinite; /*Safari and Chrome*/
+	-moz-animation:scrollmove ease-out 2s infinite;  /* Firefox */
+	-o-animation:scrollmove ease-out 2s infinite; /* Opera */
+	}
+@keyframes scrollmove
+{
+from {bottom:6%;opacity:0;}
+50%{bottom:5%;opacity:1;}
+to {bottom:2%;opacity:0;}
+}
+@-moz-keyframes scrollmove /* Firefox */
+{
+from {bottom:6%;opacity:0;}
+50%{bottom:5%;opacity:1;}
+to {bottom:2%;opacity:0;}
+}
+@-webkit-keyframes scrollmove /*Safari and Chrome*/
+{
+from {bottom:6%;opacity:0;}
+50%{bottom:5%;opacity:1;}
+to {bottom:2%;opacity:0;}
+}
+@-o-keyframes scrollmove /* Opera */
+{
+from {bottom:6%;opacity:0;}
+50%{bottom:5%;opacity:1;}
+to {bottom:2%;opacity:0;}
+}
+
+/*斜线动画*/
+
+.mainl1{
+	transform: rotate(-45deg);
+	transform-origin:0 0;
+	-ms-transform: rotate(-45deg);
+	-ms-transform-origin:0 0;
+	-webkit-transform: rotate(-45deg);
+	-webkit-transform-origin:0 0;
+	-o-transform: rotate(-45deg);
+	-o-transform-origin:0 0;
+	animation:line1move 1.5s infinite alternate;
+	animation-delay:3s;
+	-webkit-animation:line1move 1.5s infinite alternate;
+	-webkit-animation-delay:3s;
+	-moz-animation:line1move 1.5s infinite alternate;
+	-moz-animation-delay:3s;
+	-o-animation:line1move 1.5s infinite alternate;
+	-o-animation-delay:3s;
+}
+@keyframes line1move{
+	from {width:200px;}
+	to {width:0px;}
+}
+@-webkit-keyframes line1move{
+	from {width:200px;}
+	to {width:0px;}
+}
+@-moz-keyframes line1move{
+	from {width:200px;}
+	to {width:0px;}
+}
+@-o-keyframes line1move{
+	from {width:200px;}
+	to {width:0px;}
+}
+
+
+.mainl2{
+	transform: rotate(-45deg);
+	transform-origin:0 0;
+	-ms-transform: rotate(-45deg);
+	-ms-transform-origin:0 0;
+	-webkit-transform: rotate(-45deg);
+	-webkit-transform-origin:0 0;
+	-o-transform: rotate(-45deg);
+	-o-transform-origin:0 0;
+	animation:line2move 1.2s infinite alternate;
+	animation-delay:3s;
+	-webkit-animation:line2move 1.2s infinite alternate;
+	-webkit-animation-delay:3s;
+	-moz-animation:line2move 1.2s infinite alternate;
+	-moz-animation-delay:3s;
+	-o-animation:line2move 1.2s infinite alternate;
+	-o-animation-delay:3s;
+}
+@keyframes line2move{
+	from{width:80px;}
+	to{width:0px;}
+}
+@-webkit-keyframes line2move{
+	from {width:80px;}
+	to {width:0px;}
+}
+@-moz-keyframes line2move{
+	from {width:80px;}
+	to {width:0px;}
+}
+@-o-keyframes line2move{
+	from {width:80px;}
+	to {width:0px;}
+}
+.mainl3{
+	transform: rotate(-45deg);
+	transform-origin:0 0;
+	-ms-transform: rotate(-45deg);
+	-ms-transform-origin:0 0;
+	-webkit-transform: rotate(-45deg);
+	-webkit-transform-origin:0 0;
+	-o-transform: rotate(-45deg);
+	-o-transform-origin:0 0;
+	animation:line3move 1s infinite alternate;
+	animation-delay:3s;
+		-webkit-animation:line3move 1s infinite alternate;
+	-webkit-animation-delay:3s;
+	-moz-animation:line3move 1s infinite alternate;
+	-moz-animation-delay:3s;
+	-o-animation:line3move 1s infinite alternate;
+	-o-animation-delay:3s;
+}
+@keyframes line3move{
+	from{width:60px;}
+	to{width:0px;}
+}
+@-webkit-keyframes line3move{
+	from {width:60px;}
+	to {width:0px;}
+}
+@-moz-keyframes line3move{
+	from {width:60px;}
+	to {width:0px;}
+}
+@-o-keyframes line3move{
+	from {width:60px;}
+	to {width:0px;}
+}
+.mainl4{
+	transform: rotate(135deg);
+	transform-origin:0 0;
+	-ms-transform: rotate(135deg);
+	-ms-transform-origin:0 0;
+	-webkit-transform: rotate(135deg);
+	-webkit-transform-origin:0 0;
+	-o-transform: rotate(135deg);
+	-o-transform-origin:0 0;
+	animation:line4move 1.5s infinite alternate;
+	animation-delay:3s;
+	-webkit-animation:line4move 1.5s infinite alternate;
+	-webkit-animation-delay:3s;
+	-moz-animation:line4move 1.5s infinite alternate;
+	-moz-animation-delay:3s;
+	-o-animation:line4move 1.5s infinite alternate;
+	-o-animation-delay:3s;
+}
+@keyframes line4move{
+	from{width:0px;}
+	to{width:220px;}
+}
+@-webkit-keyframes line4move{
+	from {width:0px;}
+	to {width:200px;}
+}
+@-moz-keyframes line4move{
+	from {width:0px;}
+	to {width:200px;}
+}
+@-o-keyframes line4move{
+	from {width:0px;}
+	to {width:200px;}
+}
+.mainl5{
+	transform: rotate(135deg);
+	transform-origin:0 0;
+	-ms-transform: rotate(135deg);
+	-ms-transform-origin:0 0;
+	-webkit-transform: rotate(135deg);
+	-webkit-transform-origin:0 0;
+	-o-transform: rotate(135deg);
+	-o-transform-origin:0 0;
+	animation:line5move 1.2s infinite alternate;
+	animation-delay:3s;
+	-webkit-animation:line5move 1.2s infinite alternate;
+	-webkit-animation-delay:3s;
+	-moz-animation:line5move 1.2s infinite alternate;
+	-moz-animation-delay:3s;
+	-o-animation:line5move 1.2s infinite alternate;
+	-o-animation-delay:3s;
+}
+@keyframes line5move{
+	from{width:0px;}
+	to{width:100px;}
+}
+@-webkit-keyframes line5move{
+	from {width:0px;}
+	to {width:100px;}
+}
+@-moz-keyframes line5move{
+	from {width:0px;}
+	to {width:100px;}
+}
+@-o-keyframes line5move{
+	from {width:0px;}
+	to {width:100px;}
+}
+.mainl6{
+	transform: rotate(135deg);
+	transform-origin:0 0;
+	-ms-transform: rotate(135deg);
+	-ms-transform-origin:0 0;
+	-webkit-transform: rotate(135deg);
+	-webkit-transform-origin:0 0;
+	-o-transform: rotate(135deg);
+	-o-transform-origin:0 0;
+	animation:line6move 1s infinite alternate;
+	animation-delay:3s;
+	-webkit-animation:line6move 1s infinite alternate;
+	-webkit-animation-delay:3s;
+	-moz-animation:line6move 1s infinite alternate;
+	-moz-animation-delay:3s;
+	-o-animation:line6move 1s infinite alternate;
+	-o-animation-delay:3s;
+}
+@keyframes line6move{
+	from{width:0px;}
+	to{width:70px;}
+}
+@-webkit-keyframes line6move{
+	from {width:0px;}
+	to {width:70px;}
+}
+@-moz-keyframes line6move{
+	from {width:0px;}
+	to {width:70px;}
+}
+@-o-keyframes line6move{
+	from {width:0px;}
+	to {width:70px;}
+}
+
+/*正奂旋转层*/
+.mainxza{
+	margin:0 0 0 10%;
+	width:80%;
+	height:100%;
+	display: table;
+	overflow: hidden;
+	position: absolute;
+	z-index: 6;
+	}
+.mainxzb{
+	margin:0 0 0 10%;
+	width:80%;
+	height:100%;
+	display: table;
+	overflow: hidden;
+	position: absolute;
+	z-index: 6;
+	}
+
+.mainxz1 img{max-width:500px;max-height:500px;width:100%;}
+.mainxz2 img{max-width:500px;max-height:500px;width:100%;}
+
+.mainxz1{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	margin:0 auto;
+	text-align: center;
+}
+.mainxz2{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	margin:0 auto;
+	text-align: center;
+	opacity:0.5;
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+.mainxz1 img{
+	animation: mainzx1 120s infinite linear;
+	-webkit-animation:mainzx1 120s infinite linear;
+	-moz-animation:mainzx1 120s infinite linear;
+	-o-animation:mainzx1 120s infinite linear;
+}
+@-webkit-keyframes mainzx1 {
+ from {
+	-webkit-transform: rotate(0deg)
+}
+to {
+	-webkit-transform: rotate(359deg)
+}
+}
+@-moz-keyframes mainzx1 {
+ from {
+	-moz-transform: rotate(0deg)
+}
+to {
+	-moz-transform: rotate(359deg)
+}
+}
+@-o-keyframes mainzx1 {
+ from {
+	-o-transform: rotate(0deg)
+}
+to {
+	-o-transform: rotate(359deg)
+}
+}
+@keyframes mainzx1 {
+ from {
+	transform: rotate(0deg)
+}
+to {
+	transform: rotate(359deg)
+}
+}
+
+.mainxz2 img{
+	animation: mainzx2 60s infinite linear;
+	-webkit-animation:mainzx2 60s infinite linear;
+	-moz-animation:mainzx2 60s infinite linear;
+	-o-animation:mainzx2 60s infinite linear;
+}
+@-webkit-keyframes mainzx2 {
+ from {
+	-webkit-transform: rotate(0deg)
+}
+to {
+	-webkit-transform: rotate(-359deg)
+}
+}
+@-moz-keyframes mainzx2 {
+ from {
+	-moz-transform: rotate(0deg)
+}
+to {
+	-moz-transform: rotate(-359deg)
+}
+}
+@-o-keyframes mainzx2 {
+ from {
+	-o-transform: rotate(0deg)
+}
+to {
+	-o-transform: rotate(-359deg)
+}
+}
+@keyframes mainzx2 {
+ from {
+	transform: rotate(0deg)
+}
+to {
+	transform: rotate(-359deg)
+}
+}
+
+.mainline2{
+	-webkit-animation: mainline2xz 8s infinite alternate;
+	-moz-animation: mainline2xz 8s infinite alternate;
+	-o-animation: mainline2xz 8s infinite alternate;
+	animation: mainline2xz 8s infinite alternate;
+}
+
+@-webkit-keyframes mainline2xz {
+ from {
+	-webkit-transform: rotate(90deg)
+}
+to {
+	-webkit-transform: rotate(0deg)
+}
+}
+@-moz-keyframes mainline2xz {
+ from {
+	-moz-transform: rotate(90deg)
+}
+to {
+	-moz-transform: rotate(0deg)
+}
+}
+@-o-keyframes mainline2xz {
+ from {
+	-o-transform: rotate(90deg)
+}
+to {
+	-o-transform: rotate(0deg)
+}
+}
+@keyframes mainline2xz {
+ from {
+	transform: rotate(90deg)
+}
+to {
+	transform: rotate(0deg)
+}
+}
+
+@media screen and (min-width: 480px) {/*PC端点赞动效*/
+
+.goodico{
+ transition:background 0.5s;/*背景颜色0.8秒过渡*/
+ -moz-transition: background 0.5s; /* Firefox 4 */
+ -webkit-transition: background 0.5s; /* Safari 和 Chrome */
+ -o-transition: background 0.5s;/* Opera */
+}
+.scico{
+ transition:background 0.8s;/*背景颜色0.8秒过渡*/
+ -moz-transition: background 0.5s; /* Firefox 4 */
+ -webkit-transition: background 0.5s; /* Safari 和 Chrome */
+ -o-transition: background 0.5s;/* Opera */
+}
+
+}
+
+@media screen and (max-width: 480px) {/*移动端点赞动效*/
+.goodico{
+ transition:background-color 0.8s;/*背景颜色0.8秒过渡*/
+ -moz-transition: background-color 0.5s; /* Firefox 4 */
+ -webkit-transition: background-color 0.5s; /* Safari 和 Chrome */
+ -o-transition: background-color 0.5s;/* Opera */
+}
+.scico{
+ transition:background-color 0.5s;/*背景颜色0.8秒过渡*/
+ -moz-transition: background-color 0.5s; /* Firefox 4 */
+ -webkit-transition: background-color 0.5s; /* Safari 和 Chrome */
+ -o-transition: background-color 0.5s;/* Opera */
+}
+}

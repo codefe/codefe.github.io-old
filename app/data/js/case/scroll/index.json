@@ -1,0 +1,22 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "实例演示",
+		"name": "JavaScript",
+		"subType": "case/js/scroll",
+		"title": "滚动条美化特效实例演示",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "",
+		"arr": "one",
+		"items": [
+			{"title":"滚动条美化1","url":"/app/data/js/case/scroll/scroll-1.html","flag":"true"},
+			{"title":"滚动条美化2","url":"/app/data/js/case/scroll/scroll-2.html","flag":"true"},
+			{"title":"滚动条美化3","url":"/app/data/js/case/scroll/scroll-3.html","flag":"true"},
+			{"title":"滚动条美化4","url":"/app/data/js/case/scroll/scroll-4.html","flag":"true"},
+			{"title":"滚动条美化5","url":"/app/data/js/case/scroll/scroll-5.html","flag":"true"},
+			{"title":"滚动条美化6","url":"/app/data/js/case/scroll/a.html","flag":"true"},
+			{"title":"滚动条美化7","url":"/app/data/js/case/scroll/b.html","flag":"true"}
+		]
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "Other",
+		"name": "Git",
+		"subType": "other-git",
+		"title": "Git简易使用教程",
+		"author": "本站",
+		"star": "★★★★★",
+		"desc": "Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。",
+		"arr": "one",
+		"items": [
+			{"title":"配置个人信息","url":"setconfig"},
+			{"title":"查看配置信息","url":"configList"},
+			{"title":"工作区、暂存区和版本库","url":"info"},
+			{"title":"初始化一个Git仓库(init)","url":"init"},
+			{"title":"从Git仓库中拷贝项目(clone)","url":"clone"},
+			{"title":"查看是否有修改(status)","url":"status"},
+			{"title":"将该文件添加到缓存(add)","url":"add"},
+			{"title":"将缓存区内容添加到仓库(commit)","url":"commit"},
+			{"title":"取消已缓存的内容(reset HEAD)","url":"resetHEAD"},
+			{"title":"将条目从缓存区中移除(rm)","url":"rm"},
+			{"title":"移动或重命名一个文件,目录,软连接(mv)","url":"mv"},
+			{"title":"分支管理(branch/checkout/merge)","url":"branchCheckoutMerge"}
+		]
+	}
+}

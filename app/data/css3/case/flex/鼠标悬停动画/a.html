@@ -1,0 +1,217 @@
+<style>
+*{margin:0;padding:0;}
+.u_course_item {
+    width: 25%;
+    float: left;
+    overflow: hidden;
+}
+.u_course_item figure {
+    height: 200px;
+    background: url(./course_bg.jpg) center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 10px;
+}
+.u_course_item a {
+    display: block;
+    height: 100%;
+    color: #000;
+    transition: .35s;
+    position: relative;
+}
+.u_inLayout {
+    display: none;
+}
+.uci_line {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.u_cinner {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+.u_course_item figcaption {
+    font-size: 18px;
+    padding: 0 .8em;
+    margin-bottom: .5em;
+}
+.uci_one,
+.uci_two {
+    font-size: 12px;
+    color: #191919;
+    padding: 0 .8em;
+    margin-bottom: .8em;
+}
+.more_hide{
+    display: none;
+}
+.showMore .more_hide{
+    display: block;
+}
+.showMore .u_btn{
+    display: none;
+}
+.fadeInUp{animation-name: fadeInUp;}
+.anibit{animation-duration: .4s;animation-fill-mode: both; opacity: 0;}
+@keyframes fadeInUp{
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+/*隐藏部分*/
+.u_ci_icon{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAYAAABzwahEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOhSURBVGhD5VvLbtNAFLUEAsEGtkiNHaACqXwArEACFiwKK0KcBKkSSPxEFzx+oeUH6JLfoKgUKIuWFUhIpexa2wU2laDhnPENUd1pkzSZGTs+0lHdeObec+zxPPzwTCKqXTgTNSp3o0YwGzeCV/i7HIfBd/A3/m8rptsbal9aZlbVQV0JUwwk9crFKPSfRg1/CSb+/Dc4IFlXxUAsxpTw+UK75h3bqgdNnL03ELyrMzIMVUzEZg7mkrTuQBFx038chcEXnWATVLmQ09kB2A6rV3EmPurE2SBzU4PIMY/1+xOn0OzmcOT/6gTZpNIALdQk8sxgu37+EhKuZgXkgKvUJjJHi7ju34obfqJJmgui94+pUeSOBknTr2Fo2dElzBOpkVpF9nBITR99PLZNah3afBz6N4twprNUmqFdbAyGtCPL7zXdm34ycIenhqx89t6DcvXH9LnTYqs30ExeaoIUlfNi63BEzep1NTfWBykcOcnZbAXXxJ4e7RvecRQehya+h+jsVg6d23Pyr6s4FgyDR2JzL3i20cS/aiuNAbmqo0ex2wWaQ0tXYZzI9bzY7QLGl3SFx4n0KHZTbLb8KV1B0yR0v5vkVli5IrY5bgcvdIVM04VxehXbaOah/05byDBdGKdXZTqeCc66Wn05MU6v8IyZmj+tK2CDLoyT9IzeXN3s1xYwTWfG4dnDxkJ2hy26Mg4uOB2/XRlX4zk2NrI7bNGVcXCDa++fmh1W6ND4L55x3Q4rdGi8PXLjJqHLdxTiGt8pZVPHEnWzlJ0bzvi3Ug9nZZ3AlHTKWtpFSmmXpUQpb0QQ+OFZtoANujAeh8Fzse15ycOJSTQB64+NbBunR3oV2ymwYzFb0DRtGwcXxW4XGNTH/oECPYrdLkr7CIko5UNDgo9S0d1/0lYsMOmp5yugfIiu3hjUBCgi+3oxoANUmM8GKCzDYE5s9QZfmEGFz9pABSJ68ZXdO5MnxVZ/2G5VLxf9da99k5V+UcoX/DpIwsoDV6u3o5BaqVnkD4ekXq0X4cxT48hMd5A0/dv5vuZxTUOjyB0t0g4vWNuf1DnXqE1kmoEa6jDO52GSIxrmB3pfdVioGR7GyawYW2TuvmdkowZXO7iunuD6WteJM0N/nTkPXGnZRLs2dSIKqzMYO98au5PD2MjBXJI2X+DnkLyvhQPwfpjxn3UZg7Fy+4nlQVC3rsPKPTkQr9EZfcC2/qNa7GMZVZZ1OreAjcDz/gG+SBqD+IxbuwAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    margin-top: 22px;
+    margin-bottom: 15px;
+}
+.u_inLayout{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+}
+.u_inLayout *{
+    opacity: 0;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.u_inLayout *:nth-child(1){
+     animation-delay: .1s;
+}
+.u_inLayout *:nth-child(2){
+     animation-delay: .3s;
+}
+.u_inLayout *:nth-child(3){
+     animation-delay: .5s;
+}
+.u_inLayout *:nth-child(4){
+     animation-delay: .7s;
+}
+.u_inLayout *:nth-child(5){
+     animation-delay: .85s;
+}
+.u_inLayout p{
+    color: #C4C4C4;
+}
+
+/*hover效果*/
+.u_course_item a:hover{
+    background-color: rgba(0,0,0,.6);
+    color: #FFF;
+}
+.u_course_item a:hover .u_cinner{
+    opacity: 0;
+}
+.u_course_item a:hover .u_inLayout{
+    opacity: 1;
+}
+.u_course_item a:hover .u_inLayout *{
+    opacity: 1;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+</style>
+
+<div class="mod_course_list clearfix">
+            <div class="u_course_item anibit fadeInUp" date-name="fadeInUp" date-delay=".6">
+                <figure>
+                    <a href="js.html">
+                        <em class="uci_line"></em><span class="u_cinner">
+                        <figcaption>JavaScript高级实战班</figcaption>
+                        <p class="uci_one">JavaScript advanced combat course</p>
+                        </span>
+                        <div class="u_inLayout">
+                            <i class="u_ci_icon"></i>
+                            <figcaption>JavaScript高级实战班</figcaption>
+                            <p class="uci_one">JavaScript advanced combat course</p>
+                            <p class="uci_two">熟悉CSS，可运用HTML+CSS编写静态页面</p>
+                            <div class="day">80天 / 6800</div>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+            <div class="u_course_item anibit fadeInUp" date-name="fadeInUp" date-delay=".6">
+                <figure>
+                    <a href="css.html">
+                        <em class="uci_line anim"></em><span class="u_cinner">
+                            <figcaption>Web前端工程师零基础实战班</figcaption>
+                            <p class="uci_one">Web front-end zero-based combat engineer squad</p>
+                        </span>
+                        <div class="u_inLayout">
+                            <i class="u_ci_icon"></i>
+                            <figcaption>Web前端工程师零基础实战班</figcaption>
+                            <p class="uci_one">Web front-end zero-based combat engineer squad</p>
+                            <p class="uci_two">只要你会打字、上网，安装程序，我们就能把你教会。</p>
+                            <div class="day">80天 / 6800</div>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+            <div class="u_course_item anibit fadeInUp" date-name="fadeInUp" date-delay=".6">
+                <figure>
+                    <a href="javascript:;" onclick="alert('Hi，亲爱哒：<br>我知道你很期待，但我们正在努力的录制全新的视频教程，我们和你一样也很期待，相信在未来的两周中，您就会看到有新的视频展示在您的眼前。<br>好的东西，值得等待。2016-06-30 不见不散','好的，朕知道了',true)">
+                        <em class="uci_line"></em><span class="u_cinner">
+                            <figcaption>免费的视频教程</figcaption>
+                            <p class="uci_one">Free video tutorials</p>
+                        </span>
+                        <div class="u_inLayout">
+                            <i class="u_ci_icon"></i>
+                            <figcaption>免费的视频教程</figcaption>
+                            <p class="uci_one">Free video tutorials</p>
+                            <p class="uci_two">免费高端的视频课程，让你享受学习盛宴。</p>
+                            <div class="day">不断更新中...</div>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+            <div class="u_course_item anibit fadeInUp" date-name="fadeInUp" date-delay=".6">
+                <figure>
+                    <a href="html5.html">
+                        <em class="uci_line"></em><span class="u_cinner">
+                            <figcaption>移动端实战课程</figcaption>
+                            <p class="uci_one">Mobile end combat courses</p>
+                        </span>
+                        <div class="u_inLayout">
+                            <i class="u_ci_icon"></i>
+                            <figcaption>移动端实战课程</figcaption>
+                            <p class="uci_one">Mobile end combat courses</p>
+                            <p class="uci_two"></p>
+                            <div class="day"></div>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+        </div>

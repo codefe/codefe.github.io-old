@@ -1,0 +1,17 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "实例演示",
+		"name": "JavaScript",
+		"subType": "case/js/banner",
+		"title": "banner特效实例演示",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "",
+		"arr": "one",
+		"items": [
+			{"title":"炫酷带略图轮播图","url":"/app/data/js/case/banner/1/a.html","flag":"true"},
+			{"title":"左右全屏切换banner焦点图","url":"/app/data/js/case/banner/2/a.html","flag":"true"}
+		]
+	}
+}

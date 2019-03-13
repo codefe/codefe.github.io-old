@@ -1,0 +1,114 @@
+<div id="box">
+    <div id="scroll"></div>
+    <p>
+        ECMAScript是一种由Ecma国际（前身为欧洲计算机制造商协会,英文名称是European Computer Manufacturers Association）通过ECMA-262标准化的脚本程序设计语言。 1998年6月，ECMAScript 2.0版发布。 1999年12月，ECMAScript 3.0版发布，成为JavaScript的通行标准，得到了广泛支持。 2007年10月，ECMAScript 4.0版草案发布，对3.0版做了大幅升级，预计次年8月发布正式版本。草案发布后，由于4.0版的目标过于激进，各方对于是否通过这个标准，发生了严重分歧。以Yahoo、Microsoft、Google为首的大公司，反对JavaScript的大幅升级，主张小幅改动；以JavaScript创造者Brendan
+        Eich为首的Mozilla公司，则坚持当前的草案。 2008年7月，由于对于下一个版本应该包括哪些功能，各方分歧太大，争论过于激进，ECMA开会决定，中止ECMAScript 4.0的开发，将其中涉及现有功能改善的一小部分，发布为ECMAScript 3.1，而将其他激进的设想扩大范围，放入以后的版本，由于会议的气氛，该版本的项目代号起名为Harmony（和谐）。会后不久，ECMAScript 3.1就改名为ECMAScript 5。 ECMAScript是一种由Ecma国际（前身为欧洲计算机制造商协会,英文名称是European
+        Computer Manufacturers Association）通过ECMA-262标准化的脚本程序设计语言。 1998年6月，ECMAScript 2.0版发布。 1999年12月，ECMAScript 3.0版发布，成为JavaScript的通行标准，得到了广泛支持。 2007年10月，ECMAScript 4.0版草案发布，对3.0版做了大幅升级，预计次年8月发布正式版本。草案发布后，由于4.0版的目标过于激进，各方对于是否通过这个标准，发生了严重分歧。以Yahoossss、Microsoft、Google为首的大公司，反对JavaScript的大幅升级，主张小幅改动；以JavaScript创造者Brendan
+        Eich为首的Mozilla公司，则坚持当前的草案。 2008年7月，由于对于下一个版本应该包括哪些功能，各方分歧太大，争论过于激进，ECMA开会决定，中止ECMAScript 4.0的开发，将其中涉及现有功能改善的一小部分，发布为ECMAScript 3.1，而将其他激进的设想扩大范围，放入以后的版本，由于会议的气氛，该版本的项目代号起名为Harmony（和谐）。会后不久，ECMAScript 3.1就改名为ECMAScript 5。 2007年10月，ECMAScript 4.0版草案发布，对3.0版做了大幅升级，预计次年8月发布正式版本。草案发布后，由于4.0版的目标过于激进，各方对于是否通过这个标准，发生了严重分歧。以Yahoossss、Microsoft、Google为首的大公司，反对JavaScript的大幅升级，主张小幅改动；以JavaScript创造者Brendan
+        Eich为首的Mozilla公司，则坚持当前的草案。
+
+    </p>
+</div>
+<style>
+* {
+	margin:0;
+	padding:0
+}
+body {
+	height:2000px
+}
+#box {
+	height:400px;
+	width:300px;
+	overflow:hidden;
+	border:1px solid #ccc;
+	position:relative;
+	margin:20px
+}
+#box #scroll {
+	height:50px;
+	width:5px;
+	background:#ccc;
+	position:absolute;
+	top:0;
+	right:0;
+	cursor:pointer
+}
+p {
+	margin-right:30px;
+	position:absolute;
+	top:0;
+	left:0
+}
+
+</style>
+<script>
+window.onload = function() {
+
+    //封装滚轮事件-----------------------------------------------------
+    function mouseWheel(obj, fn) { //封装滚轮
+        if (window.navigator.userAgent.indexOf('Firefox') != -1) {
+            obj.addEventListener('DOMMouseScroll', wheelFn, true);
+
+        } else obj.onmousewheel = wheelFn;
+
+        function wheelFn(ev) {
+            ev = ev || event;
+            var direct = ev.wheelDelta ? ev.wheelDelta < 0 : ev.detail > 0;
+            fn && fn(direct); //将direct作为参数传递出去
+            if (window.event) { //IE
+                ev.returnValue = false; //ie 阻止默认事件
+                return false; //ie9 以上阻止
+            } else {
+                ev.preventDefault(); //阻止默认事件 firefox
+            }
+        };
+    };
+
+    //滚轮滚动----------------------------------------
+    var oBox = document.getElementById('box');
+    var p = document.getElementsByTagName('p')[0];
+    var scroller = document.getElementById('scroll');
+
+    var dis_p = p.offsetHeight - oBox.offsetHeight; //p的高度减去box的高度
+    var dis_span = oBox.offsetHeight - scroller.offsetHeight; //滑块移动距离
+
+    //滚轮比率
+    var wheel_rate = dis_span / dis_p;
+    mouseWheel(oBox, function(dir) {
+        if (dir) {
+            var t = p.offsetTop - 30;
+            if (t < -dis_p) t = -dis_p;
+            p.style.top = t + 'px';
+            scroller.style.top = -t * wheel_rate + 'px';
+        } else {
+            var t = p.offsetTop + 30;
+            if (t > 0) t = 0;
+            p.style.top = t + 'px';
+            scroller.style.top = -t * wheel_rate + 'px';
+        }
+    });
+
+
+    //拖拽----------------------------------------------
+    scroller.onmousedown = function(ev) {
+        ev = ev || window.event;
+        var mt = ev.clientY - this.offsetTop; //只取Y方向
+
+        document.onmousemove = function(ev) {
+            ev = ev || window.event;
+            var t = ev.clientY - mt;
+            if (t <= 0) t = 0; //限制顶部位置
+            if (t >= dis_span - 2) t = dis_span; //限制底部位置
+            //计算移动比率
+            move_rate = t / dis_span;
+            p.style.top = -dis_p * move_rate + 'px'; //移动比率
+            scroller.style.top = t + 'px';
+        };
+        document.onmouseup = function() {
+            document.onmousemove = null;
+        };
+        return false; //阻止选中文字
+    };
+}
+</script>

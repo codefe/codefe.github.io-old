@@ -1,0 +1,76 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "HTML5",
+		"name": "SVG",
+		"subType": "html5-svg",
+		"title": "SVG基础教程",
+		"author": "网络",
+		"star": "★★★★☆",
+		"desc": "SVG 是英文 Scalable Vector Graphics 的缩写，意为可缩放矢量图。是用XML格式定义的矢量图。",
+		"items": [
+			{"step": "阶段一：基础图形","item":[
+				{"title":"矩形","url":""},
+				{"title":"圆形","url":""},
+				{"title":"椭圆","url":""},
+				{"title":"直线","url":""},
+				{"title":"折线","url":""},
+				{"title":"多边形","url":""},
+				{"title":"路径","url":""},
+				{"title":"clipPath","url":""}
+			]},
+			{"step": "阶段二：重点属性","item":[
+				{"title":"边线边框属性","url":""},
+				{"title":"viewBox属性","url":""},
+				{"title":"preserveAspectRatio属性","url":""}
+			]},
+			{"step": "阶段三：结构元素","item":[
+				{"title":"use","url":""},
+				{"title":"symbol","url":""},
+				{"title":"g","url":""}
+			]},
+			{"step": "阶段四：文字文本","item":[
+				{"title":"text","url":""},
+				{"title":"textPath","url":""},
+				{"title":"tref","url":""},
+				{"title":"tspan","url":""}
+			]},
+			{"step": "阶段五：滤镜","item":[
+				{"title":"滤镜简介","url":""},
+				{"title":"模糊滤镜","url":"feGaussianBlur"},
+				{"title":"投/阴影滤镜","url":"dropShadow"},
+				{"title":"feBlend","url":"feBlend"},
+				{"title":"feColorMatrix","url":"feColorMatrix"},
+				{"title":"feComponentTransfer","url":"feComponentTransfer"},
+				{"title":"feDiffuseLighting","url":"feDiffuseLighting"},
+				{"title":"颜色滤镜","url":""},
+				{"title":"光照滤镜","url":""},
+				{"title":"feComposite","url":""}
+			]},
+			{"step": "阶段六：激变色","item":[
+				{"title":"线性渐变色","url":"linearGradient"},
+				{"title":"辐射式渐变色","url":"radialGradient"}
+			]},
+			{"step": "阶段七：SVG SMIL animation动画详解","item":[
+				{"title":"animation概览","url":"s7-1"},
+				{"title":"set","url":"s7-2"},
+				{"title":"animate","url":"s7-3"},
+				{"title":"animateTransform","url":"s7-4"},
+				{"title":"animateMotion","url":"s7-5"},
+				{"title":"自由组合","url":"s7-6"},
+				{"title":"暂停与播放","url":"s7-7"},
+				{"title":"animation参数详解","url":"s7-8"}
+			]},
+			{"step": "阶段八：实例","item":[
+				{"title":"旋转的马","url":"/app/data/html5/svg/case/horse.svg","flag":"true"},
+				{"title":"set动画","url":"/app/data/html5/svg/case/horse-set.svg","flag":"true"},
+				{"title":"animate动画","url":"/app/data/html5/svg/case/horse-animate.svg","flag":"true"},
+				{"title":"animateTransform动画","url":"/app/data/html5/svg/case/horse-scale.svg","flag":"true"},
+				{"title":"animateMotion动画1","url":"/app/data/html5/svg/case/horse-motion.svg","flag":"true"},
+				{"title":"animateMotion动画2","url":"/app/data/html5/svg/case/horse-motion-rotate.svg","flag":"true"},
+				{"title":"自由组合动画","url":"/app/data/html5/svg/case/horse-combine.svg","flag":"true"},
+				{"title":"Loading-圈","url":"/app/data/html5/svg/case/loading-1.svg","flag":"true"}
+			]}
+		]
+	}
+}

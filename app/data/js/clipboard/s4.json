@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"从属性中复制","content":"<p>你可以在目标元素上设置<code>data-clipboard-text</code>属性，点击触发元素后会将该属性的内容复制到剪贴板中。&nbsp;</p><pre><code>&lt;button class=\"btn\" data-clipboard-text=\"这里的内容会被复制\"&gt;\n    复制到剪贴板\n&lt;/button&gt;</code></pre><p><br></p><p>&nbsp;<br></p>"}}

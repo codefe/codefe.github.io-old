@@ -1,0 +1,47 @@
+<style>
+body {
+    background-image: linear-gradient(to right, #333, #5b5b5b);
+}
+#container {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 25%;
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    font-weight: lighter;
+}
+#text span:nth-of-type(1) {
+    animation: first 3s infinite alternate;
+}
+#text span:nth-of-type(2) {
+    animation: first 3s 0.2s infinite alternate;
+}
+#text span:nth-of-type(3) {
+    animation: first 3s 0.4s infinite alternate;
+}
+#text span:nth-of-type(4) {
+    animation: first 3s 0.6s infinite alternate;
+}
+#text span:nth-of-type(5) {
+    animation: first 3s 0.8s infinite alternate;
+}
+@keyframes first {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 5px -1px 0px #5b5b5b;
+    }
+}
+</style>
+<div id="container">
+    <div id="text">
+        <span>G</span>
+        <span>H</span>
+        <span>O</span>
+        <span>S</span>
+        <span>T</span>
+    </div>
+</div>

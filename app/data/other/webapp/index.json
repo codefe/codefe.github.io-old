@@ -1,0 +1,25 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "Other",
+		"name": "WebApp",
+		"subType": "other-webapp",
+		"title": "让web app更快的HTML5最佳实践",
+		"author": "网络",
+		"star": "★★★★☆",
+		"desc": "本文重点关注如何充分利用HTML5和CSS让web app运行更加流畅.",
+		"arr": "one",
+		"items": [
+			{"title":"使用web storage代替cookie","url":"s1-1"},
+			{"title":"使用CSS Transition代替JavaScript动画","url":"s1-2"},
+			{"title":"使用客户端数据库代替服务器请求","url":"s1-3"},
+			{"title":"使用JavaScript原生API","url":"s1-4"},
+			{"title":"不仅仅为离线app使用cache manifest","url":"s1-5"},
+			{"title":"enable硬件加速来增强视觉体验","url":"s1-6"},
+			{"title":"使用web worker执行需要大量CPU资源的操作","url":"s1-7"},
+			{"title":"HTML5 表单属性和input类型","url":"s1-8"},
+			{"title":"使用CSS3减少图片的使用","url":"s1-9"},
+			{"title":"使用WebSocket代替XHR提供更快交互和更少的带宽","url":"s1-10"}
+		]
+	}
+}

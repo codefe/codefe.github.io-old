@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"CSS字面量(CSS Literal)","content":"<h3>字面量CSS</h3><p>不管什么原因，如果遇到Stylus搞不定的特殊需求，你可以使用<code>@css</code>使其作为CSS字面量解决之。</p><pre><code>@css {\n  body {\n    font: 14px;\n  }\n}</code></pre><p>编译为：</p><p><!--StartFragment--><!--EndFragment--></p><pre><code>body {\n  font: 14px;\n}</code></pre>"}}

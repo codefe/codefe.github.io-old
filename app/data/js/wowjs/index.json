@@ -1,0 +1,21 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "JavaScript",
+		"name": "WOW.js",
+		"subType": "js-wowjs",
+		"title": "WOW.js – 让页面滚动更有趣",
+		"author": "网络",
+		"star": "★★★☆☆",
+		"desc": "如果你希望你的页面也更加有趣，那么你可以试试 WOW.js。WOW.js 依赖 animate.css，所以它支持 animate.css 多达 60 多种的动画效果，能满足您的各种需求。",
+		"items": [
+			{"step": "阶段一：WOW.js介绍与使用","item":[
+				{"title":"WOW.js介绍及浏览器兼容","url":"s1-1"},
+				{"title":"WOW.js使用方法","url":"s1-2"}
+			]},
+			{"step": "阶段二：WOW.js进阶","item":[
+				{"title":"WOW.js配置","url":"s2-1"}
+			]}
+		]
+	}
+}

@@ -1,0 +1,37 @@
+<style>
+body {
+    margin: 0;
+    background: #73CDE7;
+}
+@-webkit-keyframes background {
+    from {
+        background-position: 0 0%;
+    }
+    to {
+        background-position: 0 -300px;
+    }
+}
+@keyframes background {
+    from {
+        background-position: 0 0%;
+    }
+    to {
+        background-position: 0 -300px;
+    }
+}
+h1 {
+    text-align: center;
+    font-size: 200px;
+    font-family: sans-serif;
+    background: url(./bubbles.png) repeat #011F42;
+    background-size: 300px auto;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-animation: background 12s infinite linear;
+    animation: background 12s infinite linear;
+}
+</style>
+
+<h1>happy!</h1>

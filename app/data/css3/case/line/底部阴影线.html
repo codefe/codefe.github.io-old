@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>底部阴影</title>
+	<meta name="author" content="Asins" />
+<style type="text/css">
+body{background:#E9E9E9;}
+#box{position:relative;border-radius:5px;width:60%;background:#FFF;padding:2em;margin:60px auto;height:160px;line-height:1.5;}
+#box:before, #box:after {
+	position:absolute;
+	z-index:-1;
+	content:"";
+	bottom:15px;
+	left:10px;
+	width:50%;
+	top:80%;
+	max-width:300px;
+	background: rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);
+	-moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+#box:after {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+</style>
+</head>
+<body>
+
+<div id="box">
+	<h3>CSS实现的底角阴影</h3>
+	<p>只支持现代版本浏览器</p>
+</div>
+</body>
+</html>
+

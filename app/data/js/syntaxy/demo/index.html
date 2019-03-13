@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="syntaxy.dark.min.css" />
+<script type="text/javascript" src="syntaxy.min.js"></script>
+
+<pre id="codebox" data-type="default" data-syntax="javascript">
+    // 这里放置需要格式化的代码片段
+    // default 是格式化语法高亮过滤器的名称
+<script type="text/javascript">
+    // nested Javascript inside HTML markup
+    $( 'a.examples' ).on( 'click', function( e )
+    {
+        e && e.preventDefault();
+
+        var button = $( this )
+            type   = button.data( 'type' )   || '',
+            syntax = button.data( 'syntax' ) || '';
+
+        getSyntax( syntax, type );
+    });
+    </script>
+</pre>
+
+<script type="text/javascript">
+  var options = {};
+  var codebox = document.getElementById( 'codebox' );
+  var syntaxy = new Syntaxy( codebox, options );
+  // add custom filters, modify options, etc. then...
+  syntaxy.render();
+</script>

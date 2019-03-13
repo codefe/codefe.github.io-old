@@ -1,0 +1,23 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "JavaScript",
+		"name": "chobi.js",
+		"subType": "js-chobi",
+		"title": "chobi – 轻量级的客户端处理图片插件",
+		"author": "网络",
+		"star": "★★★☆☆",
+		"desc": "chobi是一款轻量级的客户端处理图片javascript插件。该图片处理插件使用过滤器算法来处理图片，为图片设置不同的亮度、对比度和饱和度。它使用canvas来重绘图片，可以下载处理后的图片。",
+		"items": [
+			{"step": "阶段一：chobi介绍与使用","item":[
+				{"title":"支持的图片效果","url":"s1-1"},
+				{"title":"使用方法","url":"s1-2"},
+				{"title":"chobi API","url":"s1-3"},
+				{"title":"chobi 下载地址","url":"s1-4"}
+			]},
+			{"step": "阶段二：chobi实例","item":[
+				{"title":"chobi实例演示","url":"/app/data/js/chobi/demo/","flag":"true"}
+			]}
+		]
+	}
+}

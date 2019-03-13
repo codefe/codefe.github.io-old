@@ -1,0 +1,55 @@
+<style>
+*{
+	margin:0;
+}
+#head{
+	background:url(bg1.jpg) no-repeat;
+	height:100%;
+	position:relative;
+}
+#head:after{
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background:url(bg2.jpg) no-repeat;
+	animation-name: fadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+#head:before{
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background:url(bg3.jpg) no-repeat;
+	animation-name: fadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+	animation-delay: 5s;
+    animation-direction: alternate;
+}
+@keyframes fadeInOut {
+    0% {
+        opacity:1;
+     }
+    25% {
+        opacity:0;
+		
+    }
+    50% {
+        opacity: 0; 
+    }
+    75% {
+        opacity:1;
+    }
+}
+</style>
+<div id="head"></div>

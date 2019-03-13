@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"使用web worker执行需要大量CPU资源的操作","content":"<p>web worker有两个好处: <br>1) 快速 <br>2) 不阻塞浏览器响应. 点击<a target=\"_blank\" href=\"http://slides.html5rocks.com/#web-workers\">web worker slide</a>查看更多信息.</p><p>web worker的一些可能的使用场景:</p><ul><li>长文本格式化</li><li>语法高亮</li><li>图片处理</li><li>图片合成</li><li>大数组处理</li></ul>"}}

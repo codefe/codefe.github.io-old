@@ -1,0 +1,39 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "Other",
+		"name": "Webpack",
+		"subType": "other-webpack",
+		"title": "Webpack使用手册",
+		"author": "本站",
+		"star": "★★★★★",
+		"desc": "Webpack 是一个前端资源加载/打包工具。它将根据模块的依赖关系进行静态分析,然后将这些模块按照指定的规则生成对应的静态资源。 ",
+		"items": [
+			{"step": "阶段一：基础入门","item":[
+				{"title":"暂无","url":""}
+			]},
+			{"step": "阶段二：插件使用","item":[
+				{"title":"压缩(UglifyjsWebpackPlugin)","url":"UglifyjsWebpackPlugin"},
+				{"title":"BannerPlugin","url":"BannerPlugin"},
+				{"title":"CommonsChunkPlugin","url":"CommonsChunkPlugin"},
+				{"title":"ComponentWebpackPlugin","url":"ComponentWebpackPlugin"},
+				{"title":"打成gz包(CompressionWebpackPlugin)","url":"CompressionWebpackPlugin"},
+				{"title":"全局常量(DefinePlugin)","url":"DefinePlugin"},
+				{"title":"EnvironmentPlugin","url":"EnvironmentPlugin"},
+				{"title":"ExtractTextWebpackPlugin","url":"ExtractTextWebpackPlugin"},
+				{"title":"HtmlWebpackPlugin","url":"HtmlWebpackPlugin"},
+				{"title":"LoaderOptionsPlugin","url":"LoaderOptionsPlugin"},
+				{"title":"NormalModuleReplacementPlugin","url":"NormalModuleReplacementPlugin"},
+				{"title":"ProvidePlugin","url":"ProvidePlugin"},
+				{"title":"SourceMapDevToolPlugin","url":"SourceMapDevToolPlugin"},
+				{"title":"NoErrorsPlugin","url":"NoErrorsPlugin"}
+			]},
+			{"step": "阶段三：优化","item":[
+				{"title":"暂无","url":""}
+			]},
+			{"step": "阶段四：其他","item":[
+				{"title":"webpack.config.js结构分析","url":"webpackConfig"}
+			]}
+		]
+	}
+}

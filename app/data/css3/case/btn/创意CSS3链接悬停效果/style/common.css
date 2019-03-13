@@ -1,0 +1,961 @@
+@charset "utf-8";
+.header {
+    height: 300px;
+    background-color: #ff9d2c;
+    color: #FFF;
+    text-align: center;
+}
+.header h3 {
+    font-size: 18px;
+    margin-top: 100px;
+}
+.header em{
+    font-size: 12px;
+    background-color: #FFF;
+    color: #ff9d2c;
+    padding: .2em .5em;
+}
+.header span {
+    border-bottom: solid 1px #d97705;
+    padding: 0 40px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.header p {
+    font-size: 14px;
+}
+.layout {
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+}
+.new{
+    position: absolute;
+    right: 0; top: 0;
+    padding: .3em .8em;
+    color: #ff9d2c;
+    font-size: 12px;
+}
+.layout h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.links {
+    font-size: 18px;
+}
+.links li {
+    display: inline-block;
+    margin: 15px 25px;
+}
+.links a {
+    display: block;
+    font-size: 1.35em;
+    position: relative;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.even {
+    background-color: #F7F7F7;
+}
+/**********02************
+**********滑动***********/
+.effect_1 li a{
+	overflow: hidden;
+    display: block;
+    position: relative;
+    cursor: -webkit-grab;
+}
+.effect_1 li a:hover{
+    color: #ff9d2c;
+}
+.effect_1 li span {
+    -webkit-transition: -webkit-transform .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: -webkit-transform .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    display: block;
+}
+.effect_1 li a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    content: attr(data-link-alt);
+    text-align: center;
+    -webkit-transition: top .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: top .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.effect_1 li a:hover span {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.effect_1 li a:hover::after{
+    top: 0;
+}
+/**********02************
+**********切换***********/
+.effect_2 li a{
+	overflow: hidden;
+    display: block;
+    position: relative;
+}
+.effect_2 li span {
+    -webkit-transition: -webkit-transform .35s linear;
+    transition: transform .35s linear;
+    display: block;
+}
+.effect_2 li a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    content: attr(data-link-alt);
+    text-align: center;
+    -webkit-transition: top .35s linear;
+    transition: top .35s linear;
+}
+.effect_2 li a:hover span {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.effect_2 li a:hover::after{
+    top: 0;
+    color: #ff9d2c;
+}
+/**********03************
+********顶部边线**********/
+.effect_3 li a{
+    display: block;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px;
+}
+.effect_3 li a::after {
+    content: "";
+    position: absolute;
+    top: 0 ;
+    right: 0;
+    width: 40%;
+    height: 3px;
+    background-color: #ff9d2c;
+    opacity: 0;
+    -webkit-transition: .35s opacity ease-in-out,right .2s ease-out;
+    transition: .35s opacity ease-in-out,right .2s ease-out;
+}
+.effect_3 li a:hover{
+    color: #ff9d2c;
+}
+.effect_3 li a:hover::after{
+    opacity: 1;
+    right: 30%;
+}
+/**********04************
+********中心边线**********/
+.effect_4 li a{
+    display: block;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+}
+.effect_4 li a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #ff9d2c;
+    opacity: 0;
+    -webkit-transition: 0.35s all cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: 0.35s all cubic-bezier(0.77, 0, 0.175, 1);
+    transition: 0.35s all cubic-bezier(0.77, 0, 0.175, 1);
+}
+.effect_4 li a:hover{
+    color: #ff9d2c;
+}
+.effect_4 li a:hover::after{
+    left: 0;
+    opacity: 1;
+    width: 100%;
+}
+/**********05************
+*****roll box(滚轮箱)****/
+.effect_5 li a{
+    display: block;
+    position: relative;
+    height: 45px;
+    overflow: hidden;
+}
+.effect_5 li span {
+    -webkit-transition: -webkit-transform .25s linear;
+    transition: transform .25s linear;
+    display: block;
+    padding: 0 10px;
+    height: 45px;
+    line-height: 45px;
+    transform-style: preserve-3d;
+    transform-origin: 50% 0%;
+}
+.effect_5 li span::after{
+    content: attr(data-link-alt);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0; top: 100%;
+    transform-origin: 50% 0;
+    transform: rotateX(-90deg);
+}
+.effect_5 li a:hover span{
+    background-color: #ffc27c;
+    transform: rotateX(90deg);
+}
+.effect_5 li a:hover span::after{
+    background-color: #ff9d2c;
+    color: #FFF;
+}
+/**********06************
+********起始边线**********/
+.effect_6 li a{
+    display: block;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+}
+.effect_6 li a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ff9d2c;
+    opacity: 0;
+    -webkit-transition: 0.45s all cubic-bezier(0.77, 0, 0.175, 1);
+    transition: 0.45s all cubic-bezier(0.77, 0, 0.175, 1);
+}
+.effect_6 li a:hover{
+    color: #ff9d2c;
+}
+.effect_6 li a:hover::after{
+    opacity: 1;
+    width: 100%;
+}
+/**********07************
+********底部上滑线********/
+.effect_7 li a{
+    display: block;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+}
+.effect_7 li a::after {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff9d2c;
+    opacity: 0;
+    -webkit-transition: 0.35s all cubic-bezier(0.77, 0, 0.175, 1);
+    transition: 0.35s all cubic-bezier(0.77, 0, 0.175, 1);
+}
+.effect_7 li a:hover{
+    color: #ff9d2c;
+}
+.effect_7 li a:hover::after{
+    opacity: 1;
+    top: 100%;
+}
+/**********08************
+********弹出盒子**********/
+.effect_8 li a{
+    display: block;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    z-index: 10;
+    padding: 0 10px;
+}
+.effect_8 li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: #ff9d2c;
+    opacity: 0;
+    -webkit-transition: 0.35s all cubic-bezier(0.77, 0, 0.175, 1);
+    transition: 0.35s all cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: -1;
+}
+.effect_8 li a:hover{
+    color: #FFF;
+    transition: .1s .25s;
+}
+.effect_8 li a:hover::after{
+    opacity: 1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+}
+/**********09************
+*********边框线**********/
+.effect_9 li a{
+    display: block;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    z-index: 10;
+    padding: 0 10px;
+}
+.effect_9 li a:hover{
+    color: #ff9d2c;
+    outline: solid 1px #ff9d2c;
+}
+/**********10************
+*********泡泡************/
+.effect_10 li a{
+    display: block;
+    position: relative;
+    animation: opacity forwards 1s;
+}
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.effect_10 li a::after,.effect_10 li a::before {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    content: "?";
+    display: block;
+    width: 100%;
+    font-size: 0px;
+    color: #ff9d2c;
+    text-align: center;
+}
+.effect_10 li a:hover{
+    color: #ff9d2c;
+}
+.effect_10 li a:hover::before{
+    -webkit-animation: drop 1s;
+    animation: drop 1s;
+}
+.effect_10 li a:hover::after{
+    -webkit-animation: drop 1s .5s;
+    animation: drop 1s .5s;
+}
+@keyframes drop {
+  0% {
+    opacity: 1;
+    font-size: 0;
+    top: 0;
+  }
+  100% {
+    opacity: 0;
+    font-size: 80px;
+    top: -50px;
+  }
+}
+/**********11************
+*********经典************/
+.effect_11 li a{
+    display: block;
+    position: relative;
+}
+.effect_11 li a:hover{
+    color: #ff9d2c;
+}
+.effect_11 li span{
+    height: 45px;
+    line-height: 45px;
+    padding: 15px;
+}
+.effect_11 li a::after,
+.effect_11 li a::before,
+.effect_11 li a span::after,
+.effect_11 li a span::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    opacity: 0;
+    transition: .2s;
+}
+.effect_11 li a::after {
+    right: 0;
+    top: 0;
+    border-top: solid 2px #ff9d2c;
+    border-right: solid 2px #ff9d2c;
+}
+.effect_11 li a::before {
+    left: 0;
+    top: 0;
+    border-left: solid 2px #ff9d2c;
+    border-top: solid 2px #ff9d2c;
+}
+.effect_11 li a span::after {
+    right: 0;
+    bottom: 0;
+    border-bottom: solid 2px #ff9d2c;
+    border-right: solid 2px #ff9d2c;
+}
+.effect_11 li a span::before {
+    left: 0;
+    bottom: 0;
+    border-left: solid 2px #ff9d2c;
+    border-bottom: solid 2px #ff9d2c;
+}
+.effect_11 li a:hover::after {
+    right: 6px;
+    top: 6px;
+}
+.effect_11 li a:hover::before {
+    left: 6px;
+    top: 6px;
+}
+.effect_11 li a:hover span::after {
+    right: 6px;
+    bottom: 6px;
+}
+.effect_11 li a:hover span::before {
+    left: 6px;
+    bottom: 6px;
+}
+
+.effect_11 li a:hover::after,
+.effect_11 li a:hover::before,
+.effect_11 li a:hover span::after,
+.effect_11 li a:hover span::before {
+    opacity: 1;
+}
+/**********12************
+*********边框 01*********/
+.effect_12 li a{
+    display: block;
+    position: relative;
+}
+.effect_12 li a:hover{
+    color: #ff9d2c;
+}
+.effect_12 li span{
+    height: 45px;
+    line-height: 45px;
+    padding: 15px;
+}
+.effect_12 li a::after,
+.effect_12 li a::before{
+    content: "";
+	width: 0;
+    height: 2px;
+    background-color: #ff9d2c;
+    position: absolute;
+    left: 50%;
+    transition: .35s;
+}
+.effect_12 li a::after{
+    top: 0;
+}
+.effect_12 li a::before{
+    bottom: 0;
+}
+.effect_12 li span::after,
+.effect_12 li span::before{
+    content: "";
+	width: 2px;
+    height: 0;
+    background-color: #ff9d2c;
+    position: absolute;
+    top: 50%;
+    transition: .35s;
+}
+.effect_12 li span:before{
+    left: 0;
+}
+.effect_12 li span:after{
+    right: 0;
+}
+
+.effect_12 li a:hover::after,
+.effect_12 li a:hover::before{
+    left: 0;
+    width: 100%;
+    opacity: 1;
+}
+.effect_12 li a:hover span::after,
+.effect_12 li a:hover span::before{
+    top: 0;
+    height: 100%;
+    opacity: 1;
+}
+/**********13************
+*********边框 02*********/
+.effect_13 li a{
+    display: block;
+    position: relative;
+}
+.effect_13 li a:hover{
+    color: #ff9d2c;
+}
+.effect_13 li span{
+    height: 45px;
+    line-height: 45px;
+    padding: 15px;
+}
+.effect_13 li a::after,
+.effect_13 li a::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #ff9d2c;
+    position: absolute;
+    transition: .35s;
+}
+.effect_13 li span::after,
+.effect_13 li span::before{
+    content: "";
+    width: 2px;
+    height: 0;
+    background-color: #ff9d2c;
+    position: absolute;
+    transition: .35s;
+}
+.effect_13 li a::before{ left: 0; top: 0; }
+.effect_13 li a::after{ bottom: 0; right: 0; }
+.effect_13 li span:before{ right: 0; bottom: 0; }
+.effect_13 li span:after{ left: 0; top: 0; }
+
+.effect_13 li a:hover::after,
+.effect_13 li a:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+.effect_13 li a:hover span::after,
+.effect_13 li a:hover span::before{
+    height: 100%;
+    opacity: 1;
+}
+/**********14************
+*********边框 03*********/
+.effect_14 li a{
+    display: block;
+    position: relative;
+}
+.effect_14 li a:hover{
+    color: #ff9d2c;
+}
+.effect_14 li span{
+    height: 45px;
+    line-height: 45px;
+    padding: 15px;
+}
+.effect_14 li a::after,
+.effect_14 li a::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #ff9d2c;
+    position: absolute;
+    transition: .35s;
+}
+.effect_14 li span::after,
+.effect_14 li span::before{
+    content: "";
+    width: 2px;
+    height: 0;
+    background-color: #ff9d2c;
+    position: absolute;
+    transition: .35s;
+}
+.effect_14 li a::before{ left: 0; top: 0; }
+.effect_14 li span:after{ right: 0; top: 0; }
+.effect_14 li a::after{ bottom: 0; right: 0; }
+.effect_14 li span:before{ left: 0; bottom: 0; }
+
+.effect_14 li a:hover::after,
+.effect_14 li a:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+.effect_14 li a:hover span::after,
+.effect_14 li a:hover span::before{
+    height: 100%;
+    opacity: 1;
+}
+/**********15************
+*********边框 04*********/
+.effect_15 li a{
+    display: block;
+    position: relative;
+}
+.effect_15 li a:hover{
+    color: #ff9d2c;
+}
+.effect_15 li span{
+    height: 45px;
+    line-height: 45px;
+    padding: 15px;
+}
+.effect_15 li a::after,
+.effect_15 li a::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #ff9d2c;
+    position: absolute;
+}
+.effect_15 li span::after,
+.effect_15 li span::before{
+    content: "";
+    width: 2px;
+    height: 0;
+    background-color: #ff9d2c;
+    position: absolute;
+}
+/*退回的时间*/
+.effect_15 li a::before{ transition: .1s .3s; }
+.effect_15 li span:after{ transition: .1s .2s; }
+.effect_15 li a::after{ transition: .1s .1s; }
+.effect_15 li span:before{ transition: .1s; }
+/*hover时间*/
+.effect_15 li a:hover::before{ transition: .1s; }
+.effect_15 li a:hover span:after{ transition: .1s .1s; }
+.effect_15 li a:hover::after{ transition: .1s .2s;  }
+.effect_15 li a:hover span:before{ transition: .1s .3s; }
+
+.effect_15 li a::before{ left: 0; top: 0; }
+.effect_15 li span:after{ right: 0; top: 0; }
+.effect_15 li a::after{ bottom: 0; right: 0; }
+.effect_15 li span:before{ left: 0; bottom: 0; }
+
+.effect_15 li a:hover::after,
+.effect_15 li a:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+.effect_15 li a:hover span::after,
+.effect_15 li a:hover span::before{
+    height: 100%;
+    opacity: 1;
+}
+/**********16************
+*********双括号**********/
+.effect_16{
+    display: block;
+    position: relative;
+}
+.effect_16 li a:hover{
+    color: #ff9d2c;
+}
+.effect_16 li a:after{
+    content: "]";
+    transition: .35s;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    opacity:0;
+}
+.effect_16 li a:before{
+    content: "[";
+    transition: .35s;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    opacity:0;
+}
+.effect_16 li a:hover::before{
+    opacity: 1;
+    transform: translateX(-20px);
+}
+.effect_16 li a:hover::after{
+    opacity: 1;
+    transform: translateX(20px);
+}
+/**********17************
+*********上滑入**********/
+.effect_17 li a{
+    display: block;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    z-index: 10;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.effect_17 li a::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff9d2c;
+    opacity: 0;
+    -webkit-transition: 0.15s all ease-in-out;
+    transition: 0.15s all ease-in-out;
+    z-index: -1;
+}
+.effect_17 li a:hover{
+    color: #FFF;
+    transition: .1s .25s;
+}
+.effect_17 li a:hover::after{
+    opacity: 1;
+    top: 0;
+    color: #FFF;
+}
+/**********18************
+*********下滑入**********/
+.effect_18 li a{
+    display: block;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    z-index: 10;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.effect_18 li a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff9d2c;
+    opacity: 0;
+    -webkit-transition: 0.15s all ease-in-out;
+    transition: 0.15s all ease-in-out;
+    z-index: -1;
+}
+.effect_18 li a:hover{
+    color: #FFF;
+    transition: .1s .25s;
+}
+.effect_18 li a:hover::after{
+    opacity: 1;
+    top: 0;
+    color: #FFF;
+}
+/**********19************
+*********右滑入********/
+.effect_19 li a{
+    display: block;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    z-index: 10;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.effect_19 li a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ff9d2c;
+    opacity: 0;
+    -webkit-transition: 0.15s all ease-in-out;
+    transition: 0.15s all ease-in-out;
+    z-index: -1;
+}
+.effect_19 li a:hover{
+    color: #FFF;
+    transition: .1s .25s;
+}
+.effect_19 li a:hover::after{
+    opacity: 1;
+    left: 0;
+    color: #FFF;
+}
+/**********20************
+*********左滑入********/
+.effect_20 li a{
+    display: block;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    z-index: 10;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.effect_20 li a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ff9d2c;
+    opacity: 0;
+    -webkit-transition: 0.15s all ease-in-out;
+    transition: 0.15s all ease-in-out;
+    z-index: -1;
+}
+.effect_20 li a:hover{
+    color: #FFF;
+    transition: .1s .25s;
+}
+.effect_20 li a:hover::after{
+    opacity: 1;
+    left: 0;
+    color: #FFF;
+}
+/**********21************
+*********滑动角********/
+.effect_21 li a{
+    display: block;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    z-index: 10;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.effect_21 li a::after {
+    content: attr(data-link-alt);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.25s;
+    transition: 0.25s all;
+    z-index: 2;
+    opacity: 0;
+}
+.effect_21 li a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-color: #ff9d2c;
+    -webkit-transition: 0.25s all ease-in-out;
+    transition: 0.25s all ease-in-out;
+    z-index: -1;
+    transform: translate3d(100%,-100%,0) skewY(-95deg);
+}
+.effect_21 li a:hover{
+    color: #FFF;
+}
+.effect_21 li a:hover::after{
+    opacity: 1;
+    color: #FFF;
+}
+.effect_21 li a:hover::before{
+    opacity: 1;
+    transform: translate3d(0,0,0) skew(30deg);
+}
+/**********22*************
+*********滑动文字*******/
+.effect_22 li a{
+    display: block;
+    position: relative;
+}
+.effect_22 li a::after {
+    content: attr(data-link-alt);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    -webkit-transition: width .7s linear;
+    transition: width .7s linear;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.effect_22 li a:hover::after{
+    color: #ff9d2c;
+    width: 100%;
+}
+/**********23************
+*********漂浮文字********/
+.effect_23 li{
+    perspective: 600px;
+}
+.effect_23 li a{
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.15em;
+    transition: .35s;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+}
+.effect_23 li a span{
+	position: relative;
+    display: inline-block;
+    padding: 0 14px;
+    color: #000;
+}
+.effect_23 li a::after {
+    content: attr(data-link-alt);
+    font-style: normal;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 14px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: .25s;
+    transform-origin: right 4px;
+    transform: rotate(0) scale(1);
+    color:#000;
+}
+.effect_23 li a:hover span{
+    color: #ff9d2c;
+}
+.effect_23 li a:hover::after{
+    transform: translateX(10px) rotate(10deg) scale(1);
+    opacity: 0;
+}
+/*************************
+***********底部************/
+footer{
+    text-align: center;
+    padding: 100px;
+    line-height: 2.5;
+}
+footer strong{
+    font-size: 18px;
+}
+.myLink[href*="moyu"]{
+    color: #000;
+    transition: .35s;
+    border-bottom: dashed 1px #FFF;
+    cursor: -webkit-grab;
+}
+.myLink[href*="moyu"]:hover{
+    color: #ff9d2c;
+    border-bottom: dashed 1px #ff9d2c;
+}
+body:after{
+    content: "http://www.moyu-edu.com"; 
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: #d97705;
+}

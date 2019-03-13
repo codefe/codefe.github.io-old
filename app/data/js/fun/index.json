@@ -1,0 +1,25 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "JavaScript",
+		"name": "常用函数",
+		"subType": "js-fun",
+		"title": "一些常用函数实现",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "收集一些实用性很强的函数",
+		"arr": "one",
+		"items": [
+			{"title":"删除左右两端的空格","url":"s1"},
+			{"title":"判断密码强度","url":"s2"},
+			{"title":"判断是否为email","url":"s3"},
+			{"title":"生成X位随机数","url":"s4"},
+			{"title":"获取日期前几后几天","url":"s5"},
+			{"title":"无阻塞加载","url":"s6"},
+			{"title":"获取最近的12个月份","url":"s7"},
+			{"title":"平滑返回顶部","url":"s8"},
+			{"title":"将消息转换成语音","url":"s9"},
+			{"title":"生成一个uuid","url":"s10"}
+		]
+	}
+}

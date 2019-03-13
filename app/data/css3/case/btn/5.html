@@ -1,0 +1,34 @@
+<style>
+.filter { position: relative; display: inline-block; }
+.filter li { float: left; display: inline-block; width: 100%; white-space: nowrap; box-sizing: border-box; }
+.filter .l { float: left; padding: 8px 40px; display: inline-block; cursor: pointer; width: 100%; box-sizing: border-box; }
+.filter .l { padding: 8px 10px; }
+.filter a.l:hover,.filter a.l.on { color: #008040; text-decoration: none; }
+
+.filter .main { float: left; font-size: 16px; }
+.filter .main.f14 { font-size: 14px; }
+.filter:hover > .main { position: relative; z-index: 101; color: #8c8c8c; }
+.filter .main img.arr { position: relative; vertical-align: middle; margin-left: 8px; top: -2px; transition: all 0.5s ease-in-out; }
+.filter:hover p.main img.arr { transform: rotate(180deg); }
+
+.filter .items { min-width: 100%; left: 0; top: -7px; position: absolute; display: none; background: #fff; padding: 7px 0; z-index: 100; box-sizing: border-box; }
+.filter:hover .items { display: inline-block; border: 1px solid #d9d9d9; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+.filter .items .main { min-height: 1em; padding: 8px 0; box-sizing: content-box; }
+.filter .items .main .l { padding: 0 40px; }
+.cbox .filter .items .main .l { padding: 0 10px; }
+
+.filter .items > li hr { margin: 8px 15px; border: 0; border-top: 1px solid #e8e8e8; }
+</style>
+<div class="filter">
+	<p class="main l f14">全部分类 <img src="5.png" class="arr"></p>
+	<ul class="items">
+		<li><a class="main"></a></li>
+		<li><a href="#" class="l on" filter="c" val="">全部</a></li>
+		<li><a href="#" class="l" filter="c" val="1">网页设计</a></li>
+		<li><a href="#" class="l" filter="c" val="2">电商视觉</a></li>
+		<li><a href="#" class="l" filter="c" val="3">移动UI</a></li>
+		<li><a href="#" class="l" filter="c" val="4">平面设计</a></li>
+		<li><a href="#" class="l" filter="c" val="5">数字艺术</a></li>
+		<li><a href="#" class="l" filter="c" val="z">其他</a></li>
+	</ul>
+</div>

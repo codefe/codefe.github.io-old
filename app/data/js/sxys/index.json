@@ -1,0 +1,29 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "JavaScript",
+		"name": "数学运算",
+		"subType": "js-sxys",
+		"title": "JavaScript数学运算用法总结",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "",
+		"items": [
+			{"step": "一：数学运算","item":[
+				{"title":"数学运算介绍","url":"s1-1"},
+				{"title":"数学函数集合","url":"s1-2"},
+				{"title":"数学函数","url":"s1-3"}
+			]},
+			{"step": "二：浮点运算","item":[
+				{"title":"浮点运算精度问题分析与解决","url":"s2-1"},
+				{"title":"浮点数乘积运算出现多位小数的解决方法","url":"s2-2"},
+				{"title":"使用IEEE 标准进行二进制浮点运算产生莫名错","url":"s2-3"}
+			]},
+			{"step": "三：数学函数","item":[
+				{"title":"四舍五入数学函数round使用实例","url":"s3-1"},
+				{"title":"JS数学函数Exp使用说明","url":"s3-2"},
+				{"title":"纯JS 绘制数学函数","url":"s3-3"}
+			]}
+		]
+	}
+}

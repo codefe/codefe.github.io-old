@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"通过key取出对象","content":"<p>往<code>get()</code>方法里传入对象的key值，取出相应的对象。&nbsp;</p><pre><code>var request = db.transaction([\"students\"],\"readwrite\").objectStore(\"students\").get(rollNo);<br>request.onsuccess = function(event){\n    console.log(\"Name : \"+request.result.name);    \n};</code></pre><p><br></p>"}}

@@ -1,0 +1,152 @@
+<style>
+#container:before {
+	content:"";
+	width:300px;
+	height:250px;
+	background:#f5f5f5;
+	border-radius:4px;
+	box-shadow:0px 1px 3px rgba(0,0,0,0.3);
+	margin:-125px 0 0 -150px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	animation: login_animation 1s;
+    -moz-animation: login_animation 1s;
+    -webkit-animation: login_animation 1s;
+}
+#container {
+	width:100%;
+	height:100%;
+	display: block;
+	position:fixed;
+	left:0px;
+	top:0px;
+}
+.login {
+	width:300px;
+	height:250px;
+	margin:-125px 0 0 -150px;
+	position:absolute;
+	top:50%; 
+	left:50%;
+	animation: login_animation 1s;
+    -moz-animation: login_animation 1s;
+    -webkit-animation: login_animation 1s;
+}
+.login input {
+	outline: none;
+	width:230px;
+	border:1px solid #ddd;
+	font-size:15px;
+	height:30px;
+	text-indent:5px;
+	display: block;
+	border-radius:4px;
+	margin:15px auto;
+	transition: all 1s ease;
+}
+.login input:focus {
+	border:1px solid #229ffd;
+}
+.login input[type="submit"] {
+	color:#555;
+	margin:10px auto;
+	display: block;
+	cursor: pointer;
+	width:230px;
+	height:30px;
+	color:#000;
+	border-radius:4px;
+	border:1px solid #ddd;
+	background: -webkit-linear-gradient( top,#eee,#ddd);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: 0.05s;
+	transition-duration: 0.05s;
+}
+.login input[type="submit"]:active {
+	appearance: none;
+	text-decoration: none;
+	-webkit-box-shadow:5px 5px 5px rgba(0,0,0,0.1) inset;
+}
+.login:before {
+	width:300px;
+	display: block;
+	content:"会员登录";
+	font: 21px Arial,"微软雅黑";
+	color:#222;
+	margin-top:20px;
+	text-align:center;
+}
+</style>
+<!-- HTML代码片段中请勿添加<body>标签 //-->
+<div id="container">
+  <canvas id='background'  ></canvas>
+  <div class="login">
+	<input value=""  id="inuptUser" maxlength="20" />
+    <input value="" type="password" id="inuptPwd"  maxlength="20" />
+    <input type="submit" /> 
+  </div>
+</div>
+
+
+
+<!-- 推荐开源CDN来选取需引用的外部JS //-->
+<script type="text/javascript" src="/app/lib/jquery-2.1.0.js"></script>
+<script>
+var canvas = document.getElementById("background");
+var ctx = canvas.getContext('2d');
+canvas.width=$(window).width();
+canvas.height=$(window).height();
+var mouseX =0,//鼠标移动X轴
+    mouseY=0,//鼠标移动Y轴
+    content = ["也是蛮拼的", "程序猿", "攻城狮", "产品狗", "能靠长相吃饭却偏偏要靠才华", "世界那么大，我想去看看", "你们城里人真会玩", "不忍直视", "duang duang",
+    "我带着你，你带着钱", "壁咚", "日了狗了", "重要的事说三遍", "然而这并没有什么luan用", "怪我咯", "我单方面宣布", "丑的人都睡了，帅的人还醒着",
+    "你家里人知道吗？", "画面太美我不敢看", "现在整个人都不好了", "我只想安静地做个美男子", "也是醉了",
+    "买买买", "有钱，就是任性", "心塞", "逼格","bigger than bigger","你行你上","不作死就不会死","单身狗","猴塞雷"],//文字数据
+    fx = new Array(), //随机X位置数组位置
+    fy = new Array(), //随机X位置数组位置
+    ff = new Array();//随机字体大小数组
+//循环获得随机数组
+content.forEach(function (item) {
+     var x = Math.random() * canvas.width - item.length;
+     var y = Math.random() * canvas.height  - item.length;
+     var f =  Math.random()*25;  
+     fx.push(x);
+     fy.push(y);
+     ff.push(f);
+});  
+//生成画布
+var traverseText = function() {
+         for(var i=0;i<content.length+1;i++){
+            ctx.font =  ff[i] + "px Microsoft YaHei";
+            var gradient = ctx.createLinearGradient(0, 0, 50, 0);
+            gradient.addColorStop(0, "Grey"); 
+            ctx.fillStyle = gradient;
+            ctx.fillText(content[i],fx[i]+(mouseX*(i+1))/12,fy[i]+(mouseY*(i+1))/13);     
+        }  
+   }
+//清除画布
+var clear = function(){
+        ctx.fillStyle = '#fff';
+        ctx.beginPath();
+        ctx.rect(0, 0, canvas.width, canvas.height);
+        ctx.closePath();
+        ctx.fill();
+}
+//入口
+var gameloop = function(){
+      clear();
+      traverseText();
+      requestAnimationFrame(gameloop);
+}
+//清除画布
+$(document).on('mousemove', function(e) {
+        mouseX = -(e.pageX/5);
+        mouseY = -(e.pageY/5);
+});
+gameloop(); 
+</script>

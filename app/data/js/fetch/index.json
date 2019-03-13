@@ -1,0 +1,21 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "JavaScript",
+		"name": "Fetch",
+		"subType": "js-fetch",
+		"title": "新AJAX方法Fetch",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "XMLHttpRequest来完成ajax有些老而过时了。fetch()能让我们完成类似 XMLHttpRequest (XHR) 提供的ajax功能。它们之间的主要区别是，Fetch API 使用了 Promises，它让接口更简单、简洁，避免了回调的复杂性，省去了使用复杂的 XMLHttpRequest API。",
+		"arr": "one",
+		"items": [
+			{"title":"基本Fetch用法","url":"s1"},
+			{"title":"返回数据对象的元数据","url":"s2"},
+			{"title":"响应的对象Response类型","url":"s3"},
+			{"title":"串联 Promises","url":"s4"},
+			{"title":"用fetch执行表单数据提交","url":"s5"},
+			{"title":"在Fetch请求里发送用户身份凭证信息","url":"s6"}
+		]
+	}
+}

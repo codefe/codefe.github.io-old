@@ -1,0 +1,16 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "实例演示",
+		"name": "SVG",
+		"subType": "case/svg/layout",
+		"title": "SVG布局特效演示",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "",
+		"arr": "one",
+		"items": [
+			{"title":"炫酷的SVG和jQuery垂直选项卡布局","url":"app/json/case/svg/layout/炫酷的SVG和jQuery垂直选项卡布局/index.html","flag":"true"}
+		]
+	}
+}

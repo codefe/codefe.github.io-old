@@ -1,0 +1,48 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "CSS3",
+		"name": "Stylus",
+		"subType": "css3-stylus",
+		"title": "Stylus中文版参考文档",
+		"author": "张鑫旭",
+		"star": "★★★★★",
+		"desc": "Stylus 是一个CSS的预处理框架, 功能上更为强壮，和js联系更加紧密。依赖与Node, 可以创建健壮的、动态的、富有表现力的CSS。比较年轻，其本质上做的事情与 SASS/LESS 等类似，应该是有很多借鉴，所以近似脚本的方式去写CSS代码。",
+		"items": [
+			{"step": "阶段一：安装与使用","item":[
+				{"title":"安装与特征","url":"s1-1"},
+				{"title":"生成CSS","url":"s1-2"}
+			]},
+			{"step": "阶段二：基础应用","item":[
+				{"title":"选择器(Selectors)","url":"s2-1"},
+				{"title":"变量(Variables)","url":"s2-2"},
+				{"title":"插值(Interpolation)","url":"s2-3"},
+				{"title":"运算符(Operators)","url":"s2-4"},
+				{"title":"混合书写(Mixins)","url":"s2-5"},
+				{"title":"方法(Functions)","url":"s2-6"},
+				{"title":"关键字参数(Keyword Arguments)","url":"s2-7"},
+				{"title":"内置方法(Built-in Functions)","url":"s2-8"},
+				{"title":"其余参数(Rest Params)","url":"s2-9"},
+				{"title":"注释(Comments)","url":"s2-10"},
+				{"title":"条件(Conditionals)","url":"s2-11"},
+				{"title":"迭代(Iteration)","url":"s2-12"},
+				{"title":"导入(@import)","url":"s2-13"},
+				{"title":"媒体(@media)","url":"s2-14"},
+				{"title":"自定义字体(@font-face)","url":"s2-15"},
+				{"title":"关键帧(@keyframes)","url":"s2-16"},
+				{"title":"继承(@extend)","url":"s2-17"},
+				{"title":"函数之url()","url":"s2-18"},
+				{"title":"CSS字面量(CSS Literal)","url":"s2-19"},
+				{"title":"CSS样式解析(CSS Style Syntax)","url":"s2-20"},
+				{"title":"字符转码(Char Escaping)","url":"s2-21"},
+				{"title":"可执行性(Executable)","url":"s2-22"},
+				{"title":"错误报告(Error Reporting)","url":"s2-23"},
+				{"title":"连接中间件(Connect Middleware)","url":"s2-24"},
+				{"title":"自检API(Introspection API)","url":"s2-25"},
+				{"title":"JavaScript API","url":"s2-26"},
+				{"title":"Nib下CSS扩展(CSS3 Extensions with Nib)","url":"http://github.com/visionmedia/nib","flag":"true"},
+				{"title":"Stylus在线体验!","url":"http://learnboost.github.com/stylus/try.html","flag":"true"}
+			]}
+		]
+	}
+}

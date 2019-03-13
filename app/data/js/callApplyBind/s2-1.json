@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"基本用法","content":"<pre><code>function add(a,b){\n  return a+b;  \n}\nfunction sub(a,b){\n  return a-b;  \n}\nvar a1 = add.apply(sub,[4,2]);　　//sub调用add的方法\nvar a2 = sub.apply(add,[4,2]);\nalert(a1);  //6     \nalert(a2);  //2\n\n/*call的用法*/\nvar a1 = add.call(sub,4,2);</code></pre><p><br></p>"}}

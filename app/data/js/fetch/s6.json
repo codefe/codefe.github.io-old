@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"在Fetch请求里发送用户身份凭证信息","content":"<p>如果你想在fetch请求里附带cookies之类的凭证信息，可以将&nbsp;<strong>credentials</strong>&nbsp;参数设置成&nbsp;<strong>“include”</strong>&nbsp;值。&nbsp;</p><pre><code>fetch(url, {  <br>  credentials: 'include'  \n})</code></pre><p>显而易见，fetch API相比起传统的 XMLHttpRequest (XHR) 要简单的多，相比起jQuery里提供ajax API也丝毫不逊色。</p>"}}

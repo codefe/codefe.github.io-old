@@ -1,0 +1,17 @@
+<svg width="320" height="500" xmlns="http://www.w3.org/2000/svg">
+    <text font-size="60" y="60" x="160">马
+        <animate attributeName="x" dur="5s" values="0; 20; 160" calcMode="linear" />
+    </text>
+
+    <text font-size="60" y="160" x="160">马
+        <animate attributeName="x" dur="5s" values="0; 20; 160" calcMode="paced"/>
+    </text>
+
+    <text font-size="60" y="260" x="160">马
+        <animate attributeName="x" dur="5s" values="0; 80; 160" keyTimes="0; .8; 1" calcMode="linear"/>
+    </text>
+
+    <text font-size="60" y="360" x="160">马
+        <animate attributeName="x" dur="5s" values="0; 80; 160" keyTimes="0; .8; 1" calcMode="spline"  keySplines=".5 0 .5 1; 0 0 1 1" />
+    </text>
+</svg>

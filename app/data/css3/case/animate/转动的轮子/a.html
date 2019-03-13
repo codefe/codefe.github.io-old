@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+<title>转动的轮子</title>
+<style>
+
+.mod_info1 {
+	height:536px;
+	position:relative
+}
+.mod_info1__logoall {
+	height:348px;
+	width:345px;
+	position:absolute;
+	top:0;
+	right:40%
+}
+.mod_info1__logo1 {
+	background-image:url(demo2.png);
+	background-position:0 0;
+}
+.mod_info1__logo2 {
+	background-image:url(demo2.png);
+	background-position:-347px 0;
+}
+.mod_info1__logo1 {
+	animation:myfirst 8s linear infinite;
+	-moz-animation:myfirst 8s linear infinite;
+	-webkit-animation:myfirst 8s linear infinite;
+	-o-animation:myfirst 8s linear infinite
+}
+.mod_info1__logo2 {
+	animation:myfirst2 6s linear infinite;
+	-moz-animation:myfirst2 6s linear infinite;
+	-webkit-animation:myfirst2 6s linear infinite;
+	-o-animation:myfirst2 6s linear infinite
+}
+@keyframes myfirst {
+	from {
+		transform:rotate(0);
+		-ms-transform:rotate(0);
+		-webkit-transform:rotate(0);
+		-o-transform:rotate(0);
+		-moz-transform:rotate(0)
+	}
+	to {
+		transform:rotate(360deg);
+		-ms-transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+		-o-transform:rotate(360deg);
+		-moz-transform:rotate(360deg)
+	}
+}
+
+@keyframes myfirst2 {
+	from {
+		transform:rotate(360deg);
+		-ms-transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+		-o-transform:rotate(360deg);
+		-moz-transform:rotate(360deg)
+	}
+	to {
+		transform:rotate(0);
+		-ms-transform:rotate(0);
+		-webkit-transform:rotate(0);
+		-o-transform:rotate(0);
+		-moz-transform:rotate(0)
+	}
+}
+</style>
+</head>
+
+<body>
+
+<div class="mod_info1">
+	<div class="mod_info1__logo1 mod_info1__logoall"></div>
+	<div class="mod_info1__logo2 mod_info1__logoall"></div>
+</div>
+
+
+
+</body>
+</html>

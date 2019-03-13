@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"从ObjectStore里删除对象","content":"<p>删除跟新增一样，需要创建事务，然后调用删除接口，通过key删除对象。&nbsp;</p><blockquote>db.transaction([\"students\"],\"readwrite\").objectStore(\"students\").delete(rollNo);</blockquote><p>我把语句合并到了一起，变得更简单，但效果是一样的。</p>"}}

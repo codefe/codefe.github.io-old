@@ -1,0 +1,16 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "JavaScript",
+		"name": "功能开发",
+		"subType": "js-interface",
+		"title": "一些功能接口的开发实现",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "收集一些实用性很强的功能接口",
+		"arr": "one",
+		"items": [
+			{"title":"把json导出为xls","url":"s1"}
+		]
+	}
+}

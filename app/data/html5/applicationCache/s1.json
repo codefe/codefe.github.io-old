@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"检查浏览器是否支持Cache API","content":"<p>检查浏览器是否支持Cache API…&nbsp;</p><pre><code>if('caches' in window) {\n  // Has support!\n}</code></pre><p><br></p><p>&nbsp;检查window里是否存在caches对象。<br></p>"}}

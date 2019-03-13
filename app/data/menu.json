@@ -1,0 +1,526 @@
+{
+	"sta": 1,
+	"quickNav": [
+		{
+			"name": "HTML5",
+			"url": "list.html?id=html5",
+			"subType": "html5",
+			"hot": [
+				{
+					"name":"/app/img/edu/p3.jpg",
+					"url": ""
+				},
+				{
+					"name":"/app/img/edu/p4.jpg",
+					"url": ""
+				}
+			],
+			"child": [
+				{
+					"name": "基础",
+					"url": "",
+					"child": [
+						{
+							"name": "拖放",
+							"url": "html5-drag"
+						},
+						{
+							"name": "视频(video)",
+							"url": "html5-video",
+							"flag": "home,hot",
+							"img": "/app/thumb/video.jpg"
+						},
+						{
+							"name": "音频(audio)",
+							"url": ""
+						},
+						{
+							"name": "Web存储",
+							"url": "",
+							"img": "/app/thumb/state.jpg"
+						},
+						{
+							"name": "应用程序缓存",
+							"url": "html5-applicationCache",
+							"flag": "home",
+							"img": "/app/thumb/applicationCache.jpg"
+						},
+						{
+							"name": "地理定位",
+							"url": ""
+						},
+						{
+							"name": "服务器发送事件",
+							"url": ""
+						},
+						{
+							"name": "剪贴板事件",
+							"url": "html5-clipboard",
+							"flag": "home",
+							"img": "/app/thumb/clipboard.jpg"
+						},
+						{
+							"name": "获取电池状态",
+							"url": "html5-battery"
+						},
+						{
+							"name": "手机振动API",
+							"url": "html5-vibrate"
+						}
+					]
+				},
+				{
+					"name": "进阶",
+					"url": "",
+					"child": [
+						{
+							"name": "Canvas",
+							"url": ""
+						},
+						{
+							"name": "SVG",
+							"url": "html5-svg",
+							"flag": "home,hot",
+							"img": "/app/thumb/svg.jpg"
+						},
+						{
+							"name": "MathML",
+							"url": ""
+						},
+						{
+							"name": "WebGL",
+							"url": "html5-webgl",
+							"flag": "home,hot",
+							"img": "/app/thumb/webgl.jpg"
+						},
+						{
+							"name": "Web Worker",
+							"url": ""
+						},
+						{
+							"name": "Web Socket",
+							"url": "html5-websocket",
+							"flag": "home,hot",
+							"img": "/app/thumb/websocket.jpg"
+						},
+						{
+							"name": "WebSQL",
+							"url": ""
+						},
+						{
+							"name": "IndexedDB",
+							"url": "html5-IndexedDB",
+							"flag": "home",
+							"img": "/app/thumb/IndexedDB.jpg"
+						}
+					]
+				},
+				{
+					"name": "实例",
+					"url": "",
+					"child": [
+						{
+							"name": "Canvas",
+							"url": "html5-canvas"
+						},
+						{
+							"name": "SVG",
+							"url": "html5-case-svg"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CSS3",
+			"url": "list.html?id=css3",
+			"subType": "css3",
+			"hot": [
+				{
+					"name":"/app/img/edu/p5.jpg",
+					"url": ""
+				},
+				{
+					"name":"/app/img/edu/p6.jpg",
+					"url": ""
+				}
+			],
+			"child": [
+				{
+					"name": "基础",
+					"url": "",
+					"child": [
+						{
+							"name": "选择器",
+							"url": ""
+						},
+						{
+							"name": "边框",
+							"url": ""
+						},
+						{
+							"name": "阴影",
+							"url": ""
+						},
+						{
+							"name": "圆角",
+							"url": ""
+						},
+						{
+							"name": "布局",
+							"url": "css3-flex",
+							"flag": "home,hot",
+							"img": "/app/thumb/flex.jpg"
+						},
+						{
+							"name": "背景",
+							"url": ""
+						}
+					]
+				},
+				{
+					"name": "进阶",
+					"url": "",
+					"child": [
+						{
+							"name": "过渡",
+							"url": ""
+						},
+						{
+							"name": "动画",
+							"url": ""
+						},
+						{
+							"name": "滤镜",
+							"url": ""
+						}
+					]
+				},
+				{
+					"name": "框架",
+					"url": "",
+					"child": [
+						{
+							"name": "Stylus",
+							"url": "css3-stylus",
+							"flag": "home,hot",
+							"img": "/app/thumb/stylus.jpg"
+						},
+						{
+							"name": "Less",
+							"url": ""
+						}
+					]
+				},
+				{
+					"name": "UI",
+					"url": "",
+					"child": [
+						{
+							"name": "手机UI",
+							"url": "css3-ui"
+						},
+						{
+							"name": "wxui",
+							"url": ""
+						},
+						{
+							"name": "ElementUI",
+							"url": ""
+						}
+					]
+				},
+				{
+					"name": "实例",
+					"url": "",
+					"child": [
+						{"name":"布局","url":"css3-case-flex"},
+						{"name":"背景","url":"css3-case-bg"},
+						{"name":"波浪线","url":"css3-case-line"},
+						{"name":"滤镜","url":"css3-case-filter"},
+						{"name":"动画加载","url":"css3-case-loader"},
+						{"name":"按钮","url":"css3-case-btn"},
+						{"name":"动画","url":"css3-case-animate"},
+						{"name":"图表","url":"css3-case-chart"},
+						{"name":"图标","url":"css3-case-icon"}
+					]
+				}
+			]
+		},
+		{
+			"name": "JavaScript",
+			"url": "list.html?id=js",
+			"subType": "js",
+			"hot": [
+				{
+					"name":"/app/img/edu/p1.jpg",
+					"url": ""
+				},
+				{
+					"name":"/app/img/edu/p2.jpg",
+					"url": ""
+				}
+			],
+			"child": [
+				{
+					"name": "基础",
+					"url": "",
+					"child": [
+						{
+							"name": "基础",
+							"url": "js-base"
+						},
+						{
+							"name": "运算",
+							"url": "js-sxys"
+						},
+						{
+							"name": "数组",
+							"url": "js-array",
+							"flag": "home",
+							"img": "/app/thumb/array.jpg"
+						},
+						{
+							"name": "模式",
+							"url": "js-model",
+							"flag": "home",
+							"img": "/app/thumb/model.jpg"
+						},
+						{
+							"name": "算法",
+							"url": ""
+						},
+						{
+							"name": "异步",
+							"url": "js-async",
+							"flag": "home",
+							"img": "/app/thumb/async.jpg"
+						},
+						{
+							"name": "原型闭包",
+							"url": "js-closures",
+							"flag": "home",
+							"img": "/app/thumb/closures.jpg"
+						},
+						{
+							"name": "OOP",
+							"url": "js-oop",
+							"flag": "home",
+							"img": "/app/thumb/oop.jpg"
+						},
+						{
+							"name": "语音",
+							"url": "js-speak",
+							"flag": "home",
+							"img": "/app/thumb/speak.jpg"
+						},
+						{
+							"name": "call,apply,bind",
+							"url": "js-callApplyBind",
+							"flag": "home",
+							"img": "/app/thumb/callApplyBind.jpg"
+						},
+						{
+							"name": "迭代方法",
+							"url": "js-iteration",
+							"flag": "home",
+							"img": "/app/thumb/iteration.jpg"
+						},
+						{
+							"name": "this",
+							"url": "js-this",
+							"flag": "home",
+							"img": "/app/thumb/this.jpg"
+						},
+						{
+							"name": "动画",
+							"url": ""
+						},
+						{
+							"name": "正则",
+							"url": "js-regex",
+							"flag": "home,hot",
+							"img": "/app/thumb/regex.jpg"
+						},
+						{
+							"name": "JSON",
+							"url": "js-json"
+						},
+						{
+							"name": "Fetch",
+							"url": "js-fetch",
+							"flag": "home,hot",
+							"img": "/app/thumb/fetch.jpg"
+						},
+						{
+							"name": "错误与调试",
+							"url": ""
+						}
+					]
+				},
+				{
+					"name": "框架",
+					"url": "",
+					"child": [
+						{
+							"name": "jQuery",
+							"url": ""
+						},
+						{
+							"name": "React",
+							"url": "js-react"
+						},
+						{
+							"name": "Vue",
+							"url": ""
+						}
+					]
+				},
+				{
+					"name": "插件",
+					"url": "",
+					"child": [
+						{
+							"name": "Three",
+							"url": "js-three"
+						},
+						{
+							"name": "Echarts",
+							"url": "js-echarts"
+						},
+						{
+							"name": "WOW",
+							"url": "js-wowjs"
+						},
+						{
+							"name": "scrollReveal",
+							"url": ""
+						},
+						{
+							"name": "chobi处理图片",
+							"url": "js-chobi"
+						},
+						{
+							"name": "clipboard复制到剪贴板",
+							"url": "js-clipboard"
+						},
+						{
+							"name": "Syntaxy语法高亮 ",
+							"url": "js-syntaxy"
+						}
+					]
+				},
+				{
+					"name": "实例",
+					"url": "",
+					"child": [
+						{
+							"name": "功能开发",
+							"url": "js-interface"
+						},
+						{
+							"name": "常用函数",
+							"url": "js-fun"
+						},
+						{
+							"name": "模板",
+							"url": "js-case-tpls"
+						},
+						{
+							"name": "动画",
+							"url": "js-case-animate"
+						},
+						{
+							"name": "Banner",
+							"url": "js-case-banner"
+						},
+						{
+							"name": "滚动条",
+							"url": "js-case-scroll"
+						},
+						{
+							"name": "表单",
+							"url": "js-case-from"
+						},
+						{
+							"name": "弹窗",
+							"url": "js-fun"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "工具",
+			"url": "list.html?id=other",
+			"subType": "other",
+			"hot": [
+				{
+					"name":"/app/img/edu/p1.jpg",
+					"url": ""
+				},
+				{
+					"name":"/app/img/edu/p2.jpg",
+					"url": ""
+				}
+			],
+			"child": [
+				{
+					"name": "工具",
+					"url": "",
+					"child": [
+						{
+							"name": "Webpack",
+							"url": "other-webpack",
+							"flag": "home,hot",
+							"img": "/app/thumb/webpack.jpg"
+						},
+						{
+							"name": "Git",
+							"url": "other-git",
+							"flag": "home,hot",
+							"img": "/app/thumb/git.jpg"
+						},
+						{
+							"name": "Babel",
+							"url": "",
+							"img": "/app/thumb/babel.jpg"
+						}
+					]
+				},
+				{
+					"name": "优化",
+					"url": "",
+					"child": [
+						{
+							"name": "H5优化",
+							"url": "other-h5optimize"
+						},
+						{
+							"name": "性能优化",
+							"url": "other-optimize"
+						},
+						{
+							"name": "webapp优化",
+							"url": "other-webapp"
+						},
+						{
+							"name": "web与http2",
+							"url": "other-webhttp2"
+						}
+					]
+				},
+				{
+					"name": "服务器",
+					"url": "",
+					"child": [
+						{
+							"name": "亿级Web",
+							"url": "other-serverYi"
+						}
+					]
+				}
+			]
+		}
+	]
+}

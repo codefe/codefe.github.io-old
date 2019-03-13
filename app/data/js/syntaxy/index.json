@@ -1,0 +1,17 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "JavaScript",
+		"name": "Syntaxy",
+		"subType": "js-syntaxy",
+		"title": "Syntaxy网页语法高亮js插件",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "Syntaxy.js是一款小巧灵活的网页语法高亮js插件。Syntaxy.js支持各种主流的编程语言，提供3种主题样式。它默认是JS插件，但是也可以作为jQuery插件来使用。",
+		"arr": "one",
+		"items": [
+			{"title":"使用方法","url":"s1"},
+			{"title":"示例","url":"/app/data/js/syntaxy/demo/index.html","flag":"true"}
+		]
+	}
+}

@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"放到何处 - ondragover","content":"<p>ondragover 事件规定在何处放置被拖动的数据。</p><p>默认地，无法将数据/元素放置到其他元素中。如果需要设置允许放置，我们必须阻止对元素的默认处理方式。</p><p>这要通过调用 ondragover 事件的<span>&nbsp;</span><i>event</i>.preventDefault() 方法：</p><pre>event.preventDefault()</pre>"}}

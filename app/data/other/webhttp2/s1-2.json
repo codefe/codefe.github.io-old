@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"避免重定向","content":"<p>重定向意味着要重新发起请求，当然我们没事也不会乱跳。这里要说的一种重定向是，访问HTTP站点，跳转到HTTPS。</p><p>避免这种跳转，我们可以用<strong>HSTS策略</strong>，就是告诉浏览器，以后访问我这个站点，必须用HTTPS协议来访问，让浏览器帮忙做转换，而不是请求到了服务器后，才知道要转换。只需要在响应头部加上&nbsp;<code>Strict-Transport-Security: max-age=31536000</code>&nbsp;即可。</p>"}}

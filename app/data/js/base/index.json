@@ -1,0 +1,25 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "JavaScript",
+		"name": "基础",
+		"subType": "js-base",
+		"title": "JS思维导图",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "",
+		"arr": "one",
+		"items": [
+			{"title":"变量","url":"s1-1"},
+			{"title":"数据类型","url":"s1-2"},
+			{"title":"运算符","url":"s1-3"},
+			{"title":"流程控制","url":"s1-4"},
+			{"title":"数组","url":"s1-5"},
+			{"title":"函数基础","url":"s1-6"},
+			{"title":"字符串函数","url":"s1-7"},
+			{"title":"正则表达式","url":"s1-8"},
+			{"title":"Window 对象","url":"s1-9"},
+			{"title":"DOM 基本操作","url":"s1-10"}
+		]
+	}
+}

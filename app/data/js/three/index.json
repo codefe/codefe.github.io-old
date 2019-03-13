@@ -1,0 +1,23 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "JavaScript",
+		"name": "Three",
+		"subType": "js-three",
+		"title": "ThreeJS使用笔记",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "three.js是JavaScript编写的WebGL第三方库。提供了非常多的3D显示功能。",
+		"items": [
+			{"step": "阶段一：基础","item":[
+				
+			]},
+			{"step": "阶段二：进阶","item":[
+				
+			]},
+			{"step": "阶段三：实例","item":[
+				{"title":"粒子波浪动画","url":"/app/data/js/three/粒子波浪动画/index.html","flag":"true"}
+			]}
+		]
+	}
+}

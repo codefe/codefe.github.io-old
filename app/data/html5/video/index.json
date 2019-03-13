@@ -1,0 +1,28 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "HTML5",
+		"name": "video",
+		"subType": "html5-video",
+		"title": "HTML5视频",
+		"author": "网络",
+		"star": "★★★★☆",
+		"desc": "",
+		"items": [
+			{"step": "阶段一：基础入门","item":[
+				{"title":"浏览器兼容性","url":"s1-1"},
+				{"title":"视频格式","url":"s1-2"},
+				{"title":"Video 对象属性","url":"s1-3"},
+				{"title":"Video 对象方法","url":"s1-3_1"},
+				{"title":"video实例","url":"s1-4"},
+				{"title":"使用DOM进行控制video","url":"s1-5"}
+			]},
+			{"step": "阶段二：进阶","item":[
+				{"title":"html5中video标签的总结","url":"s2-1"}
+			]},
+			{"step": "阶段三：实例","item":[
+				{"title":"暂无","url":""}
+			]}
+		]
+	}
+}

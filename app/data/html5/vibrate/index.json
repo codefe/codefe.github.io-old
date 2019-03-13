@@ -1,0 +1,17 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "HTML5",
+		"name": "Vibrate",
+		"subType": "html5-vibrate",
+		"title": "手机振动API",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "现代浏览器里提供的新的API越来越倾向于移动手机应用，而不是传统的桌面应用，比如JavaScript地理位置信息API。另外一个只针对手机应用的JavaScript API就是振动(Vibration) API。很明显，这个API就是允许mobile程序员使用JavaScript调用手机的振动功能，并且能设定振动的方式和时长。",
+		"arr": "one",
+		"items": [
+			{"title":"判断浏览器对振动API的支持情况","url":"s1"},
+			{"title":"振动API基础应用","url":"s2"}
+		]
+	}
+}

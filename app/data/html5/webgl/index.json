@@ -1,0 +1,41 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "HTML5",
+		"name": "WebGL",
+		"subType": "html5-webgl",
+		"title": "WebGL教程",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "WebGL（Web图形库）是Web上的3D图形的新标准，它是专用于绘制2D图形和交互式3D图形的目的。它是从OpenGL ES 2.0库，用于手机和其他移动设备的低级3D的API衍生。 WebGL提供ES2.0（嵌入式系统）类似的功能并在现代3D图形硬件上表现优异。它可以与HTML5使用一个JavaScript的API。 HTML5有几个功能，支持3D图形，如2D画布，WebGL，SVG，CSS3D变换和SMIL。WebGL代码编写在HTML5的canvas标签内。它是一种规范，允许互联网浏览器使用的计算机访问图形处理单元（GPU）。",
+		"items": [
+			{"step": "阶段一：WebGL概况","item":[
+				{"title":"WebGL是什么东西?","url":"s1-1"},
+				{"title":"WebGL的优势","url":"s1-2"},
+				{"title":"WebGL基本图形概念","url":"s1-3"},
+				{"title":"Html5 Canvas介绍","url":"s1-4"}
+			]},
+			{"step": "阶段二：WebGL基础","item":[
+				{"title":"WebGL基础","url":"s2-1"},
+				{"title":"WebGL着色器程序","url":"s2-2"},
+				{"title":"WebGL图形管线","url":"s2-3"},
+				{"title":"WebGL示例程序","url":"s2-4"},
+				{"title":"WebGL Context上下文","url":"s2-5"},
+				{"title":"WebGL几何体","url":"s2-6"},
+				{"title":"WebGL着色器","url":"s2-7"},
+				{"title":"WebGL关联属性和缓冲区对象","url":"s2-8"},
+				{"title":"WebGL绘制模型","url":"s2-9"},
+				{"title":"WebGL绘制点","url":"s2-10"},
+				{"title":"WebGL绘制三角形","url":"s2-11"},
+				{"title":"WebGL绘图的模式","url":"s2-12"},
+				{"title":"WebGL绘制四边形","url":"s2-13"},
+				{"title":"WebGL颜色","url":"s2-14"},
+				{"title":"WebGL平移","url":"s2-15"},
+				{"title":"WebGL缩放","url":"s2-16"},
+				{"title":"WebGL旋转","url":"s2-17"},
+				{"title":"WebGL立方体旋转","url":"s2-18"},
+				{"title":"WebGL交互式立方体","url":"s2-19"}
+			]}
+		]
+	}
+}

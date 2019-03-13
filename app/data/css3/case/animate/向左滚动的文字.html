@@ -1,0 +1,37 @@
+<style>
+ul,li,h3{margin:0;padding:0;list-style:none;}
+
+@keyframes slidy {
+	0% { left: 0%; }
+	20% { left: 0%; }
+	25% { left: -100%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; }
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100% { left: -400%; }
+}
+
+body { margin: 50px; } 
+#slider { overflow: hidden;width:500px; border:1px solid #ccc;}
+#slider ul { 
+  position: relative;
+  width: 2500px;
+  left: 0;
+  font-size: 14px;
+  animation: 30s slidy infinite; 
+}
+#slider li { width: 500px;float: left; }
+#slider h3{font-size:21px;}
+</style>
+
+<div id="slider">
+	<ul>
+		<li><h3>为什么选HTML5?</h3><p>HTML5是Web时代前沿的技术，它特有Canvas标签和多种富媒体开发的环境标签，让游戏开发更便捷。如果说苹果重新发明了手机，那么HTML5则重新定义了网络。它是链接手机、平板电脑、PC以及其他移动终端的桥梁，可以更丰富地展现页面，让视频、音频、游戏以及其他元素构成一场华丽的代码盛宴。 </p></li>
+		<li><h3>NodeJS</h3><p>学习Node.js 事件驱动， 非阻塞I/O模型的技术特点，能够快速的在分布式设备上运行数据密集型的实时应用。</p></li>
+		<li><h3>CSS3</h3><p>与传统的 JavaScript 驱动的动画实践比较，它可提供更好的呈现性能。</p></li>
+		<li><h3>AngularJS</h3><p>业界大腕谷歌推出的AngularJS框架，旨在简化前端应用程序的开发，良好的应用程序结构、数据绑定和指令功能让传统的数据操作难题迎刃而解.</p></li>
+		<li><h3>Bootstrap</h3><p>前端开发领域最火的响应式布局框架，掌握了Bootstrap，让响应式开发的噩梦成为过去。</p></li>
+	</ul>
+</div>

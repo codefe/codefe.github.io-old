@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"将该文件添加到缓存(add)","content":"<h3>git add</h3><p>git add 命令可将该文件添加到缓存</p><blockquote>git add . //添加所有文件<br>git add *.js //添加所有扩展名为js的文件<br>git add a.js //添加a.js</blockquote>"}}

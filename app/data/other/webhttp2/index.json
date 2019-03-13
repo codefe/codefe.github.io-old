@@ -1,0 +1,29 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "Other",
+		"name":"性能优化",
+		"subType": "other-webhttp2",
+		"title": "Web性能优化与HTTP/2",
+		"author": "网络",
+		"star": "★★★★☆",
+		"desc": "一个页面，会经历过加载资源，执行脚本，渲染界面的过程。我们知道，100ms对于计算机来说，可以干很多事情了，但是对于网络请求，可能一次RTT就没了。因此，页面加载对于Web性能是重中之重。 加载的快慢可以总结成受两个因素影响：阻塞与延迟。",
+		"arr": "one",
+		"items": [
+			{"title":"前言","url":"s1-1"},
+			{"title":"避免重定向","url":"s1-2"},
+			{"title":"预加载","url":"s1-3"},
+			{"title":"使用TCP、TLS最佳实践","url":"s1-4"},
+			{"title":"内联","url":"s1-5"},
+			{"title":"手动管理缓存","url":"s1-6"},
+			{"title":"HTTP持久连接","url":"s1-7"},
+			{"title":"HTTP管线化","url":"s1-8"},
+			{"title":"bigpipe","url":"s1-9"},
+			{"title":"多路复用","url":"s1-10"},
+			{"title":"服务器推送","url":"s1-11"},
+			{"title":"首部压缩","url":"s1-12"},
+			{"title":"一次完整的HTTP/2通信","url":"s1-13"},
+			{"title":"后话","url":"s1-14"}
+		]
+	}
+}

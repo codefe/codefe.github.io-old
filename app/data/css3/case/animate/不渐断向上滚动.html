@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>滚动标题</title>
+
+<style>
+*{margin:0;padding:0;}
+/*核心css*/
+@keyframes moveup{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+.box { animation: moveup 10s  linear infinite; }
+.page { overflow: hidden; }
+
+/*样式*/
+.page { margin-top: 200px; height: 100px; border-top: 2px solid lightblue; border-bottom: 2px solid red; }
+.box {margin: 0;}
+.box li{ line-height: 30px; }
+</style>
+
+</head>
+<body>
+
+<div class="page">
+    <ul class="box item1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <ul class="box item2">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+</div>  
+
+</body>
+</html>

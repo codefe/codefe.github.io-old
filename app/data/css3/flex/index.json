@@ -1,0 +1,46 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "CSS3",
+		"name": "Flex",
+		"subType": "css3-flex",
+		"title": "Flex基础教程",
+		"author": "网络",
+		"star": "★★★★☆",
+		"desc": "网页布局(layout)是 CSS 的一个重点应用。Flex布局，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持，这意味着，现在就能很安全地使用这项功能。",
+		"items": [
+			{"step": "阶段一：Flex基础","item":[
+				{"title":"Flex布局是什么","url":"s1-1"},
+				{"title":"Flex基本概念","url":"s1-2"}
+			]},
+			{"step": "阶段二：Flex容器的属性","item":[
+				{"title":"flex-direction属性","url":"s2-1"},
+				{"title":"flex-wrap属性","url":"s2-2"},
+				{"title":"flex-flow属性","url":"s2-3"},
+				{"title":"justify-content属性","url":"s2-4"},
+				{"title":"align-items属性","url":"s2-5"},
+				{"title":"align-content属性","url":"s2-6"}
+			]},
+			{"step": "阶段三：Flex项目的属性","item":[
+				{"title":"order属性","url":"s3-1"},
+				{"title":"flex-grow属性","url":"s3-2"},
+				{"title":"flex-shrink属性","url":"s3-3"},
+				{"title":"flex-basis属性","url":"s3-4"},
+				{"title":"flex属性","url":"s3-5"},
+				{"title":"align-self属性","url":"s3-6"}
+			]},
+			{"step": "阶段四：Flex布局","item":[
+				{"title":"基本网格布局","url":"s4-2"},
+				{"title":"百分比布局","url":"s4-3"},
+				{"title":"圣杯布局","url":"s4-4"},
+				{"title":"输入框的布局","url":"s4-5"},
+				{"title":"悬挂式布局","url":"s4-6"},
+				{"title":"固定的底栏","url":"s4-7"},
+				{"title":"流式布局","url":"s4-8"}
+			]},
+			{"step": "阶段五：Flex实例","item":[
+				{"title":"骰子的布局","url":"s5-1"}
+			]}
+		]
+	}
+}

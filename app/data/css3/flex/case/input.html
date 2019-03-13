@@ -1,0 +1,39 @@
+<style>
+.InputAddOn {
+  display: flex;
+  /* other code */
+  margin-top:50px;
+  border:1px solid #ccc;
+}
+
+.InputAddOn-field {
+  flex: 1;
+  border:1px solid #ccc;
+  border-top:0;
+  border-bottom:0;
+}
+.InputAddOn-item{
+	height:40px;
+	line-height:40px;
+	background-color:#eee;
+	flex: 0 0 80px;
+	text-align:center;
+	border:0;
+}
+</style>
+
+<div class="InputAddOn">
+  <input class="InputAddOn-field">
+  <button class="InputAddOn-item">send</button>
+</div>
+
+<div class="InputAddOn">
+  <span class="InputAddOn-item">name</span>
+  <input class="InputAddOn-field">
+</div>
+
+<div class="InputAddOn">
+  <span class="InputAddOn-item">name</span>
+  <input class="InputAddOn-field">
+  <button class="InputAddOn-item">send</button>
+</div>

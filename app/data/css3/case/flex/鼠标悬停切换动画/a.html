@@ -1,0 +1,39 @@
+
+<style>
+.box1  dt,.box1 dt a{width: 180px; height: 180px;border-radius: 90px;}
+.box1  dt { background: #fafafa;text-align: center; cursor: pointer; }
+.box1  dt a { display: inline-block; color: #333; top: 0px; left: 0px; position: absolute; overflow: hidden; }
+.box1  dt i { display: inline-block; background: url(icon.png) 0 -203px no-repeat;width: 54px; height: 98px; margin: 27px 63px 13px 63px;}
+.box1  dt span,.box1 dt i,.box1 dt { position: relative;}
+.box1  dt a.hover i { background-position: -67px -203px; top: -125px;}
+.box1  dt:hover {background: #84d23f;}
+/*加动画*/
+.box1 dt,.box1  dt i,.box1  dt a span{transition: all 0.5s;}
+/*动画位置*/
+.box1 dl dt a.unhover i{opacity:1; bottom:0;}
+.box1 dl dt a.unhover span{opactity:1; left:0;}
+.box1 dl dt:hover a.unhover i{opacity:0; bottom:-145px;}
+.box1 dl dt:hover a.unhover span{opactity:0; left:-125px;}
+
+.box1 dl dt a.hover i{top:-125px;}
+.box1 dl dt a.hover span{right:-110px;}
+.box1 dl dt:hover a.hover i{top:0px;}
+.box1 dl dt:hover a.hover span{right:0px;}
+/*动画位置end*/
+</style>
+
+<div class="box1">
+	<dl>
+		<dt>
+			<a class="unhover" href="#">
+				<i>&nbsp;</i>
+				<span class="txt">aaaaa</span>
+			</a>
+			<a class="hover" href="/product_service/voice">
+				<i>&nbsp;</i>
+				<span class="txt">bbbbb</span>
+			</a>
+		</dt>
+	</dl>
+</div>
+	 

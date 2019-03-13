@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"媒体(@media)","content":"<p><code>@media</code>工作原理和在常规CSS中一样，但是，要使用Stylus的块状符号。</p><pre><code>@media print\n  #header\n  #footer\n    display none</code></pre><p>生成为：</p><p><!--StartFragment--><!--EndFragment--></p><pre><code>@media print {\n  #header,\n  #footer {\n    display: none;\n  }\n}</code></pre>"}}

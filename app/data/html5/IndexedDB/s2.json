@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"IndexedDB vs Web SQL","content":"<p>WebSQL也是一种在浏览器里存储数据的技术，跟IndexedDB不同的是，IndexedDB更像是一个NoSQL数据库，而WebSQL更像是关系型数据库，使用SQL查询数据。W3C已经不再支持这种技术。具体情况请看：<a href=\"http://www.w3.org/TR/webdatabase/\" target=\"_blank\">http://www.w3.org/TR/webdatabase/</a>。</p><p></p><p>因为不再支持，所以你就不要在项目中使用这种技术了。</p>"}}

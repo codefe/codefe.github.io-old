@@ -1,0 +1,82 @@
+<style>
+.banner{
+	background:rgba(0,255,0,.5);
+	height:500px;
+	overflow:hidden;
+	position:relative;
+}
+.bs{
+	position: absolute;
+	width: 171px;
+	height: 168px;
+	animation: star 4.5s both infinite linear;
+	text-indent: -99em;
+	overflow: hidden;
+}
+.bs:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 108px;
+	height: 152px;
+	background: url(star.png) 0 0 no-repeat;
+	background-size: cover;
+}
+.star1{
+	top: 380px;
+	left: 20px;
+	animation-delay: .3s;
+}
+.star2{
+	top: 320px;
+	left: 100px;
+	animation-delay: 1s;
+}
+.star3{
+	top: 260px;
+	left: 50%;
+	animation-delay: 1.4s;
+}
+.star4{
+	top: 200px;
+	left: 50%;
+	margin-left: -200px;
+	animation-delay: 2s;
+}
+.star5{
+	top: 640px;
+	left: 50%;
+	margin-left: -400px;
+	animation-delay: 3s;
+}
+.star6{
+	top: 400px;
+	left: 50%;
+	margin-left: 400px;
+	animation-delay: 4s;
+}
+@keyframes star{
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(216px,-304px);
+	}
+	12% {
+		opacity: 1;
+		-webkit-transform: translate(108px,-152px);
+	}
+	100%, 24% {
+		opacity: 0;
+		-webkit-transform: translate(0,0);
+	}
+}
+</style>
+
+<div class="banner">
+	<div class="bs star1"></div>
+	<div class="bs star2"></div>
+	<div class="bs star3"></div>
+	<div class="bs star4"></div>
+	<div class="bs star5"></div>
+	<div class="bs star6"></div>
+</div>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML5 SVG炫酷checkbox复选框动画</title>
+	<style>
+	/*------------------Checkbox----------------------*/
+.checkboxWrapper{
+	display:block; /* you can replace with 'display:inline-block' if you want parent element inline */
+}
+
+.checkboxWrapper input[type="checkbox"] {
+	display: none;
+}
+
+.checkboxWrapper input[type="checkbox"] + label {
+	cursor: pointer;
+	display:block;
+}
+
+.checkboxWrapper input[type="checkbox"] + label i {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.checkboxWrapper input[type="checkbox"] + label path {
+	stroke-dashoffset: -189;
+	stroke: inherit;
+	stroke-dasharray: 189;
+	transition: all ease-in-out 0.5s;
+	-webkit-transition: all ease-in-out 0.5s;
+	-moz-transition: all ease-in-out 0.5s;
+	-ms-transition: all ease-in-out 0.5s;
+	-o-transition: all ease-in-out 0.5s;
+}
+
+.checkboxWrapper input[type="checkbox"]:checked + label path {
+	stroke-dashoffset: 0;
+}
+/*----------------------Themes------------------------*/
+/* Turquoise theme */
+	.theme1{
+		stroke:#1ABC9C;	
+	}
+/**/
+
+/* Emerald theme */
+	.theme2{
+		stroke:#2ECC71;
+	}
+/**/
+
+/* Peterriver theme */
+	.theme3{
+		stroke:#3498DB;
+	}
+/**/
+
+/* Amethyst theme */
+	.theme4{
+		stroke:#9B59B6;
+	}
+/**/
+
+/* Wet Asphalt theme */
+	.theme5{
+		stroke:#34495E;
+	}
+/**/
+
+/* Carrot theme */
+	.theme6{
+		stroke:#E67E22;
+	}
+/**/
+/* Alizarin theme */
+	.theme7{
+		stroke:#E74C3C;
+	}
+/**/
+
+/*-----------------------Sizes------------------------------*/
+.extraSmallCheckboxSize.checkboxWrapper input[type="checkbox"] + label i svg{
+	width:20px;
+	height:20px;
+}
+
+.smallCheckboxSize.checkboxWrapper input[type="checkbox"] + label i svg{
+	width:30px;
+	height:30px;
+}
+
+.mediumCheckboxSize.checkboxWrapper input[type="checkbox"] + label i svg{
+	width:40px;
+	height:40px;
+}
+
+.largeCheckboxSize.checkboxWrapper input[type="checkbox"] + label i svg{
+	width:50px;
+	height:50px;
+}
+
+.extraLargeCheckboxSize.checkboxWrapper input[type="checkbox"] + label i svg{
+	width:60px;
+	height:60px;
+}
+	</style>
+</head>
+<body>
+	<div class="htmleaf-container">
+
+		<main class="htmleaf-content">
+			<section>
+				<h2>Fancy style checkbox</h2>
+			</section>
+
+			<section>
+				<h3>主题</h3>
+			    <p>你也可以自定义自己的主题颜色。</p>
+			<!-- -->
+			<div class="checkboxWrapper theme1">
+			    <input type="checkbox" id="sample1">
+			    <label for="sample1">
+			        <i>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			            width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+							<circle fill="none" stroke="#B7B7B7" stroke-width="3" stroke-miterlimit="10" cx="25.11" cy="24.883" r="23.519"/>
+							<path fill="none" stroke-width="3" stroke-miterlimit="10" d="M48.659,25c0,12.998-10.537,23.534-23.534,23.534
+							S1.591,37.998,1.591,25S12.127,1.466,25.125,1.466c9.291,0,17.325,5.384,21.151,13.203L19,36l-9-14"/>
+			            </svg>
+			        </i>
+			    	Turquoise Theam
+			    </label>
+			</div>
+			<!-- --> 
+
+			<!-- -->
+			<div class="checkboxWrapper theme2">
+			    <input type="checkbox" id="sample2">
+			    <label for="sample2">
+			        <i>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			            width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+							<circle fill="none" stroke="#B7B7B7" stroke-width="3" stroke-miterlimit="10" cx="25.11" cy="24.883" r="23.519"/>
+							<path fill="none" stroke-width="3" stroke-miterlimit="10" d="M48.659,25c0,12.998-10.537,23.534-23.534,23.534
+							S1.591,37.998,1.591,25S12.127,1.466,25.125,1.466c9.291,0,17.325,5.384,21.151,13.203L19,36l-9-14"/>
+			            </svg>
+			        </i>
+			    	Emerald Theme
+			    </label>
+			</div>
+			<!-- -->
+
+			<!-- -->
+			<div class="checkboxWrapper theme3">
+			    <input type="checkbox" id="sample3">
+			    <label for="sample3">
+			        <i>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			            width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+							<circle fill="none" stroke="#B7B7B7" stroke-width="3" stroke-miterlimit="10" cx="25.11" cy="24.883" r="23.519"/>
+							<path fill="none" stroke-width="3" stroke-miterlimit="10" d="M48.659,25c0,12.998-10.537,23.534-23.534,23.534
+							S1.591,37.998,1.591,25S12.127,1.466,25.125,1.466c9.291,0,17.325,5.384,21.151,13.203L19,36l-9-14"/>
+			            </svg>
+			        </i>
+			    	Peter River Theme
+			    </label>
+			</div>
+			<!-- -->
+
+			<!-- -->
+			<div class="checkboxWrapper theme4">
+			    <input type="checkbox" id="sample4">
+			    <label for="sample4">
+			        <i>
+			        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			        width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+						<circle fill="none" stroke="#B7B7B7" stroke-width="3" stroke-miterlimit="10" cx="25.11" cy="24.883" r="23.519"/>
+						<path fill="none" stroke-width="3" stroke-miterlimit="10" d="M48.659,25c0,12.998-10.537,23.534-23.534,23.534
+						S1.591,37.998,1.591,25S12.127,1.466,25.125,1.466c9.291,0,17.325,5.384,21.151,13.203L19,36l-9-14"/>
+			        </svg>
+			        </i>
+			        Amethyst Theme
+			    </label>
+			</div>
+			<!-- -->
+
+			<!-- -->
+			<div class="checkboxWrapper theme5">
+			    <input type="checkbox" id="sample5">
+			    <label for="sample5">
+			        <i>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			            width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+							<circle fill="none" stroke="#B7B7B7" stroke-width="3" stroke-miterlimit="10" cx="25.11" cy="24.883" r="23.519"/>
+							<path fill="none" stroke-width="3" stroke-miterlimit="10" d="M48.659,25c0,12.998-10.537,23.534-23.534,23.534
+							S1.591,37.998,1.591,25S12.127,1.466,25.125,1.466c9.291,0,17.325,5.384,21.151,13.203L19,36l-9-14"/>
+			            </svg>
+			        </i>
+			    	Wetasph Alt Theme
+			    </label>
+			</div>
+			<!-- -->
+
+
+			<!-- -->
+			<div class="checkboxWrapper theme6">
+			    <input type="checkbox" id="sample6">
+			    <label for="sample6">
+			        <i>
+			        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			        width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+						<circle fill="none" stroke="#B7B7B7" stroke-width="3" stroke-miterlimit="10" cx="25.11" cy="24.883" r="23.519"/>
+						<path fill="none" stroke-width="3" stroke-miterlimit="10" d="M48.659,25c0,12.998-10.537,23.534-23.534,23.534
+						S1.591,37.998,1.591,25S12.127,1.466,25.125,1.466c9.291,0,17.325,5.384,21.151,13.203L19,36l-9-14"/>
+			        </svg>
+			        </i>
+			    	Carrot Theme
+			    </label>
+			</div>
+			<!-- -->
+
+			<!-- -->
+			<div class="checkboxWrapper theme7">
+			    <input type="checkbox" id="sample7">
+			    <label for="sample7">
+			        <i>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			            width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+							<circle fill="none" stroke="#B7B7B7" stroke-width="3" stroke-miterlimit="10" cx="25.11" cy="24.883" r="23.519"/>
+							<path fill="none" stroke-width="3" stroke-miterlimit="10" d="M48.659,25c0,12.998-10.537,23.534-23.534,23.534
+							S1.591,37.998,1.591,25S12.127,1.466,25.125,1.466c9.291,0,17.325,5.384,21.151,13.203L19,36l-9-14"/>
+			            </svg>
+			        </i>
+			    	Alizarin Theme
+			    </label>
+			</div>
+			</section>
+
+			<section>
+				<h3>尺寸</h3>
+				<p>要控制尺寸，你需要做的事情就是在带有<code>checkboxWrapper</code>class的父div容器上添加适当的class类。</p>
+			<!-- -->
+			<div class="checkboxWrapper theme4 extraSmallCheckboxSize">
+			    <input type="checkbox" id="sample8">
+			    <label for="sample8">
+			        <i>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			            width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+							<circle fill="none" stroke="#B7B7B7" stroke-width="3" stroke-miterlimit="10" cx="25.11" cy="24.883" r="23.519"/>
+							<path fill="none" stroke-width="3" stroke-miterlimit="10" d="M48.659,25c0,12.998-10.537,23.534-23.534,23.534
+							S1.591,37.998,1.591,25S12.127,1.466,25.125,1.466c9.291,0,17.325,5.384,21.151,13.203L19,36l-9-14"/>
+			            </svg>
+			        </i>
+			    	Extra-small Size (use 'extraSmallCheckboxSize' class)
+			    </label>
+			</div>
+			<!-- --> 
+
+			<br>
+
+			<!-- -->
+			<div class="checkboxWrapper theme4 smallCheckboxSize">
+			    <input type="checkbox" id="sample9">
+			    <label for="sample9">
+			        <i>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			            width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+							<circle fill="none" stroke="#B7B7B7" stroke-width="3" stroke-miterlimit="10" cx="25.11" cy="24.883" r="23.519"/>
+							<path fill="none" stroke-width="3" stroke-miterlimit="10" d="M48.659,25c0,12.998-10.537,23.534-23.534,23.534
+							S1.591,37.998,1.591,25S12.127,1.466,25.125,1.466c9.291,0,17.325,5.384,21.151,13.203L19,36l-9-14"/>
+			            </svg>
+			        </i>
+			    	Smaill Size (use 'smallCheckboxSize' class)
+			    </label>
+			</div>
+			<!-- --> 
+
+			<br>
+
+			<!-- -->
+			<div class="checkboxWrapper theme4 mediumCheckboxSize">
+			    <input type="checkbox" id="sample10">
+			    <label for="sample10">
+			        <i>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			            width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+							<circle fill="none" stroke="#B7B7B7" stroke-width="3" stroke-miterlimit="10" cx="25.11" cy="24.883" r="23.519"/>
+							<path fill="none" stroke-width="3" stroke-miterlimit="10" d="M48.659,25c0,12.998-10.537,23.534-23.534,23.534
+							S1.591,37.998,1.591,25S12.127,1.466,25.125,1.466c9.291,0,17.325,5.384,21.151,13.203L19,36l-9-14"/>
+			            </svg>
+			        </i>
+			    	Medium Size (use 'mediumCheckboxSize' class)
+			    </label>
+			</div>
+			<!-- --> 
+
+			<br>
+
+			<!-- -->
+			<div class="checkboxWrapper theme4 largeCheckboxSize">
+			    <input type="checkbox" id="sample11">
+			    <label for="sample11">
+			        <i>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			            width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+							<circle fill="none" stroke="#B7B7B7" stroke-width="3" stroke-miterlimit="10" cx="25.11" cy="24.883" r="23.519"/>
+							<path fill="none" stroke-width="3" stroke-miterlimit="10" d="M48.659,25c0,12.998-10.537,23.534-23.534,23.534
+							S1.591,37.998,1.591,25S12.127,1.466,25.125,1.466c9.291,0,17.325,5.384,21.151,13.203L19,36l-9-14"/>
+			            </svg>
+			        </i>
+			    	Large Size (use 'largeCheckboxSize' class)
+			    </label>
+			</div>
+			<!-- --> 
+
+			<br>
+
+			<!-- -->
+			<div class="checkboxWrapper theme4 extraLargeCheckboxSize">
+			    <input type="checkbox" id="sample12">
+			    <label for="sample12">
+			        <i>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			            width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+							<circle fill="none" stroke="#B7B7B7" stroke-width="3" stroke-miterlimit="10" cx="25.11" cy="24.883" r="23.519"/>
+							<path fill="none" stroke-width="3" stroke-miterlimit="10" d="M48.659,25c0,12.998-10.537,23.534-23.534,23.534
+							S1.591,37.998,1.591,25S12.127,1.466,25.125,1.466c9.291,0,17.325,5.384,21.151,13.203L19,36l-9-14"/>
+			            </svg>
+			        </i>
+			    	Extra-large Size (use 'extraLargeCheckboxSize' class)
+			    </label>
+			</div>
+			<!-- --> 
+			</section>
+		</main>
+	</div>
+	
+</body>
+</html>

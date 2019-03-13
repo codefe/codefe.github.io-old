@@ -1,0 +1,761 @@
+<style>
+.animated-lines-big {
+	position: relative;
+	height: 500px;
+	width: 1000px;
+	transform: rotate(144deg) scale(0.8);
+	transform-origin: 250px 250px;
+	contain: strict
+}
+
+.animated-lines-big .line,.animated-lines-big .line::before {
+	animation-duration: 5.17s
+}
+
+.animated-lines-big amp-img {
+	position: relative;
+	left: -21px;
+	top: 18px
+}
+.line {
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0.9, 0.01, 0.82, 0.5);
+	position: relative;
+	overflow: hidden;
+	transform-origin: left
+}
+
+.line::before {
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0.89, 0.01, 0.15, 1);
+	transform-origin: right;
+	display: block;
+	content: '';
+	height: 9px
+}
+@keyframes l-a-b {
+	0% {
+		transform: scaleX(0)
+	}
+
+	13.53965% {
+		transform: scaleX(1)
+	}
+
+	100% {
+		transform: scaleX(1)
+	}
+}
+
+@keyframes l-a {
+	0% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	13.53965% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	32.88201% {
+		transform: scale3d(0, 1, 1)
+	}
+
+	100% {
+		transform: scale3d(0, 1, 1)
+	}
+}
+
+.line-a {
+	animation-name: l-a;
+	width: 510px
+}
+
+.line-a::before {
+	animation-name: l-a-b;
+	background: linear-gradient(to left, #fff, #0389ff, #0dd3ff);
+	width: 510px
+}
+
+@keyframes l-b-b {
+	0% {
+		transform: scaleX(0)
+	}
+
+	3.2882% {
+		transform: scaleX(1)
+	}
+
+	100% {
+		transform: scaleX(1)
+	}
+}
+
+@keyframes l-b {
+	0% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	3.2882% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	6.5764% {
+		transform: scale3d(0, 1, 1)
+	}
+
+	100% {
+		transform: scale3d(0, 1, 1)
+	}
+}
+
+.line-b {
+	animation-name: l-b;
+	width: 120px
+}
+
+.line-b::before {
+	animation-name: l-b-b;
+	background: linear-gradient(to left, #0389ff, #1c79c0);
+	width: 120px
+}
+
+@keyframes l-c-b {
+	0% {
+		transform: scaleX(0)
+	}
+
+	12.57253% {
+		transform: scaleX(1)
+	}
+
+	100% {
+		transform: scaleX(1)
+	}
+}
+
+@keyframes l-c {
+	0% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	12.57253% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	33.46228% {
+		transform: scale3d(0, 1, 1)
+	}
+
+	100% {
+		transform: scale3d(0, 1, 1)
+	}
+}
+
+.line-c {
+	animation-name: l-c;
+	width: 450px
+}
+
+.line-c::before {
+	animation-name: l-c-b;
+	background: linear-gradient(to left, #fff, #0389ff, #0dd3ff);
+	width: 450px
+}
+
+@keyframes l-d-b {
+	0% {
+		transform: scaleX(0)
+	}
+
+	4.25532% {
+		transform: scaleX(1)
+	}
+
+	100% {
+		transform: scaleX(1)
+	}
+}
+@keyframes l-d {
+	0% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	4.25532% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	9.28433% {
+		transform: scale3d(0, 1, 1)
+	}
+
+	100% {
+		transform: scale3d(0, 1, 1)
+	}
+}
+
+.line-d {
+	animation-name: l-d;
+	width: 120px
+}
+
+.line-d::before {
+	animation-name: l-d-b;
+	background: linear-gradient(to right, #0dd3ff, #0dd3ff, #fff);
+	width: 120px
+}
+
+@keyframes l-e-b {
+	0% {
+		transform: scaleX(0)
+	}
+
+	3.09478% {
+		transform: scaleX(1)
+	}
+
+	100% {
+		transform: scaleX(1)
+	}
+}
+
+@keyframes l-e {
+	0% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	5.22244% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	9.47776% {
+		transform: scale3d(0, 1, 1)
+	}
+
+	100% {
+		transform: scale3d(0, 1, 1)
+	}
+}
+
+.line-e {
+	animation-name: l-e;
+	width: 300px
+}
+
+.line-e::before {
+	animation-name: l-e-b;
+	background: linear-gradient(to right, #0dd3ff, #0dd3ff, #fff);
+	width: 300px
+}
+
+@keyframes l-f-b {
+	0% {
+		transform: scaleX(0)
+	}
+
+	1.93424% {
+		transform: scaleX(1)
+	}
+
+	100% {
+		transform: scaleX(1)
+	}
+}
+
+@keyframes l-f {
+	0% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	22.24371% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	26.11219% {
+		transform: scale3d(0, 1, 1)
+	}
+
+	100% {
+		transform: scale3d(0, 1, 1)
+	}
+}
+
+.line-f {
+	animation-name: l-f;
+	width: 250px
+}
+
+.line-f::before {
+	animation-name: l-f-b;
+	background: linear-gradient(to left, #fff, #0389ff, #0dd3ff);
+	width: 250px
+}
+
+@keyframes l-g-b {
+	0% {
+		transform: scaleX(0)
+	}
+
+	3.67505% {
+		transform: scaleX(1)
+	}
+
+	100% {
+		transform: scaleX(1)
+	}
+}
+
+@keyframes l-g {
+	0% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	3.67505% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	8.12379% {
+		transform: scale3d(0, 1, 1)
+	}
+
+	100% {
+		transform: scale3d(0, 1, 1)
+	}
+}
+
+.line-g {
+	animation-name: l-g;
+	width: 80px
+}
+
+.line-g::before {
+	animation-name: l-g-b;
+	background: #0dd3ff;
+	width: 80px
+}
+
+@keyframes l-h-b {
+	0% {
+		transform: scaleX(0)
+	}
+
+	12% {
+		transform: scaleX(1)
+	}
+
+	100% {
+		transform: scaleX(1)
+	}
+}
+
+@keyframes l-h {
+	0% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	12% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	14.2% {
+		transform: scale3d(0, 1, 1)
+	}
+
+	100% {
+		transform: scale3d(0, 1, 1)
+	}
+}
+
+.line-h {
+	animation-name: l-h;
+	width: 60px
+}
+
+.line-h::before {
+	animation-name: l-h-b;
+	background: linear-gradient(to left, #fff, #0389ff, #0dd3ff);
+	width: 60px
+}
+
+@keyframes l-i-b {
+	0% {
+		transform: scaleX(0)
+	}
+
+	12% {
+		transform: scaleX(1)
+	}
+
+	100% {
+		transform: scaleX(1)
+	}
+}
+
+@keyframes l-i {
+	0% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	12% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	15% {
+		transform: scale3d(0, 1, 1)
+	}
+
+	100% {
+		transform: scale3d(0, 1, 1)
+	}
+}
+
+.line-i {
+	animation-name: l-i;
+	width: 180px
+}
+
+.line-i::before {
+	animation-name: l-i-b;
+	background: #1c79c0;
+	width: 180px
+}
+
+@keyframes l-j-b {
+	0% {
+		transform: scaleX(0)
+	}
+
+	3.4% {
+		transform: scaleX(1)
+	}
+
+	100% {
+		transform: scaleX(1)
+	}
+}
+
+@keyframes l-j {
+	0% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	3.4% {
+		transform: scale3d(1, 1, 1)
+	}
+
+	6.8% {
+		transform: scale3d(0, 1, 1)
+	}
+
+	100% {
+		transform: scale3d(0, 1, 1)
+	}
+}
+
+.line-j {
+	animation-name: l-j;
+	width: 120px
+}
+
+.line-j::before {
+	animation-name: l-j-b;
+	background: linear-gradient(to left, #0389ff, #1c79c0);
+	width: 120px
+}
+
+.line-pos {
+	position: absolute
+}
+
+.pos-306-75-delay--1050 {
+	left: 75px;
+	top: 306px
+}
+
+.pos-306-75-delay--1050 .line,.pos-306-75-delay--1050 .line::before {
+	animation-delay: -1050ms
+}
+
+.pos-155-101-delay--5100 {
+	left: 101px;
+	top: 155px
+}
+
+.pos-155-101-delay--5100 .line,.pos-155-101-delay--5100 .line::before {
+	animation-delay: -5100ms
+}
+
+.pos-282-62-delay--5090 {
+	left: 62px;
+	top: 282px
+}
+
+.pos-282-62-delay--5090 .line,.pos-282-62-delay--5090 .line::before {
+	animation-delay: -5090ms
+}
+
+.pos-255-559-delay--4150 {
+	left: 559px;
+	top: 255px
+}
+
+.pos-255-559-delay--4150 .line,.pos-255-559-delay--4150 .line::before {
+	animation-delay: -4150ms
+}
+
+.pos-318-0-delay--4120 {
+	left: 0px;
+	top: 318px
+}
+
+.pos-318-0-delay--4120 .line,.pos-318-0-delay--4120 .line::before {
+	animation-delay: -4120ms
+}
+
+.pos-297-268-delay--4050 {
+	left: 268px;
+	top: 297px
+}
+
+.pos-297-268-delay--4050 .line,.pos-297-268-delay--4050 .line::before {
+	animation-delay: -4050ms
+}
+
+.pos-353-107-delay--3160 {
+	left: 107px;
+	top: 353px
+}
+
+.pos-353-107-delay--3160 .line,.pos-353-107-delay--3160 .line::before {
+	animation-delay: -3160ms
+}
+
+.pos-74-0-delay--3150 {
+	left: 0px;
+	top: 74px
+}
+
+.pos-74-0-delay--3150 .line,.pos-74-0-delay--3150 .line::before {
+	animation-delay: -3150ms
+}
+
+.pos-257-312-delay--3120 {
+	left: 312px;
+	top: 257px
+}
+
+.pos-257-312-delay--3120 .line,.pos-257-312-delay--3120 .line::before {
+	animation-delay: -3120ms
+}
+
+.pos-207-435-delay--3090 {
+	left: 435px;
+	top: 207px
+}
+
+.pos-207-435-delay--3090 .line,.pos-207-435-delay--3090 .line::before {
+	animation-delay: -3090ms
+}
+
+.pos-294-244-delay--2150 {
+	left: 244px;
+	top: 294px
+}
+
+.pos-294-244-delay--2150 .line,.pos-294-244-delay--2150 .line::before {
+	animation-delay: -2150ms
+}
+
+.pos-251-401-delay--2120 {
+	left: 401px;
+	top: 251px
+}
+
+.pos-251-401-delay--2120 .line,.pos-251-401-delay--2120 .line::before {
+	animation-delay: -2120ms
+}
+
+.pos-52-69-delay--2100 {
+	left: 69px;
+	top: 52px
+}
+
+.pos-52-69-delay--2100 .line,.pos-52-69-delay--2100 .line::before {
+	animation-delay: -2100ms
+}
+
+.pos-203-164-delay--1940 {
+	left: 164px;
+	top: 203px
+}
+
+.pos-203-164-delay--1940 .line,.pos-203-164-delay--1940 .line::before {
+	animation-delay: -1940ms
+}
+
+.pos-0-184-delay--1130 {
+	left: 184px;
+	top: 0px
+}
+
+.pos-0-184-delay--1130 .line,.pos-0-184-delay--1130 .line::before {
+	animation-delay: -1130ms
+}
+
+.pos-76-553-delay--1110 {
+	left: 553px;
+	top: 76px
+}
+
+.pos-76-553-delay--1110 .line,.pos-76-553-delay--1110 .line::before {
+	animation-delay: -1110ms
+}
+
+.pos-306-75-delay--1010 {
+	left: 75px;
+	top: 306px
+}
+
+.pos-306-75-delay--1010 .line,.pos-306-75-delay--1010 .line::before {
+	animation-delay: -1010ms
+}
+
+.pos-280-322-delay--950 {
+	left: 322px;
+	top: 280px
+}
+
+.pos-280-322-delay--950 .line,.pos-280-322-delay--950 .line::before {
+	animation-delay: -950ms
+}
+
+.pos-54-106-delay-0 {
+	left: 106px;
+	top: 54px
+}
+
+.pos-54-106-delay-0 .line,.pos-54-106-delay-0 .line::before {
+	animation-delay: 0ms
+}
+
+.pos-0-20-delay-20 {
+	left: 20px;
+	top: 0px
+}
+
+.pos-0-20-delay-20 .line,.pos-0-20-delay-20 .line::before {
+	animation-delay: 20ms
+}
+
+.pos-20-0-delay-60 {
+	left: 0px;
+	top: 20px
+}
+
+.pos-20-0-delay-60 .line,.pos-20-0-delay-60 .line::before {
+	animation-delay: 60ms
+}
+
+.pos-40-46-delay-190 {
+	left: 46px;
+	top: 40px
+}
+
+.pos-40-46-delay-190 .line,.pos-40-46-delay-190 .line::before {
+	animation-delay: 190ms
+}
+
+.pos-57-32-delay-0 {
+	left: 32px;
+	top: 57px
+}
+
+.pos-57-32-delay-0 .line,.pos-57-32-delay-0 .line::before {
+	animation-delay: 0ms
+}
+
+.pos-38-0-delay-10 {
+	left: 0px;
+	top: 38px
+}
+
+.pos-38-0-delay-10 .line,.pos-38-0-delay-10 .line::before {
+	animation-delay: 10ms
+}
+
+.pos-0-38-delay-70 {
+	left: 38px;
+	top: 0px
+}
+
+.pos-0-38-delay-70 .line,.pos-0-38-delay-70 .line::before {
+	animation-delay: 70ms
+}
+
+.pos-17-98-delay-110 {
+	left: 98px;
+	top: 17px
+}
+
+.pos-17-98-delay-110 .line,.pos-17-98-delay-110 .line::before {
+	animation-delay: 110ms
+}
+
+.pos-57-151-delay-130 {
+	left: 151px;
+	top: 57px
+}
+
+.pos-57-151-delay-130 .line,.pos-57-151-delay-130 .line::before {
+	animation-delay: 130ms
+}
+
+
+
+
+.lines {
+	height: 600px;
+	position: relative;
+	top: 50px;
+	width: 700px
+}
+.lines .animated-lines-big {
+	position: absolute;
+	left: 25%;
+	top: -100px
+}
+.lines {
+		left: 50%;
+		height: 350px;
+		transform: translateX(-50%)
+	}
+.lines .animated-lines-big {
+		left: 0;
+		top: -140px;
+		transform: rotate(144deg) scale(0.5)
+	}
+</style>
+<div class="lines">
+  <div class="animated-lines-big">
+    <amp-img noloading="" height="224" src="amp-lines-motions.png">
+    </amp-img>
+    <div class="line-pos pos-306-75-delay--1050"><div class="line line-a"></div></div>
+    <div class="line-pos pos-155-101-delay--5100"><div class="line line-b"></div></div>
+    <div class="line-pos pos-282-62-delay--5090"><div class="line line-c"></div></div>
+    <div class="line-pos pos-255-559-delay--4150"><div class="line line-d"></div></div>
+    <div class="line-pos pos-318-0-delay--4120"><div class="line line-a"></div></div>
+    <div class="line-pos pos-297-268-delay--4050"><div class="line line-e"></div></div>
+    <div class="line-pos pos-353-107-delay--3160"><div class="line line-f"></div></div>
+    <div class="line-pos pos-74-0-delay--3150"><div class="line line-a"></div></div>
+    <div class="line-pos pos-257-312-delay--3120"><div class="line line-d"></div></div>
+    <div class="line-pos pos-207-435-delay--3090"><div class="line line-g"></div></div>
+    <div class="line-pos pos-294-244-delay--2150"><div class="line line-e"></div></div>
+    <div class="line-pos pos-251-401-delay--2120"><div class="line line-g"></div></div>
+    <div class="line-pos pos-52-69-delay--2100"><div class="line line-c"></div></div>
+    <div class="line-pos pos-203-164-delay--1940"><div class="line line-g"></div></div>
+    <div class="line-pos pos-0-184-delay--1130"><div class="line line-b"></div></div>
+    <div class="line-pos pos-76-553-delay--1110"><div class="line line-d"></div></div>
+    <div class="line-pos pos-306-75-delay--1010"><div class="line line-a"></div></div>
+    <div class="line-pos pos-280-322-delay--950"><div class="line line-b"></div></div>
+  </div>
+
+</div>

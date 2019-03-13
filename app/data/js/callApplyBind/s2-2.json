@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"实现继承","content":"<pre><code>function Animal(name){\n  this.name = name;\n  this.showName = function(){\n        alert(this.name);    \n    }    \n}\n\nfunction Cat(name){\n  Animal.apply(this,[name]);    \n}\n\nvar cat = new Cat(\"咕咕\");\ncat.showName();\n\n/*call的用法*/\nAnimal.call(this,name);</code></pre><p><br></p>"}}

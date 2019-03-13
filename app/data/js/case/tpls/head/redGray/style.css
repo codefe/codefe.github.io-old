@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* base style */
+body, div, dl, dt, dd, ul, ol, li,h1, h2, h3, h4, h5, h6, pre, code,form, fieldset, legend, input, button,textarea, p, blockquote, th, td {margin: 0;padding: 0;}
+body {font:13px/1.5 tahoma,arial,Microsoft Yahei;color:#666;}
+fieldset, img {border: 0;}
+:focus {outline: 0;}
+address, caption, cite, code, dfn,em, strong, th, var, optgroup {font-style: normal;font-weight: normal;}
+h1, h2, h3 {font-size: 100%;font-weight: normal;}
+abbr, acronym {border: 0;font-variant: normal;}
+input, button, textarea,select, optgroup, option {font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;}
+code, kbd, samp, tt {font-size: 100%;}
+input, button, textarea, select {*font-size: 100%;}
+ol,ul {list-style: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+caption, th {text-align: left;}
+sup, sub {font-size: 100%;vertical-align: baseline;}
+a{color:#666;}
+a:hover{color:#e4393c;}
+:link, :visited , ins {text-decoration: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+.fl{float:left;}
+.fr{float:right;}
+.tc{text-align:center;}
+/* html5 */
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+/* header */
+.top{background-color:#f7f7f7;height:30px;border-bottom:1px solid #ddd;}
+.logo-search{height:90px;}
+.logo-search h1{display:inline-table;width:340px;}
+.search-box{display:inline-table;margin-top:26px;background-color:#e4393c;padding:3px;}
+.search-box input[type="text"]{width:620px;height:35px;background-color:#fff;border:0;padding-left:20px;}
+.search-box input[type="submit"]{width:80px;background-color:#e4393c;border:0;color:#fff;font-weight:bold;}
+.navbar{background-color: #e4393c;height: 65px;}
+.navbar-icon{width:120px;}
+.navbar-menu li{display: inline-table;}
+.navbar-menu li a{display:block;line-height:65px;padding:0 20px;color:#fff;}
+.navbar-menu li a.cur{background-color: #cd2a2c;}
+/* footer */
+.footer{background-color:#f7f7f7;border-top: 2px solid #ddd;}
+.footer dl{display:inline-table;margin:20px 0;width:25%;border-left:1px solid #ddd;}
+.footer dl:first-child{border-left:0;}
+.footer dt{font-size:20px;}
+.footer dd{display:inline-table;width:40%;margin-top:10px;}
+.footer dd a{
+	border-bottom:1px dotted #ccc; /* #ccc换成链接的颜色 */
+	padding-bottom:1px;  /*这里设置你要空的距离*/
+}
+.footer h3{height:55px;line-height:55px;border-top:1px dotted #ddd;padding:0 10px 0 20px;}
+.footer h3 a{margin-right:10px;}

@@ -1,0 +1,35 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "JavaScript",
+		"name": "正则",
+		"subType": "js-regex",
+		"title": "正则表达式",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "正则表达式(regular expression)描述了一种字符串匹配的模式（pattern），可以用来检查一个串是否含有某种子串、将匹配的子串替换或者从某个串中取出符合某个条件的子串等。",
+		"items": [
+			{"step": "阶段一：语法","item":[
+				{"title":"test,exec,match,replace方法的区别","url":"s1-1"},
+				{"title":"元字符","url":"s1-2"},
+				{"title":"非打印字符","url":"s1-3"},
+				{"title":"特殊字符","url":"s1-4"},
+				{"title":"限定符","url":"s1-5"},
+				{"title":"定位符","url":"s1-6"},
+				{"title":"选择","url":"s1-7"},
+				{"title":"反向引用","url":"s1-8"},
+				{"title":"运算符优先级","url":"s1-9"}
+			]},
+			{"step": "阶段二：匹配规则","item":[
+				{"title":"基本模式匹配","url":"s2-1"},
+				{"title":"字符簇","url":"s2-2"},
+				{"title":"确定重复出现","url":"s2-3"}
+			]},
+			{"step": "阶段三：综合","item":[
+				{"title":"常见表达式示例","url":"s3-1"},
+				{"title":"去除字符串左右两端的空格","url":"s3-2"},
+				{"title":"正则验证固话与手机","url":"s3-3"}
+			]}
+		]
+	}
+}

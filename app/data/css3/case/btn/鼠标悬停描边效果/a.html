@@ -1,0 +1,65 @@
+<style>
+html,body,ul,li,a {
+	margin:0;
+	padding:0;
+}
+ul {
+	list-style:none;
+	margin:150px;
+}
+/* 按钮效果 */
+    .myBtn {
+	padding:20px 40px;
+	font-size:13px;
+	color:#333;
+	text-decoration:none;
+	box-sizing:border-box;
+	position:relative;
+	border:1px solid #e0e0e0;
+	border-radius:3px;
+}
+.myBtn:before,.myBtn:after {
+	box-sizing:border-box;
+	content:'';
+	border:1px solid transparent;
+	border-radius:3px;
+	position:absolute;
+	width:0;
+	height:0;
+}
+.myBtn:before {
+	top:0;
+	left:0;
+	transition:border-color 0s .8s,width .2s .6s,height .2s .4s;
+}
+.myBtn:hover:before {
+	border-top-color:#3db4d8;
+	/* 上边框颜色 */
+      border-right-color:#3db4d8;
+	/* 右边框颜色 */
+      width:100%;
+	height:100%;
+	transition:width .2s,height .2s .2s;
+}
+.myBtn:after {
+	right:0;
+	bottom:0;
+	transition:border-color 0s .4s,width .2s .2s,height .2s;
+}
+.myBtn:hover:after {
+	border-bottom-color:#3db4d8;
+	/* 下边框颜色 */
+      border-left-color:#3db4d8;
+	/* 左边框颜色 */
+      width:100%;
+	height:100%;
+	transition:border-color 0s .4s,width .2s .4s,height .2s .6s;
+}
+
+</style>
+
+<div id="root">
+    <ul>
+        <li><a href="javascript:;" class="myBtn">myBtn</a></li>
+    </ul>
+</div>

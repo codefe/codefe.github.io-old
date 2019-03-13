@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"设置元素为可拖放","content":"<p>首先，为了使元素可拖动，把 draggable 属性设置为 true ：</p><div><blockquote>&lt;p draggable=<span>\"</span><span>true</span><span>\"</span>&gt;&lt;/p&gt;</blockquote></div><p><a href=\"./app/json/html5/drag/case/draggable.html\" target=\"_blank\">查看Demo</a><br></p>"}}

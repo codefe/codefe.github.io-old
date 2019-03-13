@@ -1,0 +1,139 @@
+<style>
+*{margin:0;padding:0;}
+.wrapper { width: 986px; margin: 0 auto; position: relative;}
+#banner { width: 100%; height: 650px; background: #000; overflow: hidden; position: relative; margin-top:40px; }
+#banner_img { display: block; position: relative; }
+#banner_img li { position: absolute; top: 0; left: 0; width: 100%; height: 650px; background-position: center; background-size: cover; display: none; }
+/*设置背景图片-------开始*/
+#banner_img li.item1 { background-image: url(./images/bg01.jpg); display: block; }
+#banner_img li.item2 { background-image: url(./images/bg02.jpg); }
+#banner_img li.item3 { background-image: url(./images/bg03.jpg); }
+#banner_img li.item4 { background-image: url(./images/bg04.jpg); }
+#banner_img li.item5 { background-image: url(./images/bg05.jpg); }
+#banner_img li.item6 { background-image: url(./images/bg06.jpg); }
+#banner_img li.item7 { background-image: url(./images/bg07.jpg); }
+#banner_img li.item8 { background-image: url(./images/bg08.jpg); }
+/*设置背景图片--------结束*/
+#banner_img .ad_img { position: absolute; right: 10px; top: 80px; width: 506px; height: 404px; }
+#banner_img .ad_txt {
+	position: absolute;
+	left: 20px;
+	top: 100px;
+	color: #fff;
+	text-shadow: 1px 1px rgba(51,51,51,0.3);
+	width: 583px;
+	height: 246px;
+}
+#banner_img .item1 .ad_txt {
+	position: absolute;
+	left: 389px;
+	top: 100px;
+	color: #fff;
+	text-shadow: 1px 1px rgba(51,51,51,0.3);
+	width: 583px;
+	height: 246px;
+}
+
+#banner_img .ad_txt h2 { font: bold 36px/60px Microsoft YaHei; }
+#banner_img .ad_txt a { display: block;width:250px; height:55px; line-height:55px; font-size:20px; font-weight:bold; text-align: center;border-radius:3px; background: #f8ff00; color: #000; text-decoration: none; text-shadow: none; }
+#banner_img .ad_txt a:hover{ background:#f3253d; color:#fff;transition:all 0.3s linear; text-decoration:underline;}
+#banner_ctr { position: absolute; width: 990px; height: 122px; margin-left: -480px; left: 50%; bottom: 40px; z-index: 1; }
+#banner_ctr ul { width: 990px; height: 122px; background: url(./images/serv_ico.png) center no-repeat; font-size: 0; line-height: 0; position: relative; }
+#banner_ctr li { display: block; float: left; width: 135px; height: 122px; cursor: pointer; }
+#banner_ctr li.first-item { background: #fff; width: 20px; -webkit-border-radius: 20px 0 0 20px; -moz-border-radius: 20px 0 0 20px; border-radius: 20px 0 0 20px; cursor: default; }
+#banner_ctr li.last-item { background: #fff; width: 20px; -webkit-border-radius: 0 20px 20px 0; -moz-border-radius: 0 20px 20px 0; border-radius: 0 20px 20px 0; cursor: default; }
+#drag_ctr { position: absolute; top: -14px; left: 25px; width: 115px; height: 156px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; bottom: 170px; background: #0084cf; }
+#drag_arrow { position: absolute; top: -14px; left: 20px; width: 137px; height: 156px; background: url(./images/drag_banner_arrow.png) center 14px no-repeat; }
+
+</style>
+<!-- 代码 开始 -->
+<div id="banner">
+	<ul id="banner_img">
+	<li class="item1">
+	<div class="wrapper">
+	<div class="ad_txt">
+    <p style="float:right;"><img src="images/logo.png" /></p>
+	<p style=" float:right; height:93px;"><img src="images/a1.png" /></p>
+	<p style=" float:right; height:113px;"><img src="images/a2.png" /></p><br /><br />
+	<p style="float:right;left: 476px; top:200px;"><a href="javascript:;" onclick="NTKF.im_openInPageChat()">了解2980元修本科</a></p>
+	</div>
+	</div>
+	</li>
+	<li class="item2">
+	<div class="wrapper">
+	<div class="ad_txt">
+    <p style="float:left;"><img src="images/logo.png" /></p>
+	<p style=" float:left; height:93px;"><img src="images/b1.png" /></p>
+	<p style=" float:left; height:113px;"><img src="images/b2.png" /></p><br /><br />
+	<p style="float:left; position: absolute; left:0px; top: 250px;"><a href="javascript:;" onclick="NTKF.im_openInPageChat()">了解1个月集训详情</a></p>
+	</div>
+	</div>
+	</li>
+	<li class="item3">
+	<div class="wrapper">
+	<div class="ad_txt">
+    <p style="float:left;"><img src="images/logo.png" /></p>
+	<p style=" float:left; height:93px;"><img src="images/c1.png" /></p>
+	<p style=" float:left; height:113px;"><img src="images/c2.png" /></p><br /><br />
+	<p style="float:left; position: absolute; left:0px; top: 250px;"><a href="javascript:;" onclick="NTKF.im_openInPageChat()">了解申领居住证详情</a></p>
+	</div>
+	</div>
+	</li>
+	<li class="item4">
+	<div class="wrapper">
+	<div class="ad_txt">
+    <p style="float:left;"><img src="images/logo.png" /></p>
+	<p style=" float:left; height:93px;"><img src="images/d1.png" /></p>
+	<p style=" float:left; height:113px;"><img src="images/d2.png" /></p><br /><br />
+	<p style="float:left; position: absolute; left:0px; top: 220px;"><a href="javascript:;" onclick="NTKF.im_openInPageChat()">了解不过理赔服务</a></p>
+	</div>
+	</div>
+	</li>
+	<li class="item5">
+	<div class="wrapper">
+	<div class="ad_txt">
+    <p style="float:left;"><img src="images/logo.png" /></p>
+	<p style=" float:left; height:156px;"><img src="images/e1.png" /></p>
+	<p style=" float:left; height:108px;"><img src="images/e2.png" /></p><br /><br />
+	<p style="float:left; position: absolute; left:0px; top: 280px;"><a href="javascript:;" onclick="NTKF.im_openInPageChat()">了解上班怎么修本科</a></p>
+	</div>
+	</div>
+	</li>
+	<li class="item6">
+	<div class="wrapper">
+	<div class="ad_txt">
+    <p style="float:left;"><img src="images/logo.png" /></p>
+	<p style=" float:left; height:156px;"><img src="images/f1.png" /></p>
+	<p style=" float:left; height:73px;"><img src="images/f2.png" /></p><br /><br />
+	<p style="float:left; position: absolute; left:0px; top: 280px;"><a href="javascript:;" onclick="NTKF.im_openInPageChat()">了解最新教学法</a></p>
+	</div>
+    </div>
+	</li>
+	<li class="item7">
+	<div class="wrapper">
+	<div class="ad_txt">
+    <p style="float:left;"><img src="images/logo.png" /></p>
+	<p style=" float:left; height:93px;"><img src="images/g1.png" /></p>
+	<p style=" float:left; height:74px;"><img src="images/g2.png" /></p><br /><br />
+	<p style="float:left; position: absolute; left:0px; top: 250px;"><a href="javascript:;" onclick="NTKF.im_openInPageChat()">了解0学费修本科</a></p>
+	</div>
+	</div>
+	</li>
+	</ul>
+	<div id="banner_ctr">
+	<div id="drag_ctr"></div>
+	<ul>
+	  <li>2980</li>
+	  <li>1个月</li>
+	  <li>不过理赔</li>
+	  <li>妙</li>
+	  <li>智能</li>
+	  <li>0学费</li>
+	  <li>0学费</li>
+	</ul>
+	<div id="drag_arrow"></div>
+	</div>
+    </div>
+	<script src="/lib/jquery-2.1.0.js"></script>
+    <script src="fashionfoucs.js"></script>
+    <!-- 代码 结束 -->

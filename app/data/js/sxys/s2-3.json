@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"使用IEEE 标准进行二进制浮点运算产生莫名错","content":"<p>javascript做带小数的计算时，会出现9的循环，以下方法帮助解决。&nbsp;</p><p>第一个参数是需要处理的数值，第二个参数是需要保留的小数位数。自家项目里面就这么用了~</p><pre><code>function round(v,e){ \nvar t=1; \nfor(;e&gt;0;t*=10,e--); \nfor(;e&lt;0;t/=10,e++); \nreturn Math.round(v*t)/t; \n}</code></pre><p><br></p><p>&nbsp;<br></p>"}}

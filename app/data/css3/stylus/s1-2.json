@@ -1,0 +1,7 @@
+{
+	"sta": 1,
+	"data": {
+		"subTitle": "Stylus生成CSS",
+		"content": "<h3>stylus命令行</h3><p>建立一个stylusExample/，再在里面建立 src 目录专门存放 stylus 文件，在里面建立 example.styl 文件。然后在 stylusExample 目录下面执行下面命令</p><pre>$ stylus --compress src/</pre><p>输出compiled src/example.css ，这个时候表示你生成成功了，带上--compress参数表示你生成压缩的CSS文件。</p><pre>$ stylus --css css/example.css css/out.styl <span>CSS转换成styl</span> <br>$ stylus help box-shadow <span>CSS属性的帮助</span><br>$ stylus --css test.css <span>输出基本名一致的.styl文件</span></pre>"
+	}
+}

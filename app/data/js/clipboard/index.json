@@ -1,0 +1,21 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "JavaScript",
+		"name": "clipboard.js",
+		"subType": "js-clipboard",
+		"title": "clipboard – 实现复制文本到剪贴板",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "clipboard.js是一款轻量级的实现复制文本到剪贴板功能的JavaScript插件。通过该插件可以将输入框，文本域，DIV元素中的文本等文本内容复制到剪贴板中。它不依赖flash，使用非常简单。",
+		"arr": "one",
+		"items": [
+			{"title":"浏览器兼容及安装使用与下载","url":"s1"},
+			{"title":"复制文本","url":"s2"},
+			{"title":"剪切文本","url":"s3"},
+			{"title":"从属性中复制","url":"s4"},
+			{"title":"事件","url":"s5"},
+			{"title":"高级参数","url":"s6"}
+		]
+	}
+}

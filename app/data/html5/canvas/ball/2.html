@@ -1,0 +1,71 @@
+<style>
+.index-partners {
+  position: relative;
+  width: 100%;
+  height: 708px;
+  margin-top: 100px;
+  background: #0a406b;
+  overflow: hidden;
+}
+.index-partners canvas {
+  position: absolute;
+  width: 100%;
+  height: 708px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: transparent;
+  transform: scale(1.4, 1.4);
+  -moz-transform: scale(1.4, 1.4);
+  -o-transform: scale(1.4, 1.4);
+  -webkit-transform: scale(1.4, 1.4);
+}
+</style>
+<div class="index-partners"></div>
+<script src="/app/lib/jquery-2.1.0.js"></script>
+<script>
+!function () {
+    function g() {
+        y.width = $(".index-partners").width(), y.height = $(".index-partners").height();
+    }
+
+    function q() {
+        p.clearRect(0, 0, y.width, y.height);
+        var a = [w].concat(j);
+        j.forEach(function (t) {
+            t.x += t.xa, t.y += t.ya, t.xa *= t.x > y.width || t.x < 0 ? -1 : 1, t.ya *= t.y > y.height || t.y < 0 ? -1 : 1, p.beginPath(), p.arc(t.x - 0.5, t.y - 0.5, 3, 0*Math.PI,2*Math.PI), p.fillStyle="#0f507f", p.fill(), p.closePath(), p.beginPath(), p.arc(t.x - 0.5, t.y - 0.5, 10, 0*Math.PI,2*Math.PI), p.strokeStyle="#0f507f", p.stroke(), p.closePath();
+            for (var A = 0; A < a.length; A++) {
+                var i = a[A];
+                if (t !== i && null !== i.x && null !== i.y) {
+                    var z, l = t.x - i.x, B = t.y - i.y, n = l * l + B * B;
+                    n < i.max && (i === w && n >= i.max / 2 && (t.x -= 0.03 * l, t.y -= 0.03 * B), z = (i.max - n) / i.max, p.beginPath(), p.lineWidth = z / .2, p.strokeStyle = "rgba(15,74,119,1)", p.moveTo(t.x, t.y), p.lineTo(i.x, i.y), p.stroke())
+                }
+            }
+            a.splice(a.indexOf(t), 1)
+        }), f(q)
+    }
+
+
+    $(".index-partners").append('<canvas id="canvas_nest"></canvas>');
+
+    var y = document.getElementById("canvas_nest"), p = y.getContext("2d");
+    g(), window.onresize = g;
+    var f = function () {
+        return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (a) {
+                window.setTimeout(a, 1000 / 60)
+            }
+    }(), w = {x: null, y: null, max: 20000};
+    window.onmousemove = function (a) {
+        a = a || window.event, w.x = a.clientX, w.y = a.clientY
+    }, window.onmouseout = function (a) {
+        w.x = null, w.y = null
+    };
+    for (var j = [], s = 0; 80 > s; s++) {
+        var x = Math.random() * y.width, v = Math.random() * y.height, b = 2 * Math.random() - 1, k = 2 * Math.random() - 1;
+        j.push({x: x, y: v, xa: b, ya: k, max: 6000})
+    }
+    setTimeout(function () {
+        q()
+    }, 100)
+}();
+</script>

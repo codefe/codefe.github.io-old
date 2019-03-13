@@ -1,0 +1,19 @@
+<div id="title"></div>
+<script>
+ var hiddenProperty = 'hidden' in document ? 'hidden' :
+     'webkitHidden' in document ? 'webkitHidden' :
+     'mozHidden' in document ? 'mozHidden' : null;
+ var title = document.querySelector('#title');
+ var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+ var onVisibilityChange = function() {
+     if (!document[hiddenProperty]) {
+         title.innerHTML = '回来了';
+         setTimeout(() => {
+             title.innerHTML = 'webpack';
+         }, 2000)
+     } else {
+         title.innerHTML = '去哪了';
+     }
+ }
+ document.addEventListener(visibilityChangeEvent, onVisibilityChange);
+</script>

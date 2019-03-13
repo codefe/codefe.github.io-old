@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"使用CSS3减少图片的使用","content":"<p>减少图片能减少HTTP请求,同时减少页面大小,更容易维护,常用的属性如下:</p><ul><li>linear and radial gradients</li><li>border-radius</li><li>box-shadow</li><li>rgba</li><li>transform</li><li>css mask</li></ul>"}}

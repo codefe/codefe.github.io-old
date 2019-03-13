@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title></title>
+<style> 
+.pic{
+	width:102px;
+	height:102px;
+	animation: myfirst .5s ease-in-out 2s forwards;
+}
+.img1{background:url(front.png);}
+@keyframes myfirst{
+	from {
+		transform: rotateY(180deg);;
+	}
+	to {
+		background: url(back.png);
+		transform: rotateY(0deg);
+	}
+}
+</style>
+</head>
+<body>
+
+<div class="pic img1"></div>
+
+
+</body>
+</html>

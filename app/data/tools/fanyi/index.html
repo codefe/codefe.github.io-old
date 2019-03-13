@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>js翻译工具</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<main class="translate">
+			<header class="t-header">
+				<span class="title">当前翻译语言类型:</span>
+				<span class="result">英语</span>
+				<ul class="lang-panel">
+					<li data-type="en">英语</li>
+					<li data-type="zh">汉语</li>
+					<li data-type="jp">日语</li>
+					<li data-type="kor">韩语</li>
+					<li data-type="fra">法语</li>
+					<li data-type="ru">俄语</li>
+					<li data-type="de">德语</li>
+				</ul>
+			</header>
+			<section class="content">
+				<textarea class="input" placeholder="请输入你要翻译的单词或语句"></textarea>
+				<textarea class="output" placeholder="翻译结果"></textarea>
+			</section>
+			<footer class="t-footer">
+				<button type="button" class="transbtn">翻译</button>
+				<button type="button" class="clear">清除</button>
+			</footer>
+		</main>
+	</body>
+	<!--js引入部分-->
+	<script src="md5.js"></script>
+	<script src="index.js"></script>
+</html>

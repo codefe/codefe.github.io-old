@@ -1,0 +1,27 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "Other",
+		"name":"WebSocket",
+		"subType": "html5-websocket",
+		"title": "WebSocket协议翻译",
+		"author": "网络",
+		"star": "★★★☆☆",
+		"desc": "WebSocket协议实现在受控环境中运行不受信任代码的一个客户端到一个从该代码已经选择加入通信的远程主机之间的全双工通信。用于这个的安全模型是通常由web浏览器使用的基于来源的安全模型。该协议包括一个打开阶段握手、接着是基本消息帧、TCP之上的分层（layered over TCP）。该技术的目标是为需要与服务器全双工通信且不需要依赖打开多个HTTP连接（例如，使用XMLHttpRequest或和长轮询）的基于浏览器应用的提供一种机制。",
+		"arr": "one",
+		"items": [
+			{"title":"引言","url":"s1-1"},
+			{"title":"一致性要求","url":"s1-2"},
+			{"title":"WebSocket URI","url":"s1-3"},
+			{"title":"打开阶段握手","url":"s1-4"},
+			{"title":"数据帧","url":"s1-5"},
+			{"title":"发送和接收数据","url":"s1-6"},
+			{"title":"关闭连接","url":"s1-7"},
+			{"title":"错误处理","url":"s1-8"},
+			{"title":"扩展","url":"s1-9"},
+			{"title":"安全注意事项","url":"s1-10"},
+			{"title":"IANA考虑","url":"s1-11"},
+			{"title":"其他规范使用WebSocket协议","url":"s1-12"}
+		]
+	}
+}

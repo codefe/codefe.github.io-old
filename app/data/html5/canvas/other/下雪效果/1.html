@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>canvas下雪效果</title>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<style>
+* {
+	margin:0;
+	padding:0
+}
+html,body {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background-color:#222;
+}
+#canvas {
+	position:absolute;
+	top:0;
+	left:0;
+}
+</style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<img id="imgSnow" width="0" height="0" src="./20180608224803406.png" title="雪花" alt="">
+<img id="bgSnow" width="100%" height="100%" src="./timg.jpg" title="雪花" alt="">
+
+<script>
+window.onload = function() {
+    var canvas = document.getElementById("canvas");
+    var imgSnow = document.getElementById("imgSnow");
+    var bgSnow = document.getElementById("bgSnow");
+    var ctx = canvas.getContext('2d');
+
+    canvas.width = $("body").width();
+    canvas.height = $("body").height();
+
+    var GetRandomNum = function(Min, Max) {
+        var Range = Max - Min;
+        var Rand = Math.random();
+        return (Min + Math.round(Rand * Range));
+    }
+
+    console.log(GetRandomNum(0, canvas.width))
+
+    var snowArray = {}; //雪花对象
+    var snowIndex = 0; //标识符
+    var setting = {
+        num: 30, //数量
+        snowSize: 20, //大小
+        startX: Math.random() * canvas.width, //起始横坐标
+        startY: 0, //起始纵坐标
+        vy: 0.01
+    }
+
+    function snow() {
+        // 起始横坐标
+        this.x = Math.random() * canvas.width;
+        // 起始纵坐标
+        this.y = setting.startY;
+        this.size = setting.snowSize + Math.random() * 10 - 10;
+
+        //横坐标偏移量
+        this.vx = Math.random() * 3 - 2; //偏移量
+        //纵坐标偏移量
+        this.vy = Math.random() * 10;
+
+        this.life = 0;
+        this.maxLife = 100;
+        this.id = snowIndex;
+        //当前信息保存至对象snowArray
+        snowArray[snowIndex] = this;
+
+        snowIndex++;
+    }
+
+    snow.prototype.draw = function() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        this.vy += setting.vy;
+
+
+        this.life++;
+
+        //删除
+        if (this.y > canvas.height * 0.9 - 20) {
+            snowArray[this.id]
+        } else if (this.life >= this.maxLife) {
+            snowArray[this.id]
+        }
+
+        ctx.drawImage(imgSnow, this.x, this.y, this.size, this.size)
+    }
+
+    setInterval(function() {
+        //背景
+        // ctx.fillStyle = "#000";
+        //    			ctx.fillRect(0,0,canvas.width, canvas.height);
+        ctx.drawImage(bgSnow, 0, 0, canvas.width, canvas.height)
+        //地面
+        // ctx.fillStyle='#fff';
+        // ctx.fillRect(0,canvas.height*0.7+20,canvas.width, 2)
+
+
+        //数
+        for (var i = 0; i < setting.num; i++) {
+            if (Math.random() > 0.97) {
+                new snow();
+            }
+        }
+
+        for (var i in snowArray) {
+            snowArray[i].draw();
+        }
+
+    }, 100)
+}
+</script>
+
+</body>
+</html>

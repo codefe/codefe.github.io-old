@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            border: 0;
+        }
+
+        .scrollWrap {
+            margin: 200px auto;
+            width: 800px;
+            position: relative;
+            height: 300px;
+            border: 1px solid #ccc;
+            overflow: hidden
+        }
+
+        .scrollView, .scrollBar, .scrollBtn {
+            overflow: hidden;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 10px;
+        }
+
+        .scrollView {
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            height: auto;
+            box-sizing: border-box;
+            moz-user-select: -moz-none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            -khtml-user-select: none; /* you could also put this in a class */
+            -webkit-user-select: none; /* and add the CSS class here instead */
+            -ms-user-select: none;
+            user-select: none; /**禁止选中文字*/
+        }
+
+        .scrollBar {
+            background-color: #eee;
+            border-radius: 5px;
+        }
+
+        .scrollBtn {
+            border-radius: 5px;
+            background-color: #aaa;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+<div class="scrollWrap" id="scrollWrap">
+    <div class="scrollView" id="scrollView">
+        <p>哈哈哈哈 李 周 吴 郑 王 冯 陈 楮 卫 蒋 沈 韩 杨 朱 秦 尤 许 何 吕 施 张 孔 曹 严 华 金 魏 陶 姜 乐 于 时 傅 皮 卞 齐</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+
+        <p>xxx额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+		<p>哈哈哈哈 李 周 吴 郑 王 冯 陈 楮 卫 蒋 沈 韩 杨 朱 秦 尤 许 何 吕 施 张 孔 曹 严 华 金 魏 陶 姜 乐 于 时 傅 皮 卞 齐</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+        <p>呵呵呵额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平</p>
+
+        <p>xxx额呵呵 水 窦 章 云 苏 潘 葛 奚 范 彭 郎 鲁 韦 昌 马 苗 凤 花 方 俞 任 袁 柳 酆 鲍 史 唐 伍 余 元 卜 顾 孟 平over</p>
+    </div>
+    <div class="scrollBar" id="scrollBar">
+        <span class="scrollBtn" id="scrollBtn"></span>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    (function () {
+
+        function Scroll(scrollWrap, scrollView, scrollBar, scrollBtn, scrollList) {
+            this.scrollWrap = document.getElementById(scrollWrap);
+            this.scrollView = document.getElementById(scrollView);
+            this.scrollBar = document.getElementById(scrollBar);
+            this.scrollBtn = document.getElementById(scrollBtn);
+            this.scrollList = document.getElementById(scrollList);
+        }
+
+        Scroll.prototype.setScroll = function () {
+            var _this = this,
+                    scrollWrapHeight = _this.scrollWrap.offsetHeight,                             // 获取父级容器高度值；
+                    scrollViewH = _this.scrollView.offsetHeight,                                // 获取滚动页面的高度
+                    scrollBarH = _this.scrollBar.offsetHeight,                                     // 获取滚动槽的高度
+                    wrapTopH = _this.scrollWrap.offsetTop,                                         // 获取body容器到父级容器的高度值；
+                    scrollBtnH = scrollWrapHeight * scrollBarH / scrollViewH;
+            // 给滑动按钮设置最小高度
+            if (scrollBtnH <= 40) {
+                scrollBtnH = 40;
+            } else if (scrollBtnH >= scrollBarH) {
+                scrollBtnH = 0;
+                _this.scrollBar.style.display = 'none';
+                _this.scrollView.style.paddingRight = 0;
+            }
+            // 动态设置滑动按钮的高度
+            _this.scrollBtn.style.height = scrollBtnH + 'px';
+            //    console.log('滑动按钮高度 ' + scrollBtnH + 'px');
+            // 鼠标点击事件
+            var defaults = {
+                addEvent: function (event) {
+                    var event = event || window.event;
+                    var touchPageY = event.pageY - wrapTopH;
+                    if (touchPageY < scrollBtnH / 2) {
+                        touchPageY = scrollBtnH / 2;
+                    } else if (touchPageY > (scrollBarH - scrollBtnH / 2)) {
+                        touchPageY = (scrollBarH - scrollBtnH / 2);
+                    }
+                    if (scrollBtnH == 0) {
+                        touchPageY = 0;
+                    }
+
+                    //保持滑块中心滚动 touchPageY - scrollBtnH/2
+                    _this.scrollBtn.style.top = touchPageY - scrollBtnH / 2 + 'px';
+                    _this.scrollView.style.top = -(touchPageY - scrollBtnH / 2) * (scrollViewH - scrollBarH) / (scrollBarH - scrollBtnH) + 'px';
+                },
+                scrollFunc: function (event) {
+                    var scrollTop = _this.scrollBtn.offsetTop;
+                    var btnTop = 0;  // 滑块top值
+                    if (event.wheelDelta) {//IE/Opera/Chrome
+                        if (event.wheelDelta > 0) {
+                            btnTop = scrollTop - 50;  // 设定每次滚轮移动 50px
+                            if (btnTop < 0) {
+                                btnTop = 0;
+                            }
+                        } else {
+                            btnTop = scrollTop + 50;
+                            if (btnTop > (scrollBarH - scrollBtnH)) {
+                                btnTop = (scrollBarH - scrollBtnH);
+                            }
+                        }
+                    } else if (event.detail) {//Firefox
+                        if (event.detail > 0) {
+                            btnTop = scrollTop + 50;
+                            if (btnTop > (scrollBarH - scrollBtnH)) {
+                                btnTop = (scrollBarH - scrollBtnH);
+                            }
+
+                        } else {
+                            btnTop = scrollTop - 50;
+                            if (btnTop < 0) {
+                                btnTop = 0;
+                            }
+                        }
+                    }
+                    _this.scrollBtn.style.top = btnTop + 'px';
+                    _this.scrollView.style.top = -btnTop * (scrollViewH - scrollBarH) / (scrollBarH - scrollBtnH) + 'px';
+                }
+            };
+            // 监听鼠标点击
+            _this.scrollBtn.onmousedown = function () {
+                document.onmousemove = function (event) {
+                    defaults.addEvent(event);
+                }
+            };
+            document.onmouseup = function () {
+                document.onmousemove = null;
+            };
+            _this.scrollBar.onclick = function (event) {
+                defaults.addEvent(event);
+            };
+
+            // 滚轮事件
+            if (document.addEventListener) {
+                document.addEventListener('DOMMouseScroll', defaults.scrollFunc, false);
+            }//W3C
+            _this.scrollList.onmousewheel = defaults.scrollFunc;//IE/Opera/Chrome/Safari
+			//window.onmousewheel = defaults.scrollFunc; //IE、chrome、safira
+
+        };
+
+		if (document.addEventListener) {
+			document.addEventListener("DOMContentLoaded", function () {
+				var scroller = new Scroll('scrollWrap', 'scrollView', 'scrollBar', 'scrollBtn', 'scrollView');
+				scroller.setScroll();
+			});
+		}else if(document.attachEvent) {
+			doScroll();
+		}
+		
+		function doScroll(){
+			try{
+				document.documentElement.doScroll('left');
+			}catch(error){
+				return setTimeout(doScroll,20);
+			}
+			var scroller = new Scroll('scrollWrap', 'scrollView', 'scrollBar', 'scrollBtn', 'scrollView');
+			scroller.setScroll();
+		}
+		
+    })();
+
+</script>

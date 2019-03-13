@@ -1,0 +1,33 @@
+<style>
+.school-zhuan{background: #fff;text-align: center;cursor: pointer;}
+.school-zhuan a{text-decoration: none;color: #666;transition: all 1s ease ;display: inline-block;width: 150px;height: 100px;padding-top:50px;}
+.school-zhuan i{position:absolute;top:0px;left:76px;}
+.typing_loader{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    animation: typing 1s linear infinite alternate;
+    margin: 35px auto;
+}
+@keyframes typing{
+   0%{
+        background-color: rgba(138,138,138, 1);
+        box-shadow: 12px 0px 0px 0px rgba(138,138,138,0.2), 
+                    24px 0px 0px 0px rgba(138,138,138,0.2);
+      }
+    25%{ 
+        background-color: rgba(138,138,138, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(138,138,138,2), 
+                    24px 0px 0px 0px rgba(138,138,138,0.2);
+    }
+    75%{ background-color: rgba(138,138,138, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(138,138,138,0.2), 
+                    24px 0px 0px 0px rgba(138,138,138,1);
+      }
+}
+</style>
+<span class="school-zhuan">
+	<a href="http://www.tongyi.com/elite">
+		<i class="typing_loader"></i>更多
+	</a>
+</span>

@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"创建一个缓存对象","content":"<p>创建一个缓存对象的方法是使用<code>caches.open()</code>，并传入缓存的名称：&nbsp;</p><p><pre><code>caches.open('test-cache').then(function(cache) {</span><br></p>  // 缓存创建完成，现在就可以访问了\n});</code></pre><p>这个caches.open方法返回一个Promise，其中的cache对象新创建出来，如果是以前创建过，就不重新创建。</p>"}}

@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"逻辑判断优化","content":"<p>switch语句。</p><ul><li>若有一系列复杂的<code>if-else</code>语句，可以转换成单个<code>switch</code>语句则可以得到更快的代码，还可以通过将<code>case</code>语句按照最可能的到最不可能的顺序进行组织，来进一步优化。</li></ul>"}}

@@ -1,0 +1,23 @@
+<style>
+@keyframes spin {
+            to{transform:rotate(.5turn);}
+        }
+        @keyframes bg {
+            50%{background: #655;}
+        }
+        .pie{width: 200px;height: 200px;background-color: yellowgreen;margin: 50px auto;border-radius: 50%;
+            background-image: linear-gradient(to right,transparent 50%, #655 0);
+            box-shadow: 25px 0 25px -25px black,
+                        -25px 0 25px -25px black;
+        }
+        .pie:before{
+            content: '';display: block;margin-left: 50%;height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background-color: inherit;
+            transform-origin:left;
+            animation: spin 3s linear infinite,
+                        bg 6s step-end infinite;
+        }
+</style>
+
+<div class="pie"></div>

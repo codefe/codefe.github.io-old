@@ -1,0 +1,23 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "实例演示",
+		"name": "CSS3",
+		"subType": "case/css/line",
+		"title": "纯CSS波浪线效果",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "",
+		"arr": "one",
+		"items": [
+			{"title":"不停滚动的波浪线效果1","url":"/app/data/css3/case/line/1/a.html","flag":"true"},
+			{"title":"不停滚动的波浪线效果2","url":"/app/data/css3/case/line/2/a.html","flag":"true"},
+			{"title":"不停滚动的波浪线效果3","url":"/app/data/css3/case/line/3/a.html","flag":"true"},
+			{"title":"绿色条纹css3进度条代码","url":"/app/data/css3/case/line/绿色条纹css3进度条代码.html","flag":"true"},
+			{"title":"超棒水平线","url":"/app/data/css3/case/line/超棒水平线.html","flag":"true"},
+			{"title":"底部阴影线","url":"/app/data/css3/case/line/底部阴影线.html","flag":"true"}
+			
+			
+		]
+	}
+}

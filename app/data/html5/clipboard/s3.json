@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"处理粘贴事件","content":"<p>有计划推出检测剪贴板更改的新事件，但现在最好使用“粘贴”事件。它很适合用于阅读剪贴板文本的新异步方法：&nbsp;</p><pre><code>document.addEventListener('paste', event =&gt; {\n  event.preventDefault();\n  navigator.clipboard.readText().then(text =&gt; {\n    console.log('Pasted text: ', text);\n  });\n});</code></pre><p><br></p><p>&nbsp;<br></p>"}}

@@ -1,0 +1,7 @@
+{
+	"sta": 1,
+	"data": {
+		"subTitle": "Stylus安装与特征",
+		"content": "<p>全局安装，安装之前你需要你安装 nodejs 这个怎么安装搜去哦。</p><pre>$ npm install stylus -g</pre><p>Stylus的特征</p><ul><li>冒号可选</li><li>分号可选</li><li>逗号可选</li><li>括号可选</li><li>变量</li><li>插值</li><li>混合书写</li><li>算术</li><li>强制类型转换</li><li>动态导入</li><li>条件</li><li>迭代</li><li>嵌套选择</li><li>父级参考</li><li>变量函数调用</li><li>词法作用域</li><li>内置函数(>25)</li><li>内部语言函数</li><li>压缩可选</li><li>图像内联可选</li><li>可执行Stylus</li><li>健壮的错误报告</li><li>单行和多行注释</li><li>CSS字面量</li><li>字符转义</li><li>TextMate捆绑</li><li>以及其他更多</li></ul>"
+	}
+}

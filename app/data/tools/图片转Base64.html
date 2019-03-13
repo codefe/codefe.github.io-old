@@ -1,0 +1,117 @@
+<style>
+.form-control {
+    height: auto;
+	overflow: auto;
+	outline:0;
+	font-family: inherit;
+	display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	box-sizing: border-box;
+	white-space: pre-wrap;
+    word-wrap: break-word;
+}
+#btn {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	box-sizing: border-box;
+}
+.btn-success {
+    background-image: -webkit-linear-gradient(top,#5cb85c 0,#419641 100%);
+    background-image: -o-linear-gradient(top,#5cb85c 0,#419641 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#5cb85c),to(#419641));
+    background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: #3e8f3e;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
+	color: #fff;
+    background-color: #5cb85c;
+}
+#btn input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+input[type=file] {
+    display: block;
+}
+</style>
+<textarea id="base64Show" class="form-control" rows="15" onFocus="this.select()">
+# 图片在线转换为Base64
+# 移动开发、HTML5开发、必备的DataURI工具
+# 支持 PNG、GIF、JPG 等格式
+</textarea>
+  <div class="text-center" style="padding:10px 0">
+    <div class="btn btn-success" id="btn">编码本地图片
+      <input type="file" name="file" onchange="showPreview(this)" accept="image/gif,image/jpeg,image/jpg,image/png" />
+    </div>
+    <input type="button" value="清空" id="clearBase64" class="btn btn-warning">
+  </div>
+  <img id="img" src="" style="display:none"> </div>
+<script>
+/*
+ @ Name：html5 图片转base64
+*/
+document.getElementById('clearBase64').onclick=function(){
+	document.getElementById('base64Show').value='';	
+}
+function showPreview(source) {
+	if(window.FileReader) {
+		var file=source.files[0];
+		if(!/image\/\w+/.test(file.type)){
+			alert('您选择的'+file.name+'不是图片');
+			return
+		}
+		var fr = new FileReader();
+		fr.onloadend = function(e) {
+			document.getElementById('base64Show').value=this.result;
+			document.getElementById('img').src=this.result;
+			document.getElementById('img').style.display='block';
+		}
+		fr.readAsDataURL(file);	
+	}else{
+		alert('必须在支持html5的浏览器下才能运行')	
+	}
+}
+</script> 

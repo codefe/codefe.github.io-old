@@ -1,0 +1,17 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "HTML5",
+		"name": "Battery",
+		"subType": "html5-battery",
+		"title": "获取电池状态的方法",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "从Mozilla Aurora 11起，火狐浏览器里实现了一些新功能，其中一个就是对电池状态接口的基本实现。这个很简单的接口能提供你关于电池当前电量，是否在充电等信息，以及一些电池状态变化事件。",
+		"arr": "one",
+		"items": [
+			{"title":"基本用法","url":"s1"},
+			{"title":"最新Promises用法","url":"s2"}
+		]
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "实例演示",
+		"name": "JavaScript",
+		"subType": "case/js/tpls",
+		"title": "模板特效实例演示",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "",
+		"items": [
+			{"step": "头部模板","item":[
+				{"title":"红色头部与灰色底部模板","url":"/app/data/js/case/tpls/head/redGray/a.html","flag":"true"},
+				{"title":"纯CSS导航效果","url":"/app/data/js/case/tpls/head/menudrop/a.html","flag":"true"},
+				{"title":"纯CSS蓝色下拉导航效果","url":"/app/data/js/case/tpls/head/menubluedrop/a.html","flag":"true"},
+				{"title":"纯CSS左侧导航效果","url":"/app/data/js/case/tpls/head/menuLeftdrop/a.html","flag":"true"},
+				{"title":"绿色头部","url":"/app/data/js/case/tpls/head/绿色头部/a.html","flag":"true"}
+			]},
+			{"step": "右侧导航","item":[
+				{"title":"左侧工具栏CSS实现","url":"/app/data/js/case/tpls/rnav/a.html","flag":"true"}
+			]},
+			{"step": "网页模板","item":[
+				{"title":"蓝色模板","url":"/app/data/js/case/tpls/page/蓝色模板/a.html","flag":"true"}
+			]},
+			{"step": "表单","item":[
+				{"title":"自适应的占位符效果","url":"/app/data/js/case/tpls/form/自适应的占位符效果.html","flag":"true"},
+				{"title":"input效果","url":"/app/data/js/case/tpls/form/input效果.html","flag":"true"},
+				{"title":"滑块手机向右滑动验证登录效果","url":"/app/data/js/case/tpls/form/滑块手机向右滑动验证登录效果/a.html","flag":"true"}
+			]},
+			{"step": "弹窗","item":[
+				{"title":"CSS3兼容移动端提示框弹窗","url":"/app/data/js/case/tpls/dialog/CSS3兼容移动端提示框弹窗/a.html","flag":"true"},
+				{"title":"3d翻转提示框","url":"/app/data/js/case/tpls/dialog/3d翻转提示框/a.html","flag":"true"}
+			]},
+			{"step": "综合实例","item":[
+				{"title":"答题卡片抽取切换动画","url":"/app/data/js/case/tpls/答题卡片抽取切换动画/a.html","flag":"true"},
+				{"title":"圆形倒计时滚动条效果","url":"/app/data/js/case/tpls/圆形倒计时滚动条效果/a.html","flag":"true"},
+				{"title":"自定义输入表单的自然语言界面","url":"/app/data/js/case/tpls/自定义输入表单的自然语言界面/a.html","flag":"true"}
+			]}
+		]
+	}
+}

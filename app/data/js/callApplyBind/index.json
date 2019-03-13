@@ -1,0 +1,28 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "JavaScript",
+		"name": "面向对象OOP",
+		"subType": "js-callApplyBind",
+		"title": "浅谈JavaScript中的apply/call/bind和this的使用",
+		"author": "网络",
+		"star": "★★★★☆",
+		"desc": "apply/call/bind三者的联系就在于，都可以用来改变函数中 this 指向的值，且第一个参数为要指向的 this 的值，apply的第二个参数（或 bind 与 call 的不定参数）为要传入的参数。",
+		"items": [
+			{"step": "阶段一：基础","item":[
+				{"title":"apply","url":"s1-1"},
+				{"title":"call","url":"s1-2"},
+				{"title":"bind","url":"s1-3"}
+			]},
+			{"step": "阶段二：进阶","item":[
+				{"title":"基本用法","url":"s2-1"},
+				{"title":"实现继承","url":"s2-2"},
+				{"title":"多重继承","url":"s2-3"},
+				{"title":"apply的一些其他巧妙用法","url":"s2-4"}
+			]},
+			{"step": "阶段三：实例","item":[
+				{"title":"实例讲解call,apply,bind方法","url":"s3-1"}
+			]}
+		]
+	}
+}

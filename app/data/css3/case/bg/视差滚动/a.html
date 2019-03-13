@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>视差滚动</title>
+
+<style type="text/css">
+body, html {height: 100%;}
+*{ margin:0; padding:0;list-style-type:none;}
+p{font-size:60px; font-weight:bold; line-height:80px; text-align:center; color:#FFF;  padding:20px 0;}
+
+.main_content{ height:100%; position:relative; z-index:1;}
+.fixed_bg{ background-attachment:fixed;}
+.fixed_bg{ width:100%; background-position:center center; background-repeat:no-repeat; background-size:cover; min-height:100%; position:relative; z-index:1;}
+.bg_1{ background-image:url(img/cd-background-1.jpg);}
+.bg_2{ background-image:url(img/cd-background-2.jpg);}
+.bg_3{ background-image:url(img/cd-background-1.jpg);}
+.bg_4{ background-image:url(img/cd-background-4.jpg);}
+.scroll_bg{ min-height:100%; position:relative; z-index:2;}
+.color_1{ background-color:#99a478;}
+.color_2{ background-color:#3d3536; }
+.color_3{ background-color:#99a478;}
+</style>
+
+</head>
+
+<body>
+
+<main class="main_content">
+	<div class="fixed_bg bg_1">
+    	<p>图片背景第一页</p>
+    </div>
+    <div class="scroll_bg color_1">
+    	<p>色块背景第一页</p>
+    </div>
+    <div class="fixed_bg bg_2">
+    	<p>图片背景第二页</p>
+    </div>
+    <div class="scroll_bg color_2">
+    	<p>色块背景第二页</p>
+    </div>
+    <div class="fixed_bg bg_3">
+    	<p>图片背景第三页</p>
+    </div>
+    <div class="scroll_bg color_3">
+    	<p>色块背景第三页</p>
+    </div>
+    <div class="fixed_bg bg_4">
+    	<p>图片背景第四页</p>
+    </div>
+</main>
+
+</body>
+</html>

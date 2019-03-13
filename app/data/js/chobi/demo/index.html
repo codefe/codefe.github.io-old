@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>chobi.js-轻量级客户端图片处理js插件</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>chobi.js-轻量级客户端图片处理js插件</h1>
+		</header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Chobi <small>The Image Processing Library</small></h1>
+			      	<hr>
+			      	<span class="btn btn-info" onclick="document.getElementById('image-chooser').click();">Upload Image</span>
+			      	<button class="btn btn-info" onclick="downloadImage()">Download Image</button>
+			      	<div class="alert alert-warning" id="error" style="display:none;">
+					  <strong>Error!</strong> You didn't upload any image yet.
+					</div>
+
+			      	<hr>
+			      	<div class="btn-group" id="filters" style="display:none;">
+			      		<h3>Filters:</h3>
+						<button class="btn btn-success" onclick="loadImage(document.getElementById('image-chooser'))">Reset</button>
+						<button class="btn btn-success" onclick="filter(0)">Black and White</button>
+						<button class="btn btn-success" onclick="filter(10)">Black and White 2</button>
+						<button class="btn btn-success" onclick="filter(1)">Sepia</button>
+						<button class="btn btn-success" onclick="filter(2)">Negative</button>
+						<button class="btn btn-success" onclick="filter(3)">Vintage</button>
+						<button class="btn btn-success" onclick="filter(4)">Cross Process</button>
+						<button class="btn btn-success" onclick="filter(9)">Noise</button>
+						<button class="btn btn-success" onclick="filter(5)">Brightness +1</button>
+						<button class="btn btn-success" onclick="filter(6)">Brightness -1</button>
+						<button class="btn btn-success" onclick="filter(7)">Contrast +1</button>
+						<button class="btn btn-success" onclick="filter(8)">Contrast -1</button>
+						<button class="btn btn-success" onclick="filter(11)">Crayon</button>
+						<button class="btn btn-success" onclick="filter(12)">Cartoonify</button>
+						<button class="btn btn-success" onclick="filter(13)">Vignette</button>
+						<button class="btn btn-warning" onclick="myFilter()">Custom Filter</button>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<input type="file" id="image-chooser" style="display:none" onchange="loadImage(this)">
+			      	<canvas id="canvas" width="600" height="300" class="well"></canvas>
+				</div>
+			</div>
+		</div>
+
+	</div>
+  	<script type="text/javascript" src="src/Chobi.min.js"></script>
+  	<script type="text/javascript">
+	//custom filter
+	function myFilter(){
+	var height = imgObj.imageData.height;
+			//orange
+			for(var i=0;i<imgObj.imageData.width;i++){
+				for(var j=0;j<Math.floor(height/3);j++){
+					var pixel = imgObj.getColorAt(i,j);
+					pixel.red = (255+pixel.red)/2;
+					pixel.green = (165+pixel.green)/2;
+					pixel.blue /= 2;
+					imgObj.setColorAt(i,j,pixel);			
+				}
+			}
+			//white
+			for(var i=0;i<imgObj.imageData.width;i++){
+				for(var j=Math.floor(height/3);j<Math.floor(2*(height/3));j++){
+					var pixel = imgObj.getColorAt(i,j);
+					pixel.red = (255+pixel.red)/2;
+					pixel.green = (255+pixel.green)/2;
+					pixel.blue = (255+pixel.blue)/2;
+					imgObj.setColorAt(i,j,pixel);			
+				}
+			}
+			//green
+			for(var i=0;i<imgObj.imageData.width;i++){
+				for(var j=Math.floor(2*(height/3));j<Math.floor(height);j++){
+					var pixel = imgObj.getColorAt(i,j);
+					pixel.red = (0+pixel.red)/2;
+					pixel.green = (255+pixel.green)/2;
+					pixel.blue = (0+pixel.blue)/2;
+					imgObj.setColorAt(i,j,pixel);			
+				}
+			}
+			imgObj.loadImageToCanvas();
+		}
+
+		var imgObj = null; //global Chobi object
+		function loadImage(elem){
+			//you should probably check if file is image or not before passing it
+			imgObj = new Chobi(elem);
+			imgObj.ready(function(){
+				this.canvas = document.getElementById("canvas");
+				this.loadImageToCanvas();
+
+				//show filters to users
+				document.getElementById("filters").style.display = "block";
+			});
+		}
+
+		function downloadImage(){
+			if(imgObj == null){
+				document.getElementById("error").style.display="block";
+				setTimeout(function(){
+					document.getElementById("error").style.display="none";
+				}, 4000);
+				return;
+			}
+			imgObj.download('demo-image');
+		}
+
+
+		//0 -> Black and white
+		//10 -> Black and white2
+		//1 -> sepia
+		//2 -> negative
+		//3 -> vintage
+		//4 -> crossprocess
+		//5 -> Brightness increase
+		//6 -> Brightness decrease
+		//7 -> Contrast increase
+		//8 -> Contrast decrease
+		//9 -> Noise Effect
+		//11 -> Crayon effect
+		//12 -> Cartoonify
+		//13 -> Vignette
+		//filter chaining is also possible, like imgObj.brightness(-5).sepia().negative();
+		function filter(id){
+			if(imgObj == null){
+				alert("Choose an image first!");
+				return;
+			}
+			if(id==0){
+				imgObj.blackAndWhite();
+			}
+			else if(id==1){
+				imgObj.sepia();
+			}
+			else if(id==2){
+				imgObj.negative();
+			}
+			else if(id==3){
+				imgObj.vintage();
+			}
+			else if(id==4){
+				imgObj.crossProcess();
+			}
+			else if(id==5){
+				imgObj.brightness(1);
+			}
+			else if(id==6){
+				imgObj.brightness(-1);
+			}
+			else if(id==7){
+				imgObj.contrast(1);
+			}
+			else if(id==8){
+				imgObj.contrast(-1);
+			}
+			else if(id==9){
+				imgObj.noise();
+			}
+			else if(id==10){
+				imgObj.blackAndWhite2();
+			}
+			else if(id==11){
+				imgObj.crayon();
+			}
+			else if(id==12){
+				imgObj.cartoon();
+			}
+			else if(id==13){
+				imgObj.vignette();
+			}
+
+
+			imgObj.loadImageToCanvas();
+		}
+	</script>
+</body>
+</html>

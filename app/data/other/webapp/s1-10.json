@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"使用WebSocket代替XHR提供更快交互和更少的带宽","content":"<p>WebSockets是为了Comet而设计的. 使用它实现Comet比XHR确实带来更多的好处.</p>"}}

@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"删除缓存里的数据","content":"<p>从缓存里删除数据，我们可以使用cache对象里的<code>delete()</code>方法：&nbsp;</p><pre><code><p>&nbsp;<span style=\"background-color: rgb(241, 241, 241); white-space: pre-wrap;\">caches.open('test-cache').then(function(cache) {</span><br></p>  cache.delete('/page/1');\n});</code></pre><p><br></p>"}}

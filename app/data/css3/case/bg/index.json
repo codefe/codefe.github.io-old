@@ -1,0 +1,33 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "实例演示",
+		"name": "CSS3",
+		"subType": "case/css/bg",
+		"title": "CSS背景效果",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "",
+		"arr": "one",
+		"items": [
+			{"title":"模糊图片背景","url":"/app/data/css3/case/bg/bg-img.html","flag":"true"},
+			{"title":"背景渐隐切换","url":"/app/data/css3/case/bg/背景渐隐切换/a.html","flag":"true"},
+			{"title":"自动变换的背景色","url":"/app/data/css3/case/bg/bg-color.html","flag":"true"},
+			{"title":"带有动画的背景","url":"/app/data/css3/case/bg/带有动画的背景.html","flag":"true"},
+			{"title":"斜角背景","url":"/app/data/css3/case/bg/斜角背景.html","flag":"true"},
+			{"title":"清爽背景","url":"/app/data/css3/case/bg/清爽背景.html","flag":"true"},
+			{"title":"视频背景1","url":"/app/data/css3/case/bg/video1/a.html","flag":"true"},
+			{"title":"视频背景2","url":"/app/data/css3/case/bg/video2/a.html","flag":"true"},
+			{"title":"视频背景3","url":"/app/data/css3/case/bg/video3/a.html","flag":"true"},
+			{"title":"视频背景4","url":"/app/data/css3/case/bg/video4/a.html","flag":"true"},
+			{"title":"视频背景5","url":"/app/data/css3/case/bg/video5/a.html","flag":"true"},
+			{"title":"视频背景6","url":"/app/data/css3/case/bg/video6/a.html","flag":"true"},
+			{"title":"视频背景7","url":"/app/data/css3/case/bg/video7/a.html","flag":"true"},
+			{"title":"视差滚动","url":"/app/data/css3/case/bg/视差滚动/a.html","flag":"true"},
+			{"title":"滚动背景","url":"/app/data/css3/case/bg/滚动背景/a.html","flag":"true"},
+			{"title":"线条背景","url":"/app/data/css3/case/bg/线条背景.html","flag":"true"},
+			{"title":"纯CSS实现波动动画","url":"/app/data/css3/case/bg/纯CSS实现波动动画.html","flag":"true"}
+			
+		]
+	}
+}

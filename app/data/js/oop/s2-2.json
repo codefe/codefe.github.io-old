@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"静态成员","content":"<pre><code>function Person(name){\n  var age = 100;\n  this.name = name;\n}\n//静态成员\nPerson.walk = function(){\n  console.log('static');\n};\nPerson.walk(); // static</code></pre><p><br></p>"}}

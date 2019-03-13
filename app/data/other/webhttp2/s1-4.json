@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"使用TCP、TLS最佳实践","content":"<p>HTTP请求要经过建立TCP连接这一步，而TCP为了可靠传输，建立连接需要三次握手。如果网站又接入了HTTPS，那还要额外多两次RTT时间以建立安全通道，这样耗费了很多时间。HTTP是建立在TCP、TLS之上，那么TCP的最佳实践，SSL的优化都是适用于HTTP的优化。</p><p>比如TCP慢启动过程非常影响性能的，我们可以把初始窗口调大，让慢启动更快。对于TLS可用缓存session_ticket之类的优化可以减少一次RTT。</p>"}}

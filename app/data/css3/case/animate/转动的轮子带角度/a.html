@@ -1,0 +1,85 @@
+<style>
+.banner{
+	background-color:rgba(0,0,255,.5);
+	height:500px;
+	position:relative;
+}
+.c2{
+	width: 212px;
+	height: 212px;
+	top: 40px;
+	left: 80px;
+	z-index: 6;
+	position: absolute;
+	transform: matrix(1,0,0,.4,0,0);
+}
+.c3{
+	width: 300px;
+	height: 300px;
+	top: 50px;
+	left: 36px;
+	z-index: 4;
+	position: absolute;
+	transform: matrix(1,0,0,.4,0,0);
+}
+.round{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background: url(r_d_7856dac.png) no-repeat;
+	background-size: 300px;
+	animation: clockwise 6s linear infinite;
+	transition: all .3s ease-out;
+}
+.round1{
+	background: url(r_m_c4e7de5.png) no-repeat;
+	background-size: 212px;
+	animation: clockwise 6s linear infinite;
+	position: absolute;
+	width: 212px;
+	height: 212px;
+	transition: all .3s ease-out;
+}
+.round2{
+	background: url(r_m2_c2b4ac9.png) no-repeat;
+	background-size: 212px;
+	animation: counterclockwise 6s linear infinite;
+	position: absolute;
+	width: 212px;
+	height: 212px;
+	transition: all .3s ease-out;
+}
+.round3{
+	background: url(r_m3_2aacaa8.png) no-repeat;
+	background-size: 212px;
+	animation: clockwise 6s linear infinite;
+	position: absolute;
+	width: 212px;
+	height: 212px;
+	transition: all .3s ease-out;
+}
+@keyframes clockwise {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+</style>
+<div class="banner">
+	<div class="c2">
+		<div class="round1"></div>
+		<div class="round2"></div>
+		<div class="round3"></div>
+	</div>
+	<div class="c3">
+		<div class="round"></div>
+	</div>
+</div>

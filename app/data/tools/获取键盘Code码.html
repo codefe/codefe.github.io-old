@@ -1,0 +1,12 @@
+<style>
+#num{ font-size:100px; line-height:100px; margin:50px 0; color:#09F; text-align:center;}
+</style>
+<h2>获取键盘Code码</h2>
+<div id="num">0</div>
+<script>
+	window.onkeydown=function(e){
+		e.preventDefault()
+		e=e||window.event
+		document.getElementById('num').innerHTML=e.keyCode;
+	}
+</script>

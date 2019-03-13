@@ -1,0 +1,20 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "JavaScript",
+		"name": "React",
+		"subType": "js-react",
+		"title": "React使用笔记",
+		"author": "网络",
+		"star": "★★★☆☆",
+		"desc": "React 是一个用于构建用户界面的 JAVASCRIPT 库。 React主要用于构建UI,很多人认为 React 是 MVC 中的 V(视图)。",
+		"items": [
+			{"step": "阶段一：React基础使用","item":[
+				{"title":"阻止多次点击","url":"s1-1"}
+			]},
+			{"step": "阶段二：React进阶","item":[
+				
+			]}
+		]
+	}
+}

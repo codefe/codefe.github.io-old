@@ -1,0 +1,36 @@
+<style>
+#main{height:500px;background-color:#49f;position: relative;overflow:hidden;}
+.bolang1{
+	height: 85px;
+	background: url(./wave1.png) repeat-x;
+	position: absolute;
+    bottom: -2px;
+    width: 400%;
+    left: -236px;
+    z-index: 999;
+	animation: wave1 25s linear .4s infinite normal;
+}
+.bolang2{
+	height: 100px;
+    background: url(./wave2.png) repeat-x;
+	position: absolute;
+    bottom: -2px;
+    width: 400%;
+    left: 0;
+    z-index: 998;
+	animation: wave2 60s linear .4s infinite normal;
+}
+@keyframes wave1{
+	0% {left: -236px;}
+	100% {left: -1233px;}
+}
+@keyframes wave2{
+	0% {left: 0;}
+	100% {left: -1009px;}
+}
+</style>
+
+<div id="main">
+	<div class="bolang1"></div>
+	<div class="bolang2"></div>
+</div>

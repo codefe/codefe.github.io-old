@@ -1,0 +1,31 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "JavaScript",
+		"name": "JS异步",
+		"subType": "js-async",
+		"title": "深入理解JavaScript异步",
+		"author": "王福朋",
+		"star": "★★★★★",
+		"desc": "Javascript语言将任务的执行模式分成两种：同步(Synchronous)和异步(Asynchronous)。[异步模式]非常重要。在浏览器端，耗时很长的操作都应该异步执行，避免浏览器失去响应，最好的例子就是Ajax操作。在服务器端，[异步模式]甚至是唯一的模式，因为执行环境是单线程的，如果允许同步执行所有http请求，服务器性能会急剧下降，很快就会失去响应。",
+		"items": [
+			{"step": "阶段一：基础","item":[
+				{"title":"JS为何会有异步","url":"s1-1"},
+				{"title":"异步的实现原理","url":"s1-2"},
+				{"title":"常用的异步操作","url":"s1-3"},
+				{"title":"异步和事件轮询(event-loop)","url":"s1-4"},
+				{"title":"事件绑定算不算异步？","url":"s1-5"}
+			]},
+			{"step": "阶段二：进阶","item":[
+				{"title":"jquery的解决方案","url":"s2-1"},
+				{"title":"ES6中的Promise","url":"s2-2"},
+				{"title":"ES6中的 Generator","url":"s2-3"},
+				{"title":"ES7中引入async-await","url":"s2-4"},
+				{"title":"整体总结","url":"s2-5"}
+			]},
+			{"step": "阶段三：综合","item":[
+				{"title":"Javascript异步编程的4种方法","url":"s3-1"}
+			]}
+		]
+	}
+}

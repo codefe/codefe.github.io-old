@@ -1,0 +1,65 @@
+<div class="spinner">
+  <div class="ball ball-1"></div>
+  <div class="ball ball-2"></div>
+  <div class="ball ball-3"></div>
+  <div class="ball ball-4"></div>
+</div>
+
+<style>
+.ball {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.ball:before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  margin-left: -50%;
+  margin-top: -50%;
+  left: -100%;
+  
+  animation: position 2s infinite cubic-bezier(.25,0,.75,1), size 2s infinite cubic-bezier(.25,0,.75,1);
+}
+
+.ball-1:before {
+  animation-delay: 0s, -.5s;
+    background: rgba( 242, 80, 34, .75);
+}
+.ball-2:before {
+  animation-delay: -.5s, -1s;
+    background: rgba( 127, 186, 0, .75);
+}
+.ball-3:before {
+  animation-delay: -1s, -1.5s;
+    background: rgba( 255, 185, 1, .75);
+}
+.ball-4:before {
+  animation-delay: -1.5s, -2s;
+    background: rgba( 1, 164, 239, .75);
+}
+
+.spinner {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@keyframes position {
+  50% { 
+    left: 100%;
+  }
+}
+
+@keyframes size {
+  50% {
+    transform: scale(.5,.5);
+  }
+}
+
+
+</style>

@@ -1,0 +1,136 @@
+<style>
+#loading {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #f1f0eb;
+    font-size: 12px;
+}
+#colorfulPulse {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+}
+#colorfulPulse span {
+    display: inline-block;
+    width: 6px;
+    height: 30px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    animation-name: scale;
+    -webkit-animation-name: scale;
+    -moz-animation-name: scale;
+    -ms-animation-name: scale;
+    -o-animation-name: scale;
+    animation-duration: 1.2s;
+    -webkit-animation-duration: 1.2s;
+    -moz-animation-duration: 1.2s;
+    -ms-animation-duration: 1.2s;
+    -o-animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+}
+
+@keyframes scale{
+	0%, 40%, 100% {
+		-moz-transform: scaleY(0.2);
+		-ms-transform: scaleY(0.2);
+		-o-transform: scaleY(0.2);
+		-webkit-transform: scaleY(0.2);
+		transform: scaleY(0.2);
+	}
+	20%, 60% {
+		-moz-transform: scaleY(1);
+		-ms-transform: scaleY(1);
+		-o-transform: scaleY(1);
+		-webkit-transform: scaleY(1);
+		transform: scaleY(1);
+	}
+}
+
+span.item-1 {
+    background: #00ade8;
+}
+.item-1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    -moz-animation-delay: -1s;
+    -ms-animation-delay: -1s;
+    -o-animation-delay: -1s;
+}
+span.item-2 {
+    background: #e22924;
+}
+.item-2 {
+    animation-delay: -0.9s;
+    -webkit-animation-delay: -0.9s;
+    -moz-animation-delay: -0.9s;
+    -ms-animation-delay: -0.9s;
+    -o-animation-delay: -0.9s;
+}
+span.item-3 {
+    background: #abc529;
+}
+.item-3 {
+    animation-delay: -0.8s;
+    -webkit-animation-delay: -0.8s;
+    -moz-animation-delay: -0.8s;
+    -ms-animation-delay: -0.8s;
+    -o-animation-delay: -0.8s;
+}
+span.item-4 {
+    background: #8b97a3;
+}
+.item-4 {
+    animation-delay: -0.7s;
+    -webkit-animation-delay: -0.7s;
+    -moz-animation-delay: -0.7s;
+    -ms-animation-delay: -0.7s;
+    -o-animation-delay: -0.7s;
+}
+span.item-5 {
+    background: #424a5b;
+}
+.item-5 {
+    animation-delay: -0.6s;
+    -webkit-animation-delay: -0.6s;
+    -moz-animation-delay: -0.6s;
+    -ms-animation-delay: -0.6s;
+    -o-animation-delay: -0.6s;
+}
+.item-6 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    -moz-animation-delay: -0.5s;
+    -ms-animation-delay: -0.5s;
+    -o-animation-delay: -0.5s;
+}
+
+.item-7 {
+    animation-delay: -0.4s;
+    -webkit-animation-delay: -0.4s;
+    -moz-animation-delay: -0.4s;
+    -ms-animation-delay: -0.4s;
+    -o-animation-delay: -0.4s;
+}
+</style>
+
+<div id="loading">
+	<div id="colorfulPulse">
+	  <span class="item-1"></span>
+	  <span class="item-2"></span>
+	  <span class="item-3"></span>
+	  <span class="item-4"></span>
+	  <span class="item-5"></span>
+	  <span class="item-6"></span>
+	  <span class="item-7"></span>
+	</div>
+</div>

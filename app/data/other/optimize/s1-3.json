@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"Cookie专题","content":"<p>减少COOKIE的大小。&nbsp;</p><p>使用无COOKIE的域。&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;比如图片CSS等静态文件放在静态资源服务器上并配置单独域名，客户端请求静态文件的时候，减少COOKIE反复传输时对主域名的影响。</p>"}}

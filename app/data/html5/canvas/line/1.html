@@ -1,0 +1,54 @@
+<canvas id="canvas-blue"></canvas>
+<script>
+;(function () {
+	function t() {
+		a = document.getElementById("canvas-blue"),
+		a.width = document.documentElement.clientWidth,
+		a.height = 85,
+		f = a.getContext("2d"),
+		d = a.height,
+		s = a.width,
+		l = Math.floor(d / 2),
+		c = 0,
+		e()
+	}
+	function e() {
+		f.clearRect(0, 0, s, d),
+		o("#eaf4f9", .4, 2, 300),
+		o("#eaf4f9", .6, 1.4, 530),
+		o("#eaf4f9", 1, 2, 0),
+		e.seconds = e.seconds + .003,
+		e.t = e.seconds * Math.PI,
+		setTimeout(e, 35)
+	}
+	function o(t, o, i, a) {
+		f.fillStyle = t,
+		f.globalAlpha = o,
+		f.beginPath(),
+		n(e.t / .5, i, a),
+		f.lineTo(s + 10, d),
+		f.lineTo(0, d),
+		f.closePath(),
+		f.fill()
+	}
+	function n(t, e, o) {
+		var n = void 0,
+		a = t,
+		d = Math.sin(a) / e;
+		for (f.moveTo(c, i * d + l), n = c; s + 10 >= n; n += 10) a = t + ( - c + n) / i / e,
+		d = Math.sin(a - o) / 3,
+		f.lineTo(n, i * d + l)
+	}
+	var i = 100,
+	a = void 0,
+	f = void 0,
+	d = void 0,
+	s = void 0,
+	l = void 0,
+	c = void 0;
+	e.seconds = 0,
+	e.t = 0,
+	t()
+} ()); 
+  
+</script>

@@ -1,0 +1,43 @@
+<style>
+.red{
+	width: 300px;
+	height: 345px;
+	border-radius: 15px;
+	box-shadow: 1px 1px 20px #666;
+	position: fixed;
+	top:50%;
+	left: 50%;
+	overflow: hidden;
+	margin-left: -150px;
+	margin-top: -172px;
+	transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%;
+}
+.red:hover{
+	animation:shake .2s infinite linear;
+}
+.red img{
+	width:100%;
+	height: auto;
+}
+.red.shake{
+	animation:shake .2s infinite linear;
+	-webkit-animation:shake .2s infinite linear;
+}
+@-webkit-keyframes shake {
+	0% {
+		-webkit-transform: rotate(2deg) translate3d(0,0,0)
+	}
+
+	50% {
+		-webkit-transform: rotate(-2deg) translate3d(0,0,0)
+	}
+
+	100% {
+		-webkit-transform: rotate(2deg) translate3d(0,0,0)
+	}
+}
+</style>
+<div class="red">
+	<img src="huangdong.png">
+</div>

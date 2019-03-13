@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>绿色条纹css3进度条代码</title>
+
+<style type="text/css">
+
+.warning {
+	position: absolute;
+	width:100%;height: 5px;
+	background-color: #2187e7;
+    background-image: linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #4cd964);
+	animation: warning-animation 3s infinite linear;
+}
+
+@keyframes warning-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100em 0;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="warning"></div>
+
+</body>
+</html>

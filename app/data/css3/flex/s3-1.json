@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"order属性","content":"<p><code>order</code>属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。</p><pre><code><span>.item </span><span>{</span>\n  <span>order</span><span>:</span> <span>&lt;</span>integer&gt;<span>;</span>\n<span>}</span>\n</code></pre><p><img src=\"/app/data/css3/flex/img/bg2015071013.png\" alt=\"\" title=\"\"></p>"}}

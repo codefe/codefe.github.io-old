@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>  
+<style>  
+
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+	border-left:1px solid #ddd;
+	border-top:1px solid #ddd;
+	background:#fff;
+	width:90%;
+	margin:40px;
+} 
+
+th,td{
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	padding:10px 15px;
+	font-size:12px;
+	overflow:hidden;
+}  
+th{
+	font-weight:bold;
+	background:#eee;
+	padding:0;
+}
+
+.biaotou {
+	width: 100px;
+	height: 40px;
+	position: relative;
+	overflow:hidden;
+}
+
+.biaotou:before {
+	position: absolute;
+	top: 0px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	border-bottom: 40px solid #bbb;
+	border-right: 100px solid transparent;
+	content: "";
+}
+
+.biaotou:after {
+	position: absolute;
+	left: 0;
+	right: 1px;
+	top: 1px;
+	bottom: 0;
+	border-bottom: 39px solid #eee;
+	border-right: 99px solid transparent;
+	content: "";
+}
+
+.biaotou b{font-style:normal;position:absolute;top:5px;left:60px;z-index:2;} 
+.biaotou em{font-style:normal;position:absolute;top:20px;left:10px;z-index:2;} 
+
+</style>  
+</head>  
+<body> 
+<table>   
+	<thead> 
+		<tr>
+			<th width="100">
+				<div class="biaotou">
+					<b>类别</b>
+					<em>姓名</em> 
+				</div>
+			</th>
+			<th>网址</th>
+			<th>时间</th>
+		</tr> 
+	</thead> 
+	<tbody> 
+		<tr>
+			<td>百度</td>
+			<td>http://www.baidu.com</td>
+			<td>2017.03.07</td>
+		</tr>
+		<tr>
+			<td>百度</td>
+			<td>http://www.baidu.com</td>
+			<td>2017.03.07</td>
+		</tr>
+		<tr>
+			<td>百度</td>
+			<td>http://www.baidu.com</td>
+			<td>2017.03.07</td>
+		</tr>
+
+	</tbody> 
+</table> 
+
+</body>  
+</html>  

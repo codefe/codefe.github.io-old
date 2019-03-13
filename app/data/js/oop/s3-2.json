@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"方法重写","content":"<pre><code>function F(){}\nvar f = new F();\nF.prototype.run = function(){\n  console.log('F');\n}\nf.run(); // F\n \nf.run = function(){\n  console.log('fff');\n}\nf.run(); // fff</code></pre><p><br></p>"}}

@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"eval优化","content":"<p><!--StartFragment-->避免<code>eval</code>：<!--EndFragment--></p><ul><li><code>eval</code>会在时间方面带来一些效率，但也有很多缺点。<ul><li><code>eval</code>会导致代码看起来更脏。</li><li><code>eval</code>会需要消耗大量时间。</li><li><code>eval</code>会逃过大多数压缩工具的压缩</li></ul></li></ul>"}}

@@ -1,0 +1,25 @@
+{
+	"sta": 1,
+	"data": {
+		"type": "实例演示",
+		"name": "CSS3",
+		"subType": "case/css/loader",
+		"title": "CSS动画加载效果",
+		"author": "网络",
+		"star": "★★★★★",
+		"desc": "",
+		"arr": "one",
+		"items": [
+			{"title":"乐视加载","url":"/app/data/css3/case/loader/leLoader.html","flag":"true"},
+			{"title":"N个圈加载","url":"/app/data/css3/case/loader/loading.html","flag":"true"},
+			{"title":"3个点加载","url":"/app/data/css3/case/loader/3个点加载.html","flag":"true"},
+			{"title":"弧线变色加载","url":"/app/data/css3/case/loader/弧线变色加载.html","flag":"true"},
+			{"title":"多条弧线变色加载","url":"/app/data/css3/case/loader/多条弧线变色加载.html","flag":"true"},
+			{"title":"2条弧线加文字加载","url":"/app/data/css3/case/loader/2条弧线加文字加载.html","flag":"true"},
+			{"title":"4色交叉加载","url":"/app/data/css3/case/loader/4色交叉加载.html","flag":"true"},
+			{"title":"windows loading","url":"/app/data/css3/case/loader/windows loading.html","flag":"true"},
+			{"title":"彩色loading","url":"/app/data/css3/case/loader/彩色loading.html","flag":"true"},
+			{"title":"霓虹彩色数据loading加载动画","url":"/app/data/css3/case/loader/霓虹彩色数据loading加载动画.html","flag":"true"}
+		]
+	}
+}

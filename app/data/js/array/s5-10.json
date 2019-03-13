@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"Array.remove() 数组删除","content":"<p>下面的代码主要是实现了，删除数组中指定的值。&nbsp;</p><pre><code>Array.prototype.remove = function(b) { \nvar a = this.indexOf(b); \nif (a &gt;= 0) { \nthis.splice(a, 1); \nreturn true; \n} \nreturn false; \n};</code></pre><p>以后使用过程中，就可以直接利用这个函数，删除数组中的值了。</p><p>&nbsp;<br></p>"}}

@@ -1,0 +1,1 @@
+﻿{"sta":1,"data":{"subTitle":"删除左右两端的空格","content":"<p>代码如下：</p><pre><code>function trim(s){\n\treturn s.replace(/(^\\s*)|(\\s*$)/g, \"\");\n}</code></pre><p><br></p>"}}

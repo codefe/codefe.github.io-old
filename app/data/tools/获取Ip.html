@@ -1,0 +1,18 @@
+<div id="ip"></div>
+<div id="code"></div>
+<script src="/app/lib/jquery-2.1.0.js"></script>
+<script>
+$(function(){
+	//ªÒ»°ip ajax
+	$.ajax({
+	    url: 'http://freegeoip.net/json/',
+	    success: function(data){
+	       console.log(JSON.stringify(data.ip));
+	       $('#ip').html(JSON.stringify(data.ip))
+		   $('#code').html(JSON.stringify(data))
+	    },
+	    type: 'GET',
+	    dataType: 'JSON'
+	});
+})
+</script>
