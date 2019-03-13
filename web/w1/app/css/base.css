@@ -1,0 +1,43 @@
+@charset "utf-8";
+html,body {font:16px/2 'Microsoft Yahei',arial,sans-serif;color: #666;-webkit-user-select: none;-moz-user-select: none;user-select:none;background-color:#fff;}
+html,body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+header,footer,article,aside,details,figcaption,figure,hgroup,main,menu,nav,section,summary {display: block;}
+ol,ul,li,dl{list-style:none;}
+img{border:0;display: inline-table;vertical-align: middle;}
+a,input{text-decoration:none;outline:none;color:rgba(79,170,251,.9);}
+*,*:before,*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.tc{text-align:center;}
+.tgray{color:#bbb;}
+.cls{zoom:1;}
+.cls:after{clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
+/* margin padding */
+.m20{margin:20px;}
+.m30{margin:30px;}
+.mt30{margin-top:30px;}
+.mlr30{margin-left:30px;margin-right:30px;}
+.warp{margin:20px auto 0;width:1200px;}
+/* btn */
+.btn{
+	border-radius: 2px;white-space: nowrap;border: 1px solid transparent;color: rgba(255,255,255,.9);
+	outline: 0 none;cursor: pointer;display: inline-block;font-size: 14px;line-height: 1.42857;padding: 6px 12px;vertical-align: middle;
+}
+.btn:hover{opacity: .8;}
+.btn:active{opacity: 1;}
+.btn-danger   {background-color: #f05050;border-color: #f05050;}
+.btn-success {background-color: #27c24c;border-color: #27c24c;}
+.btn-info       {background-color: #23b7e5;border-color: #23b7e5;}
+/* 图片自适应 */
+.zoomImg{
+	display:inline-table;
+	width:0;
+    height:100%;
+    padding-right: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+	overflow:hidden;
+}

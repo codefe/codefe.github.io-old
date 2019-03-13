@@ -1,0 +1,70 @@
+/*管理中心*/
+#top-nav{position:fixed; left:0; top:0;width:100%;height:54px;background:url(../images/ucms.png) no-repeat right -260px #F5F5F5;border-bottom:1px solid #DDDDDD;border-top:4px solid #666;}
+#headerBox{float:right;margin-right:20px;line-height:50px;}
+#headerBox img{float:right;width:35px;height:35px;margin:5px 0 0 10px;-moz-border-radius:35px;-webkit-border-radius:35px;border-radius:35px;border:2px solid #ddd;}
+#leftbox{position:fixed; left:0; top:4px; height:100%;width:90px;background:#F5F5F5; border-right:1px solid #DDDDDD;}
+#mainContent{ overflow:auto; margin:51px 0px 20px 91px;}
+#leftbox li{line-height:120%;padding:5px 0;border-bottom:1px solid #ddd;text-align:center;}
+#leftbox li a i{display:inline-block;width:20px;height:20px;background:url(../images/ucms.png) no-repeat #bbb;-moz-border-radius:20px;-webkit-border-radius:20px;border-radius:20px;transition:All 0.4s ease-in-out; webkit-transition:All 0.4s ease-in-out; -moz-transition:All 0.4s ease-in-out; -o-transition:All 0.4s ease-in-out;}
+#leftbox li a:hover i{background:url(../images/ucms.png) no-repeat #09f;}
+#leftbox li a:hover i {transform:rotateX(360deg);-ms-transform:rotateY(360deg);-moz-transform:rotateY(360deg);	-webkit-transform:rotateY(360deg);-o-transform:rotateY(360deg);}
+#leftbox h1{height:50px;border-bottom:1px solid #ddd;font-size:22px;text-align:center;line-height:50px;color:#888;}
+#leftbox .ic-set,#leftbox a:hover .ic-set{background-position: 0px 0px;}
+#leftbox .ic-user,#leftbox a:hover .ic-user{background-position: 0px -37px;}
+#leftbox .ic-article,#leftbox a:hover .ic-article{background-position: 0px -73px;}
+
+/*导航*/
+.subbar{height:40px;border-bottom:1px #ddd solid;}
+.subbar li{float:left;margin-left:-1px;line-height:39px;}
+.subbar li a{display:block;color:#555;padding:0 10px;border:1px solid #ddd;border-top:none;overflow:hidden;}
+.subbar li a.y{background:#fff;border-bottom:1px #fff solid;color:#09F;}
+.subbar li a i{height:21px;}
+/*表单*/
+.formBox{margin:20px;}
+.fb-tr{clear:both;padding:8px 0;border-bottom:1px dashed #ddd;line-height:34px;}
+.fb-tr label{float:left;margin-right:15px;width:120px;text-align:right;}
+.fb-tr input[type="text"]{height:32px;padding:3px 5px;width:500px;border:1px solid #ddd;-moz-box-shadow:3px 3px 5px #eee inset;-webkit-box-shadow:3px 3px 5px #eee inset;box-shadow:3px 3px 5px #eee inset;}
+.fb-tr input[type="text"]:focus{border:1px solid #09f;color:#09f;}
+.fb-tr input[type="submit"]{height:30px;padding:3px 20px;border:0;}
+.wm120{margin-left:135px;}
+/* input file */
+.uploader { float:left;position:relative;display:inline-block; overflow:hidden; cursor:pointer;width:650px;height:32px; }
+.filename { float:left; display:inline-block; outline:0 none; overflow:hidden; cursor:pointer; border-right:0; text-overflow:ellipsis; white-space:nowrap;}
+.uploader .button { float:left; height:32px; display:inline-block; outline:0 none; padding:8px 12px; margin:0; cursor:pointer; border:1px solid #ddd;  -moz-box-shadow:0px 0px 1px #fff inset; -webkit-box-shadow:0px 0px 1px #fff inset; box-shadow:0px 0px 1px #fff inset; }
+.uploader input[type=file] { position:absolute; top:0; right:0; bottom:0; border:0; padding:0; margin:0; width:100%; height:30px; cursor:pointer; filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity: 0; opacity:0; }
+/* button */
+.btn{padding:3px 10px;cursor:pointer;}
+.btn-white { color:#555; text-shadow:1px 1px 0px #fff; background:#ddd; background:-moz-linear-gradient(top, #eeeeee 0%, #dddddd 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #dddddd)); border-color:#ccc; }
+.btn-white:hover  { background:#eee; background:-moz-linear-gradient(top, #dddddd 0%, #eeeeee 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #dddddd), color-stop(100%, #eeeeee)); }
+
+.btn-blue{ color:#fff; text-shadow:1px 1px 0px #09365f; background:#064884; background:-moz-linear-gradient(top, #3b75b4 0%, #064884 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #3b75b4), color-stop(100%, #064884)); border-color:#09365f; }
+.btn-blue:hover { background:#3b75b4; background:-moz-linear-gradient(top, #064884 0%, #3b75b4 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #064884), color-stop(100%, #3b75b4)); }
+
+.btn-black { color:#fff; text-shadow:1px 1px 0px #111111; background:#222222; background:-moz-linear-gradient(top, #444444 0%, #222222 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #444444), color-stop(100%, #222222)); border-color:#111111; }
+.btn-black:hover { background:#444444; background:-moz-linear-gradient(top, #222222 0%, #444444 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #222222), color-stop(100%, #444444)); }
+/*listBox*/
+#lists{background:#fff;margin:0px 10px 10px 10px;}
+#lists dt,#lists dd{clear:both;line-height:35px;height:35px;}
+#lists dt{background:#FBFBFB;}
+#lists dd{border-top:1px solid #eee;}
+#lists dd:nth-child(odd){background:#FBFBFB;}
+#lists dd:hover{background:#f9f9ed;}
+#lists i,#lists em,#lists strong{float:left;font-style:normal;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+#lists dt em,#lists i,#lists dt strong,#lists em{text-align:center;}
+#lists i{width:4%;}
+#lists em{width:10%;}
+#lists strong{width:45%;font-weight:400;}
+/*icon*/
+.icon_edit,.icon_del,.icon_add,.icon_view,.icon_tj,.icon_utj,.icon_flag,.icon_uflag,.icon_pic,.icon_upic,.icon_hot,.icon_uhot{display:inline-block;width:15px;height:30px;font-size:12px;text-indent:-200px;background:url(../images/ucms.png) no-repeat;}
+.icon_edit{background-position:0px -645px;}
+.icon_del{background-position:0px -671px;}
+.icon_add{background-position:0px -697px;}
+.icon_view{background-position:0px -721px;}
+.icon_tj{background-position:0px -324px;}
+.icon_utj{background-position:0px -371px;}
+.icon_flag{background-position:0px -410px;}
+.icon_uflag{background-position:0px -446px;}
+.icon_pic{background-position:0px -484px;}
+.icon_upic{background-position:0px -523px;}
+.icon_hot{background-position:0px -563px;}
+.icon_uhot{background-position:0px -603px;}

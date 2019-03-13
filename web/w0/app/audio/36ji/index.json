@@ -1,0 +1,329 @@
+{
+    "name": "儿童故事三十六计语音版",
+    "children": [
+        {
+			"id": 1,
+			"title": "01瞒天过海",
+			"form": "网络",
+			"time": "09:31",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/01瞒天过海.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 2,
+			"title": "02围魏救赵",
+			"form": "网络",
+			"time": "08:27",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/02围魏救赵.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 3,
+			"title": "03借刀杀人",
+			"form": "网络",
+			"time": "07:12",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/03借刀杀人.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 4,
+			"title": "04以逸待劳",
+			"form": "网络",
+			"time": "08:22",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/04以逸待劳.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 5,
+			"title": "05趁火打劫",
+			"form": "网络",
+			"time": "09:42",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/05趁火打劫.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 6,
+			"title": "06声东击西",
+			"form": "网络",
+			"time": "06:54",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/06声东击西.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 7,
+			"title": "07无中生有",
+			"form": "网络",
+			"time": "09:01",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/07无中生有.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 8,
+			"title": "08暗渡陈仓",
+			"form": "网络",
+			"time": "08:56",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/08暗渡陈仓.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 9,
+			"title": "09隔岸观火",
+			"form": "网络",
+			"time": "07:12",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/09隔岸观火.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 10,
+			"title": "10笑里藏刀",
+			"form": "网络",
+			"time": "09:24",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/10笑里藏刀.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 11,
+			"title": "11李代桃僵",
+			"form": "网络",
+			"time": "08:25",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/11李代桃僵.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 12,
+			"title": "12顺手牵羊",
+			"form": "网络",
+			"time": "07:14",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/12顺手牵羊.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 13,
+			"title": "13打草惊蛇",
+			"form": "网络",
+			"time": "09:58",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/13打草惊蛇.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 14,
+			"title": "14借尸还魂",
+			"form": "网络",
+			"time": "07:46",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/14借尸还魂.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 15,
+			"title": "15调虎离山",
+			"form": "网络",
+			"time": "08:22",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/15调虎离山.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 16,
+			"title": "16欲擒故纵",
+			"form": "网络",
+			"time": "08:52",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/16欲擒故纵.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 17,
+			"title": "17抛砖引玉",
+			"form": "网络",
+			"time": "06:31",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/17抛砖引玉.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 18,
+			"title": "18擒贼擒王",
+			"form": "网络",
+			"time": "07:25",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/18擒贼擒王.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 19,
+			"title": "19釜底抽薪",
+			"form": "网络",
+			"time": "07:44",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/19釜底抽薪.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 20,
+			"title": "20混水摸鱼",
+			"form": "网络",
+			"time": "08:09",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/20混水摸鱼.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 21,
+			"title": "21金蝉脱壳",
+			"form": "网络",
+			"time": "07:39",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/21金蝉脱壳.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 22,
+			"title": "22关门捉贼",
+			"form": "网络",
+			"time": "09:58",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/22关门捉贼.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 23,
+			"title": "23远交近攻",
+			"form": "网络",
+			"time": "08:09",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/23远交近攻.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 24,
+			"title": "24假道伐虢",
+			"form": "网络",
+			"time": "07:57",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/24假道伐虢.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 25,
+			"title": "25偷梁换柱",
+			"form": "网络",
+			"time": "06:22",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/25偷梁换柱.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 26,
+			"title": "26指桑骂槐",
+			"form": "网络",
+			"time": "08:09",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/26指桑骂槐.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 27,
+			"title": "27假痴不癫",
+			"form": "网络",
+			"time": "09:06",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/27假痴不癫.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 28,
+			"title": "28上屋抽梯",
+			"form": "网络",
+			"time": "09:15",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/28上屋抽梯.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 29,
+			"title": "29树上开花",
+			"form": "网络",
+			"time": "08:04",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/29树上开花.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 30,
+			"title": "30反客为主",
+			"form": "网络",
+			"time": "07:55",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/30反客为主.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 31,
+			"title": "31美人计",
+			"form": "网络",
+			"time": "08:43",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/31美人计.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 32,
+			"title": "32空城计",
+			"form": "网络",
+			"time": "08:25",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/32空城计.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 33,
+			"title": "33反奸计",
+			"form": "网络",
+			"time": "07:21",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/33反奸计.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 34,
+			"title": "34苦肉计",
+			"form": "网络",
+			"time": "08:43",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/34苦肉计.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 35,
+			"title": "35连环计",
+			"form": "网络",
+			"time": "07:48",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/35连环计.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 36,
+			"title": "36走为上计",
+			"form": "网络",
+			"time": "07:16",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/36ji/36走为上计.mp3",
+			"lyric": ""
+		}
+    ]
+}

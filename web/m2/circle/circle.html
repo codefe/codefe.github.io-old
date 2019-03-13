@@ -1,0 +1,90 @@
+<style>
+.circle {
+	width: 4.6rem;
+	height: 4.6rem;
+	position: relative;
+	border-radius: 50%;
+	background: #f9eb5c;
+	margin: 0 auto;
+}
+
+.pie_left,
+.pie_right {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.circle .left,
+.circle .right {
+	width: 100%;
+	height: 100%;
+	background: #e6e6e6;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.pie_right,
+.right {
+	clip: rect(0, auto, auto, 2.3rem);
+}
+
+.pie_left,
+.left {
+	clip: rect(0, 2.3rem, auto, 0);
+}
+.mask {
+	width: 90%;
+	height: 90%;
+	border-radius: 50%;
+	left: 5%;
+	top: 5%;
+	background: #FFF;
+	position: absolute;
+	text-align: center;
+	line-height: 3.6rem;
+	font-size: .42rem;
+	font-weight: bold;
+	color: #8C8C8C;
+}
+
+.mask .hidden {
+	display: none;
+}
+
+.mask img {
+    width:85%;
+	margin-top: 10px;
+}
+
+.qiandaoa {
+	position: absolute;
+	top: 12px;
+	left: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.qiandaoa em {
+	font-style: inherit;
+	padding: 4px 6px;
+	background: #fff;
+}
+</style>
+<div class="circle">
+	<div class="pie_left">
+		<div class="left" style="transform: rotate(36deg);"></div>
+	</div>
+	<div class="pie_right">
+		<div class="right" style="transform: rotate(180deg);"></div>
+	</div>
+	<div class="mask">
+		<p class="hidden"><span>60</span>%</p>
+		<img src="18.png" class="mt10">
+		<p class="qiandaoa"><em>µã»÷Ç©µ½</em></p>
+	</div>
+</div>

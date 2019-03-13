@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>管理中心</title>
+<link type="text/css" rel="stylesheet" href="inc/base.css?v=0.1" />
+<link type="text/css" rel="stylesheet" href="inc/admin.css?v=0.1" />
+<script src='inc/jquery-1.11.2.min.js'></script>
+<script src="inc/admin.js"></script>
+</head>
+
+<body>
+<div id="loading"></div>
+<div id="top-nav">
+	<div id="headerBox">
+		文森, <a href="">退出</a><img src="images/noheader.gif" />	
+	</div>
+</div>
+<div id="leftbox">
+	<h1>UCMS</h1>
+	<ul>
+		<li><a href=""><i class="ic-set"></i><p>网站设置</p></a></li>
+		<li><a href=""><i class="ic-user"></i><p>用户管理</p></a></li>
+		<li><a href=""><i class="ic-article"></i><p>文章管理</p></a></li>
+	</ul>
+</div>
+    
+<div id="mainContent">
+	<div class="subbar">
+		<ul>
+			<li><a href="/roadshow.html" class="y">用户管理</a></li>
+			<li><a href="/roadshow/11.html"><i class="icon_add"></i>添加</a></li>
+			<li><a href="/roadshow/11.html">bbb</a></li>
+		</ul>
+	</div>
+	
+	<div class="listBox">
+		<dl id="lists">
+        <dt><i>编号</i><i>选择</i><em>分类</em><strong>标题</strong><em>时间</em><i>审核</i><i>推荐</i><i>焦点</i><i>头条</i><i>编辑</i><i>删除</i></dt>
+        <dd>
+            <i>1</i>
+            <i><input type="checkbox" value="1" name="id[]"></i>
+            <em>分类</em>
+            <strong>2014年春季结业典礼流程(上海交通大学继续教育学院)</strong>
+            <em>2003/12/22 10:45</em>
+            <i><a title="隐藏" href="" class="icon_flag">隐藏</a></i>
+            <i><a title="取消" href="" class="icon_tj">取消</a></i>
+            <i><a title="取消焦点" href="" class="icon_pic">取消焦点</a></i>
+            <i><a title="取消头条" href="" class="icon_hot">取消头条</a></i>
+            <i><a title="编辑" href="" class="icon_edit">编辑</a></i>
+            <i><a title="删除" href="" class="icon_del">删除</a></i>
+        </dd>
+        <dd>
+            <i>1</i>
+            <i><input type="checkbox" value="1" name="id[]"></i>
+            <em>分类</em>
+            <strong>2014年春季结业典礼流程(上海交通大学继续教育学院)</strong>
+            <em>2003/12/22 10:45</em>
+            <i><a title="显示" href="" class="icon_uflag">显示</a></i>
+            <i><a title="推荐" href="" class="icon_utj">推荐</a></i>
+            <i><a title="设为焦点" href="" class="icon_upic">设为焦点</a></i>
+            <i><a title="设为头条" href="" class="icon_uhot">设为头条</a></i>
+            <i><a title="编辑" href="" class="icon_edit">编辑</a></i>
+            <i><a title="删除" href="" class="icon_del">删除</a></i>
+        </dd>
+        <dd>
+            <i>1</i>
+            <i><input type="checkbox" value="1" name="id[]"></i>
+            <em>分类</em>
+            <strong>2014年春季结业典礼流程(上海交通大学继续教育学院)</strong>
+            <em>2003/12/22 10:45</em>
+            <i><a title="隐藏" href="" class="icon_flag">隐藏</a></i>
+            <i><a title="取消" href="" class="icon_tj">取消</a></i>
+            <i><a title="取消焦点" href="" class="icon_pic">取消焦点</a></i>
+            <i><a title="取消头条" href="" class="icon_hot">取消头条</a></i>
+            <i><a title="编辑" href="" class="icon_edit">编辑</a></i>
+            <i><a title="删除" href="" class="icon_del">删除</a></i>
+        </dd>
+        <dd>
+            <i>1</i>
+            <i><input type="checkbox" value="1" name="id[]"></i>
+            <em>分类</em>
+            <strong>2014年春季结业典礼流程(上海交通大学继续教育学院)</strong>
+            <em>2003/12/22 10:45</em>
+            <i><a title="显示" href="" class="icon_uflag">显示</a></i>
+            <i><a title="推荐" href="" class="icon_utj">推荐</a></i>
+            <i><a title="设为焦点" href="" class="icon_upic">设为焦点</a></i>
+            <i><a title="设为头条" href="" class="icon_uhot">设为头条</a></i>
+            <i><a title="编辑" href="" class="icon_edit">编辑</a></i>
+            <i><a title="删除" href="" class="icon_del">删除</a></i>
+        </dd>
+        
+        <dd><em><input type="button" value="删除选择" class="btn btn-black"></em></dd>
+        
+        <div class="fenye"><a class="on">1</a><a href="2.html">2</a><a href="3.html">3</a><a href="4.html">4</a><a>…</a><a href="18.html">18</a><span>总记录:347</span></div>
+
+    </dl>
+		
+	</div>
+	
+</div>
+<script>
+NProgress.start();
+setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
+</script>
+</body>
+</html>

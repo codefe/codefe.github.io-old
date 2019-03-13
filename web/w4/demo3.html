@@ -1,0 +1,104 @@
+<div class="main-block">
+	<div class="b-block w840 bk-num1" onclick="SendEvent(38,881,&quot;{'inx':'1'}&quot;);"> 
+		<div class="b-cube">
+			<div class="b-cont b-cont1"> 
+				<div class="b-cube2"> 
+					<p class="b-title"> 闪充开学季 </p> 
+					<p class="b-desc"> 用巧劲才不费劲 </p> 
+					<p> <a href="javascripts:;" class="square">立即参与</a> </p> 
+				</div> 
+			</div> 
+			<div class="b-cont b-cont2"> 
+				<div class="b-cube2"> 
+					<p class="b-title"> 闪充开学季 </p> 
+					<p> 
+						充电补脑上沪江网校，学习成为更好的自己。<br>
+						涵盖各语种人气课程，为你的学习保驾护航。<br>
+						更有开学福利大礼包，助你学半功倍提分快！ 
+					</p> 
+					<p> <a href="javascript:;" class="square">立即参与</a> </p> 
+				</div> 
+				<div class="pic_bg"> <img src="http://n1image.hjfile.cn/mh/2017/02/20/15c702028b9414987e9aba0ffe4e6782.png" alt=""> </div> 
+			</div> 
+			<div class="b-hover b-green"> </div> 
+			<div class="b-cover"> <img src="http://n1image.hjfile.cn/mh/2017/02/20/24c1582dcc2dc04c5d125fbb57e0d70a.jpg" alt=""> </div> 
+		</div> 
+	</div>
+	
+	<div class="b-block w540 bk-num2" onclick="SendEvent(38,881,&quot;{'inx':'2'}&quot;);"> 
+		<div class="b-cube"> 
+			<div class="b-cont b-cont1"> 
+				<div class="b-cube2"> 
+					<p class="b-title"> 英语开学季 </p> 
+					<p class="b-desc"> 开学新“鸡”惠，省钱学好课！ </p> 
+				</div> 
+			</div> 
+			<div class="b-cont b-cont2"> 
+				<div class="b-cube2"> 
+					<p class="b-title"> 英语开学季 </p> 
+					<p>
+						人气爆款课程限时7.5起，报名赠学币！<br>
+						拔高能力考试无压力，高效变身英语达人！<br>
+						鸡年开学新起点，英语学习有转“鸡”！ 
+					</p> 
+					<p> <a href="javascript:;" class="square">立即前往</a> </p> 
+				</div> 
+				<div class="pic_bg"> <img src="http://n1image.hjfile.cn/mh/2017/02/17/3df5f5f4308bbfe59561e876bed28345.png" alt=""> </div> 
+			</div> 
+			<div class="b-hover b-yellow"> </div> 
+			<div class="b-cover"> <img src="http://n1image.hjfile.cn/mh/2017/02/17/9c7c676dc5163a55fdb4cc830abc3246.png" alt=""> </div> 
+		</div> 
+	</div>
+</div>
+<style>
+*{margin:0;padding:0;}
+
+.main-block{margin:20px auto;width:1400px;height:400px;}
+.main-block .b-block{position:relative;height:100%;float:left;cursor:pointer;}
+.main-block .b-block a{color:#FFF;}
+
+.main-block .b-block:hover .b-cover img{transform:scale(1.1);}
+.main-block .b-block:hover .b-hover{height:100%;width:100%;}
+.main-block .b-block:hover .b-cont2{visibility:visible;opacity:1;}
+.main-block .b-block:hover .b-cont2 p{opacity:1;transform:translateX(0);}
+.main-block .b-block:hover .b-cont1{visibility:hidden;opacity:0;transform:translateY(100%);}
+
+
+.main-block .w840{width:840px;}
+.main-block .w540{width:540px;}
+
+.main-block .b-cube{position:relative;margin-right:4px;height:100%;overflow:hidden;}
+.main-block .b-cover{height:100%;width:100%;overflow:hidden;transition:background-color .3s;}
+.main-block .b-cover img{height:100%;width:auto;display:block;transition:transform .3s;}
+
+.main-block .b-cont{position:absolute;color:#FFF;z-index:10;bottom:15px;width:100%;transition:opacity .3s, transform .3s;}
+.main-block .b-cont p{line-height:20px;}
+
+.main-block .b-cube2{padding:0 20px;position:relative;z-index:2;}
+
+.main-block .b-cont1{visibility:visible;transition:transform .3s, opacity .3s;}
+.main-block .b-cont2{visibility:hidden;opacity:0;top:20px;}
+.main-block .b-cont2 p{transition:transform .3s, opacity .3s;opacity:0;transform:translateX(-30%);}
+.main-block .b-cont2 p:nth-child(2){transition-delay:.1s;}
+.main-block .b-cont2 p:nth-child(3){transition-delay:.2s;}
+
+
+.main-block .b-cont .b-title{font-size:20px;margin-bottom:5px;height:24px;}
+.main-block .b-cont2 p{margin-bottom:20px;}
+
+.main-block .b-hover{position:absolute;z-index:9;bottom:0;width:100%;height:85px;opacity:.95;transition:width .3s, height .3s, opacity .3s;}
+.main-block .b-green{background-color:#4abb3b;}
+.main-block .b-yellow{background-color:#f5bf26;}
+
+.main-block .bk-num1 .b-cont{top:80px;}
+.main-block .bk-num1 .b-hover{height:100%;width:200px;}
+
+
+.main-block .pic_bg{position:absolute;top:-20px;left:0;z-index:1;width:100%;}
+.main-block .pic_bg img{display:block;width:100%;height:auto;}
+
+.main-block .square{display:inline-block;padding:6px 20px;border:1px solid #FFF;border-radius:2px;transition:background-color .3s;}
+.main-block .square:hover{background-color:rgba(255, 255, 255, 0.2);}
+
+
+</style>

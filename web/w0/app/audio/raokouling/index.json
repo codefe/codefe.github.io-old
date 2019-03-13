@@ -1,0 +1,221 @@
+{
+    "name": "24首经典幼儿绕口令",
+    "children": [
+        {
+			"id": 1,
+			"title": "矮老头",
+			"form": "网络",
+			"time": "00:44",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/矮老头.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 2,
+			"title": "白石塔",
+			"form": "网络",
+			"time": "01:45",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/白石塔.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 3,
+			"title": "扁担长板凳宽",
+			"form": "网络",
+			"time": "02:04",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/扁担长板凳宽.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 4,
+			"title": "布补虎",
+			"form": "网络",
+			"time": "01:41",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/布补虎.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 5,
+			"title": "吃荸荠",
+			"form": "网络",
+			"time": "01:31",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/吃荸荠.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 6,
+			"title": "吃葡萄",
+			"form": "网络",
+			"time": "00:50",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/吃葡萄.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 7,
+			"title": "打醋买布",
+			"form": "网络",
+			"time": "02:11",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/打醋买布.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 8,
+			"title": "凤凰山",
+			"form": "网络",
+			"time": "01:18",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/凤凰山.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 9,
+			"title": "高高山上一根藤",
+			"form": "网络",
+			"time": "01:20",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/高高山上一根藤.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 10,
+			"title": "红豆豆绿豆豆",
+			"form": "网络",
+			"time": "02:11",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/红豆豆绿豆豆.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 11,
+			"title": "虎鹿猪兔鼠",
+			"form": "网络",
+			"time": "01:48",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/虎鹿猪兔鼠.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 12,
+			"title": "金瓜银瓜",
+			"form": "网络",
+			"time": "02:05",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/金瓜银瓜.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 13,
+			"title": "葵花和蓖麻",
+			"form": "网络",
+			"time": "02:12",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/葵花和蓖麻.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 14,
+			"title": "南南有个篮篮",
+			"form": "网络",
+			"time": "00:53",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/南南有个篮篮.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 15,
+			"title": "七个阿姨来摘果",
+			"form": "网络",
+			"time": "01:56",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/七个阿姨来摘果.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 16,
+			"title": "刷牙",
+			"form": "网络",
+			"time": "01:38",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/刷牙.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 17,
+			"title": "娃画画",
+			"form": "网络",
+			"time": "01:21",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/娃画画.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 18,
+			"title": "小良救羊",
+			"form": "网络",
+			"time": "01:21",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/小良救羊.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 19,
+			"title": "小六打油",
+			"form": "网络",
+			"time": "01:14",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/小六打油.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 20,
+			"title": "小泥鳅",
+			"form": "网络",
+			"time": "02:01",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/小泥鳅.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 21,
+			"title": "学捏泥",
+			"form": "网络",
+			"time": "01:49",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/学捏泥.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 22,
+			"title": "一群鹅",
+			"form": "网络",
+			"time": "01:31",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/一群鹅.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 23,
+			"title": "摘柿子",
+			"form": "网络",
+			"time": "01:33",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/摘柿子.mp3",
+			"lyric": ""
+		},
+		{
+			"id": 24,
+			"title": "张老六李老六",
+			"form": "网络",
+			"time": "01:06",
+			"pic": "app/img/study/html5.jpg",
+			"src": "app/audio/raokouling/张老六李老六.mp3",
+			"lyric": ""
+		}
+    ]
+}

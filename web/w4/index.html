@@ -1,0 +1,347 @@
+<style>
+.main_block {
+    width: 100%;
+    overflow: hidden;
+    margin-right: -20px;
+}
+
+.main_block .item_main {
+    position: relative;
+    height: 250px;
+    float: left;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.main_block .item_page {
+    position: relative;
+    margin-right: 10px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main_block .num1 {
+    width: 450px;
+}
+
+.main_block .num2,.main_block .num3 {
+    width: 375px;
+}
+
+.main_block .num4 {
+    width: 750px;
+}
+/*楂樺害*/
+.main_block .num1 {
+    height: 500px;
+}
+
+.main_block .num4 {
+    height: 240px;
+}
+
+.main_block .cont2 .b_title {
+    font: 400 24px/30px "Microsoft Yahei";
+}
+
+.main_block .cont2 p {
+    font: 400 14px/24px "Microsoft Yahei";
+}
+
+.main_block .cont2 .b_desc {
+    font: 400 14px/24px "Microsoft Yahei";
+}
+
+.main_block .item_main a {
+    color: #FFF;
+}
+
+.main_block .item_main:hover .cover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(7px);
+}
+
+.main_block .item_main:hover .b_hover {
+    height: 100%;
+    width: 100%;
+}
+
+.main_block .item_main:hover .cont2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*棰滆壊*/
+.main_block .b_blue {
+    background-color: #07b0f8;
+    filter: Alpha(opacity=90);
+    opacity: .90;
+}
+
+.main_block .b_green {
+    background-color: #52c244;
+    filter: Alpha(opacity=90);
+    opacity: .90;
+}
+
+.main_block .b_blue2 {
+    background-color: #0cc8cb;
+    filter: Alpha(opacity=90);
+    opacity: .90;
+}
+
+.main_block .b_hover {
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    width: 100%;
+    height: 85px;
+    /* -webkit-transition: width .3s, height .3s, opacity .3s; */
+    -ms-transition: width .3s, height .3s, opacity .3s;
+    /* transition: width .3s, height .3s, opacity .3s; */
+}
+
+.main_block .cover {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: background-color .3s;
+    -ms-transition: background-color .3s;
+    transition: background-color .3s;
+}
+
+.main_block .cover img {
+    height: 100%;
+    width: auto;
+    display: block;
+    -webkit-transition: -webkit-transform .3s;
+    -ms-transition: -ms-transform .3s;
+    transition: transform .3s;
+}
+
+.main_block .cont {
+    position: absolute;
+    color: #FFF;
+    z-index: 10;
+    bottom: 15px;
+    width: 100%;
+    -webkit-transition: opacity .3s, -webkit-transform .3s;
+    -ms-transition: opacity .3s, -ms-transform .3s;
+    transition: opacity .3s, transform .3s;
+}
+
+.main_block .cont {
+    bottom: 25px;
+}
+
+.main_block .num4 .cont {
+    top: 30px;
+}
+
+.main_block .num4 .b_hover {
+    height: 100%;
+    width: 180px;
+}
+
+.main_block .cont p {
+    font: 400 14px "Microsoft Yahei";
+    color: #fff;
+}
+
+.main_block .cont .b_title {
+    font: 400 20px "Microsoft Yahei";
+}
+
+.main_block .num4  .cont .b_title {
+    font: 400 20px/36px "Microsoft Yahei";
+}
+
+.main_block .b_cube2 {
+    padding: 0 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.main_block .cont1 {
+    visibility: visible;
+    -webkit-transition: -webkit-transform .3s, opacity .3s;
+    -ms-transition: -ms-transform .3s, opacity .3s;
+    transition: transform .3s, opacity .3s;
+}
+
+.main_block .cont2 {
+    visibility: hidden;
+    opacity: 0;
+    top: 20px;
+}
+
+.main_block .num1 .cont2 {
+    top: 50px;
+}
+
+.main_block .bk_h .cont2 p {
+    -webkit-transition: -webkit-transform .3s, opacity .3s;
+    -ms-transition: -ms-transform .3s, opacity .3s;
+    transition: transform .3s, opacity .3s;
+    opacity: 0;
+}
+
+.main_block .cont2 p:nth-child(2) {
+    -webkit-transition-delay: .2s;
+    -ms-transition-delay: .2s;
+    transition-delay: .2s;
+}
+
+.main_block .cont2 p:nth-child(3) {
+    -webkit-transition-delay: .3s;
+    -ms-transition-delay: .3s;
+    transition-delay: .3s;
+}
+
+.main_block .cont2 .b_title,
+.main_block .cont2 .b_desc {
+    margin-bottom: 10px;
+}
+
+.main_block .pic_bg {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.pic_bg img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.main_block .bk_h .cont2 p {
+    -webkit-transform: translateX(-30%);
+    -ms-transform: translateX(-30%);
+    transform: translateX(-30%);
+}
+
+.main_block .bk_h:hover .cont1 {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.main_block .bk_h:hover .cont2 p {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.main_block .square {
+    display: inline-block;
+    padding: 6px 20px;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    -webkit-transition: background-color .3s;
+    -ms-transition: background-color .3s;
+    transition: background-color .3s;
+}
+
+.main_block .square:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+</style>
+<div class="main_block clearfix">
+      <div class="item_main bk_h num1">
+        <div class="item_page">
+          <div class="cont cont1">
+            <div class="b_cube2">
+              <p class="b_title"> 海风独家三级知识点切片 </p>
+            </div>
+          </div>
+          <div class="cont cont2">
+            <div class="b_cube2">
+              <p class="b_title"> 海风独家三级知识点切片 </p>
+              <p class="b_desc">中小学5000+知识点，精准定位薄弱点，一课见效。 </p>
+              <p> <a href="research.html" target="_blank" class="square">了解详情</a> </p>
+            </div>
+            <div class="pic_bg"> <img src="images/bg.png" alt=""> </div>
+          </div>
+          <div class="b_hover b_blue"> </div>
+          <div class="cover"> <img src="images/page301.jpg" height="281" width="" alt=""> </div>
+        </div>
+      </div>
+      <div class="item_main bk_h num2">
+        <div class="item_page">
+          <div class="cont cont1">
+            <div class="b_cube2">
+              <p class="b_title"> 清北复交一流名师 </p>
+              <p class="b_desc">"百里挑一"  五层筛选机制</p>
+              <p> 
+            </p></div>
+          </div>
+          <div class="cont cont2">
+            <div class="b_cube2">
+              <p class="b_title"> 五层筛选，百里挑一 </p>
+              <p class="b_desc"> 第1层筛选：全国顶尖名校毕业<br>
+                第2层筛选：拥有长期教学经验<br>
+                第3层筛选：具备专业教学技巧<br>
+                第4层筛选：备课与教案能力<br>
+                第5层筛选：试讲好评率达到85%以上 </p>
+              <p> <a href="teachers.html" target="_blank" class="square">了解详情</a> </p>
+            </div>
+            <div class="pic_bg"> <img src="images/bg.png" alt=""> </div>
+          </div>
+          <div class="b_hover b_blue"> </div>
+          <div class="cover"> <img src="images/page302.jpg" height="" width="370" alt=""> </div>
+        </div>
+      </div>
+      <div class="item_main bk_h num3">
+        <div class="item_page">
+          <div class="cont cont1">
+            <div class="b_cube2">
+              <p class="b_title"> 超豪华教研阵容 </p>
+              <p class="b_desc">严格把关教学质量 </p>
+            </div>
+          </div>
+          <div class="cont cont2">
+            <div class="b_cube2">
+              <p class="b_title"> 严格把控，教学质量</p>
+              <p class="b_desc"> 150+名校骨干教师严格把关教研，深度剖析34省份，200种全国考纲，每个知识点精确定位对应考纲，重点难点考点全面分类标注。 </p>
+              <p> <a href="research.html" target="_blank" class="square">了解详情</a> </p>
+            </div>
+            <div class="pic_bg"> <img src="images/bg.png" alt=""> </div>
+          </div>
+          <div class="b_hover b_green"> </div>
+          <div class="cover"> <img src="images/page303.jpg" height="" width="370" alt=""> </div>
+        </div>
+      </div>
+      <div class="item_main bk_h num4">
+        <div class="item_page">
+          <div class="cont cont1">
+            <div class="b_cube2">
+              <p class="b_title"> 智能学习中心 </p>
+              <p class="b_desc">全国首家自主研发，<br>
+                畅快体验在线学习！ </p>
+              <p> 
+            </p></div>
+          </div>
+          <div class="cont cont2">
+            <div class="b_cube2">
+              <p class="b_title"> 海风学习中心</p>
+              <p class="b_desc"> 国内最早，历时三年，耗资千万，仿佛老师就在身边。 </p>
+              <p> <a href="Learning_Center.html" target="_blank" class="square">了解详情</a> </p>
+            </div>
+            <div class="pic_bg"> <img src="images/bg.png" alt=""> </div>
+          </div>
+          <div class="b_hover b_blue2"> </div>
+          <div class="cover"> <img src="images/page304.jpg" height="" width="370" alt=""> </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,83 @@
+html{width:100%; height:100%;-ms-text-size-adjust:none;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;	-o-text-size-adjust:none;}
+body{font:14px/160% 'Microsoft Yahei','\5B8B\4F53',sans-serif;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin: 0; padding: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset,img,abbr,acronym { border: 0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-weight: normal;font-style:normal; }
+ol,ul { list-style:none; }
+input,textarea,button{border:0;}
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
+*, *:after, *:before{-webkit-box-sizing: border-box;	-moz-box-sizing: border-box;-o-box-sizing: border-box;box-sizing: border-box; }
+.clearfix:before,.clearfix:after{ content: ''; display:block;}
+.clearfix:after { clear: both; }
+a {text-decoration: none;color:#555;cursor: pointer;outline: none;}
+a:hover {text-decoration: none;color:#09F;}
+/*文字排版*/
+.f12 { font-size:12px; }
+.f14 { font-size:14px; }
+.f16 { font-size:16px; }
+.f20 { font-size:20px; }
+.fb { font-weight:bold; }
+.fn { font-weight:normal; }
+.t2 { text-indent:2em;}
+.lh150 { line-height: 150%; }
+.lh180 { line-height: 180%; }
+.lh200 { line-height: 200%; }
+.unl { text-decoration:underline; }
+.no_unl { text-decoration:none; }
+/*定位*/
+.tl { text-align:left; }
+.tr { text-align:right; }
+.tc { text-align:center; }
+.ma { margin:0 auto;}
+.fl { float:left; }
+.fr { float:right; }
+.cb { clear:both; }
+.vm { vertical-align:middle; }
+.pr { position: relative; }
+.pa { position: absolute; }
+.pa-right { position: absolute; right:0; }
+.zoom { zoom:1; }
+.hidden {visibility:hidden; }
+.none { display:none; }
+
+/*边距*/
+.m10 { margin:10px;}
+.m15 { margin:15px;}
+.mt10 { margin-top:10px}
+
+/* 加载进度 */
+#nprogress { pointer-events: none;}
+#nprogress .bar { background: #f60;  position: fixed; z-index: 1031;  top: 0; left: 0;  width: 100%; height: 4px;}
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #f00, 0 0 5px #f00;
+  opacity: 1.0;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+      -ms-transform: rotate(3deg) translate(0px, -4px);
+          transform: rotate(3deg) translate(0px, -4px);
+}
+#nprogress .spinner {  display: block;  position: fixed; z-index: 1031; top: 15px; right: 15px;}
+#nprogress .spinner-icon {  width: 18px;  height: 18px;  box-sizing: border-box;  border: solid 2px transparent;  border-top-color: #f00;  border-left-color: #f00;  border-radius: 50%;
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+          animation: nprogress-spinner 400ms linear infinite;
+}
+.nprogress-custom-parent {  overflow: hidden;  position: relative;}
+.nprogress-custom-parent #nprogress .spinner,.nprogress-custom-parent #nprogress .bar {  position: absolute;}
+@-webkit-keyframes nprogress-spinner {
+  0%   { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes nprogress-spinner {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*pages*/
+.fenye{padding:15px;clear:both;border-top:1px solid #ddd;}
+.fenye a,.fenye span{margin-right:8px;padding:5px 10px;background:#fafafa;border:1px solid #DDD;}
+.fenye a:hover,.fenye .on{color:#FFF;background:#333;}

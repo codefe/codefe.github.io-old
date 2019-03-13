@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script type="text/javascript" src="sql.js"></script>
+    </head>
+    <body>
+        <input type="file"  id="dbFileEle"/>
+    </body>
+    <script>
+         
+        var dbFileElm = document.getElementById('dbFileEle');
+        dbFileElm.onchange = function() {
+            var f = dbFileElm.files[0];
+            var r = new FileReader();
+            r.onload = function() {
+                var Uints = new Uint8Array(r.result);
+                db = new SQL.Database(Uints);
+                //console.log(db)
+                var c = db.exec("SELECT * FROM test");
+                    document.write(c)
+            }
+            r.readAsArrayBuffer(f);
+        }
+        
+    </script>
+</html>

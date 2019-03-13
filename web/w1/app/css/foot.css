@@ -1,0 +1,26 @@
+/* footer */
+footer{
+	background-color: #014b96;
+	background-image: linear-gradient(#03b99b, #00715e);
+	padding:80px 0 20px 0;
+	margin-top:50px;
+}
+footer,footer a{color:rgba(255,255,255,.6);}
+footer h3{text-align:center;font-weight:100;position:relative;font-size:21px;letter-spacing:5px;}
+footer h3:after{position:absolute;left:50%;top:40px;margin-left:-75px;width:150px;height:2px;background-color:rgba(255,255,255,.2);content:'';}
+.footop{margin:50px 30px 10px 30px;}
+.foot-boxa a{display:inline-table;width:28px;height:28px;line-height:28px;border:1px solid rgba(255,255,255,.2);text-align:center;}
+.foot-a a{margin:0 15px;}
+.foot-boxa img{width:100%;opacity:.5;}
+
+.foot-nav{margin:0 30px;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2);}
+.foot-nav dl{flex:1;border-right:1px solid rgba(255,255,255,.1);padding:20px 10px;}
+.foot-nav dl:last-child{border-right:0;}
+.foot-nav dt{margin-bottom:10px;}
+.foot-nav dt:before{content:'';display:inline-block;margin-right:5px;width:8px;height:8px;border-radius:8px;background-color:rgba(255,255,255,.6);}
+.foot-nav dd{float:left;width:50%;line-height:2;}
+
+
+.links{border-bottom:1px solid rgba(255,255,255,.2);height:59px;line-height:59px;}
+.links a{margin-right:20px;}
+.copy{clear:both;padding-top:20px;height:60px;}

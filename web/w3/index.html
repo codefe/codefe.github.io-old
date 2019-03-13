@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>管理中心</title>
+<link type="text/css" rel="stylesheet" href="inc/base.css?v=0.1" />
+<link type="text/css" rel="stylesheet" href="inc/admin.css?v=0.1" />
+<script src='inc/jquery-1.11.2.min.js'></script>
+<script src="inc/admin.js"></script>
+</head>
+
+<body>
+<div id="top-nav">
+	<div id="headerBox">
+		文森, <a href="">退出</a><img src="images/noheader.gif" />	
+	</div>
+</div>
+<div id="leftbox">
+	<h1>UCMS</h1>
+	<ul>
+		<li><a href=""><i class="ic-set"></i><p>网站设置</p></a></li>
+		<li><a href=""><i class="ic-user"></i><p>用户管理</p></a></li>
+		<li><a href=""><i class="ic-article"></i><p>文章管理</p></a></li>
+	</ul>
+</div>
+    
+<div id="mainContent">
+	<div class="subbar">
+		<ul>
+			<li><a href="/roadshow.html" class="y">网站设置</a></li>
+			<li><a href="/roadshow/11.html">aaa</a></li>
+			<li><a href="/roadshow/11.html">bbb</a></li>
+		</ul>
+	</div>
+	
+	<div class="formBox">
+		<div class="fb-tr">
+			<label>标题</label>
+			<input name="" type="text" />
+		</div>
+		<div class="fb-tr">
+			<label>上传</label>
+			<div class="uploader">
+				<input type="text" readonly="" placeholder="请选择文件..." class="filename" id="filename1">
+				<input type="button" value="双击选择图片..." class="btn button btn-white" name="file">
+				<input type="file" size="30" onchange="getVal(this,1)">
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="fb-tr">
+			<label>标题</label>
+			<input name="" type="text" />
+		</div>
+		<div class="fb-tr ">			
+			<input type="submit" class="btn btn-black wm120" value="提交 (OK)" />
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>
