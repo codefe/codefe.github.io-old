@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>计数</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=yes" />
+</head>
+<style>
+    *{padding: 0; margin: 0; font-family: "Lato", sans-serif}
+    i{font-size: 14px}
+    div{font-size: 20px; text-align: center; padding-top: 15px;}
+    div span{display: inline-block; color: #ffffff;width: 50px; height: 50px;padding: 10px; border-radius: 5px}
+    p{font-size: 18px}
+    span.red{background: #ff0000}
+    span.yg{background: yellowgreen}
+    span.or{background: orange}
+    span.pi{background: palevioletred}
+    span.pk{background: #00a0e9}
+    span.mk{background: #1FADC5}
+    span p:first-child{font-size: 25px}
+    span p:last-child{font-size: 14px}
+</style>
+<body>
+
+<script>
+
+ if (typeof xcsoft == "undefined") var xcsoft = new
+function() {};
+xcsoft.countdown = function(a, b, c) {
+    var d = new Object();
+    var e = 0;
+    if (typeof a == "object") {
+        var f = parseInt(new Date().getTime() / 1000);
+        var g = a.startTime ? parseInt(a.startTime) : 0;
+        g = g == 0 ? f: g;
+        var h = a.endTime;
+        var x = g - f;
+        d.decimal = parseInt(a.msec ? a.msec: 0)
+    } else {
+        var f = 0;
+        var x = 0;
+        d.decimal = 0;
+        var h = a;
+        var i = h.toString();
+        if (i.indexOf('.') > 0) {
+            d.decimal = i.split('.')[1];
+            if (d.decimal > 3) {
+                d.decimal = 3
+            }
+        }
+    }
+    d.time = h;
+    d.finish = false;
+    if (isNaN(h)) {
+        var j = h.substring(0, 19);
+        j = j.replace(/-/g, '/');
+        d.time = new Date(j).getTime() / 1000
+    }
+    var k = d.decimal == 0 ? 100 : 100;
+    d.day = 0;
+    d.hour = 0;
+    d.minute = 0;
+    d.second = 0;
+    d.t = setInterval(function() {
+        e = new Date().getTime();
+        f = parseInt(e / 1000 + x);
+        var l = d.time - f;
+        if (l <= 0) {
+            e = 0;
+            l = 0
+        }
+        if (l >= 0) {
+            d = xcsoft.getTimeObject(d, l)
+        }
+        if (d.decimal == 1) {
+            d.msecZero = d.msec = parseInt(10 - e % 1000 / 100);
+            if (d.msec == 10 || l == 0) {
+                d.msecZero = d.msec = 0
+            }
+        } else if (d.decimal == 2) {
+            d.msecZero = d.msec = parseInt(100 - e % 1000 / 10);
+            if (d.msec < 10) {
+                d.msecZero = '0' + d.msec
+            } else if (d.msec == 100 || l == 0) {
+                d.msec = 0;
+                d.msecZero = '0' + d.msec
+            }
+        } else {
+            d.msecZero = d.msec = parseInt(1000 - e % 1000);
+            if (d.msec < 10) {
+                d.msecZero = '00' + d.msec
+            } else if (d.msec < 100) {
+                d.msecZero = '0' + d.msec
+            } else if (d.msec == 1000 || l == 0) {
+                d.msec = 0;
+                d.msecZero = '00' + d.msec
+            }
+        }
+        if (b) {
+            b(d)
+        }
+        if (l <= 0 || d.stop == true) {
+            clearInterval(d.t);
+            d.finish = true;
+            if (c) c(d)
+        }
+    },
+    k)
+};
+xcsoft.countup = function(c, d) {
+    if (!c) {
+        var e = new Date().getTime();
+        c = parseInt(e / 1000)
+    } else if (isNaN(c)) {
+        c = c.replace(/-/g, '/');
+        var e = new Date(c).getTime();
+        c = parseInt(e / 1000)
+    }
+    var f = new Object();
+    f.time = c;
+    f.t = setInterval(function() {
+        var a = new Date().getTime();
+        nowtime = parseInt(a / 1000);
+        var l = nowtime - c;
+        f = xcsoft.getTimeObject(f, l);
+        if (d) var b = d(f);
+        if (b === true) {
+            clearTimeout(f.t)
+        }
+    },
+    100)
+};
+xcsoft.getTimeObject = function(a, l) {
+    var b = 60;
+    var c = b * b;
+    var d = 24 * c;
+    a.days = Math.floor(l / d);
+    a.year = Math.floor(a.days / 365);
+    a.day = Math.floor(a.days % 365);
+    a.hour = Math.floor(l % d / c);
+    a.minute = Math.floor((l - (a.days * d + a.hour * c)) / b);
+    a.second = Math.floor(l % (b));
+    a.dayZero = a.day < 10 ? '0' + a.day: a.day;
+    a.daysZero = a.days < 10 ? '0' + a.days: a.days;
+    a.hourZero = a.hour < 10 ? '0' + a.hour: a.hour;
+    a.minuteZero = a.minute < 10 ? '0' + a.minute: a.minute;
+    a.secondZero = a.second < 10 ? '0' + a.second: a.second;
+    return a
+}
+</script>
+<script type="text/javascript">
+    /**
+     * time.day 和 time.dayZero 区别
+     * time.day 如果是1天 返回 1
+     * time.dayZero 如果是1天 则返回 01
+     * 除了day拥有Zero外 hour,minute,second,msec都有Zero 即小于10的，都会在前面补0
+     */
+    window.onload=function(){
+        /*
+        xcsoft.countdown('2028-11-11',function (time) {
+            //time.days=总天数
+            document.getElementById("y1").innerHTML=time.year
+            document.getElementById("d1").innerHTML=time.day
+            document.getElementById("h1").innerHTML=time.hourZero
+            document.getElementById("i1").innerHTML=time.minuteZero
+            document.getElementById("s1").innerHTML=time.secondZero
+            document.getElementById("m1").innerHTML=time.msecZero
+        },function (time) {
+            //倒计时结束后的操作
+        })
+        */
+        xcsoft.countup('2018-08-18 22:23:00',function (time) {
+            document.getElementById("y2").innerHTML=time.year
+            document.getElementById("d2").innerHTML=time.day
+            document.getElementById("h2").innerHTML=time.hourZero
+            document.getElementById("i2").innerHTML=time.minuteZero
+            document.getElementById("s2").innerHTML=time.secondZero
+        })
+
+        /*
+        var nes=parseInt(new Date().getTime()/1000)+60;
+        xcsoft.countdown(parseInt(nes)+'.3',function (time) {
+            document.getElementById("s3").innerHTML=time.secondZero
+            document.getElementById("m3").innerHTML=time.msecZero
+        })
+        */
+
+    }
+</script>
+
+<!--
+<div>
+    <i>距2028年11月11日还有</i>
+    <div>
+        <span class="red">
+            <p id="y1"></p>
+            <p>年</p>
+        </span>
+        <span class="yg">
+            <p id="d1"></p>
+            <p>天</p>
+        </span>
+        <span class="or">
+            <p id="h1"></p>
+            <p>时</p>
+        </span>
+        <span class="pi">
+            <p id="i1"></p>
+            <p>分</p>
+        </span>
+        <span class="pk">
+            <p id="s1"></p>
+            <p>秒</p>
+        </span>
+        <span class="mk">
+            <p id="m1"></p>
+            <p>毫秒</p>
+        </span>
+    </div>
+</div>
+-->
+
+<div>
+    <i>从2018年08月18日22点23分至今已经过去</i>
+    <div>
+        <span class="red">
+            <p id="y2"></p>
+            <p>年</p>
+        </span>
+        <span class="yg">
+            <p id="d2"></p>
+            <p>天</p>
+        </span>
+        <span class="or">
+            <p id="h2"></p>
+            <p>时</p>
+        </span>
+        <span class="pi">
+            <p id="i2"></p>
+            <p>分</p>
+        </span>
+        <span class="pk">
+            <p id="s2"></p>
+            <p>秒</p>
+        </span>
+    </div>
+</div>
+
+<!--
+<div>
+    <i>60秒倒计时</i>
+    <div>
+        <span class="pk">
+            <p id="s3"></p>
+            <p>秒</p>
+        </span>
+        <span class="mk">
+            <p id="m3"></p>
+            <p>毫秒</p>
+        </span>
+    </div>
+</div>
+-->
+
+</body>
+</html>
