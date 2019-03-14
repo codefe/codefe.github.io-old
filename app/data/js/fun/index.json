@@ -19,7 +19,8 @@
 			{"title":"获取最近的12个月份","url":"s7"},
 			{"title":"平滑返回顶部","url":"s8"},
 			{"title":"将消息转换成语音","url":"s9"},
-			{"title":"生成一个uuid","url":"s10"}
+			{"title":"生成一个uuid","url":"s10"},
+			{"title":"scrollTo平滑滚动","url":"s11"}
 		]
 	}
 }
