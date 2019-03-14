@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"ie9,10,11环境下发现axios存在兼容性","content":"<p>用 vue 开发的 web 程序，在 Chorm 上运行好好的，可是一到IE上面，就出现了兼容性问题，在网上一番查找之后，发现是 IE9,10,11 不兼容axios 的回调方法。<br><br>解决办法：<br><br><blockquote>在命令行 npm install es6-promise --save-dev</blockquote><br>安装好后<br><blockquote>import promise from 'es6-promise';<br>promise.polyfill();</blockquote></p>"}}
