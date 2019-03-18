@@ -13,14 +13,13 @@
 				
 			]},
 			{"step": "阶段二：进阶","item":[
-				
+				{"title":"平级组件通信","url":"s2-1"}
 			]},
 			{"step": "阶段三：vuex","item":[
 				{"title":"同级action 如何互相调用","url":"vuex1"}
 			]},
 			{"step": "阶段四：常见问题","item":[
-				{"title":"ie9,10,11环境下发现axios存在兼容性","url":"s3-1"},
-				{"title":"平级组件通信","url":"s3-2"}
+				{"title":"ie9,10,11环境下发现axios存在兼容性","url":"s3-1"}
 			]}
 		]
 	}
