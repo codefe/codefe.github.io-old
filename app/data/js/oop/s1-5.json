@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"ES6最简单的深复制方法","content":"<blockquote>let a =[{a:1}]<br>let b = JSON.parse(JSON.stringify(a))<br>b[0].a=3<br>consloe.log(a[0].a)&nbsp; // 1</blockquote><p>用json转才可以完成深赋值，因为字符串转成对象之后就是一个新的对象了；</p>"}}
