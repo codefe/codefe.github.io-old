@@ -18,7 +18,7 @@
 				{"title":"人物图标","url":"/app/data/html5/case/svg/icon/人物图标.svg","flag":"true"},
 				{"title":"Map图标","url":"/app/data/html5/case/svg/icon/map.svg","flag":"true"},
 				{"title":"Load图标","url":"/app/data/html5/case/svg/icon/loading.svg","flag":"true"},
-				{"title":"Load图标","url":"/app/json/case/svg/icon/load1/demo.html","flag":"true"},
+				{"title":"Load图标","url":"/app/data/html5/case/svg/icon/load1/demo.html","flag":"true"},
 				{"title":"动态气泡滑块","url":"/app/data/html5/case/svg/icon/动态气泡滑块.html","flag":"true"},
 				{"title":"纯CSS SVG单选","url":"/app/data/html5/case/svg/icon/纯CSS-SVG单选.html","flag":"true"},
 				{"title":"800个精美的SVG图标","url":"/app/data/html5/case/svg/icon/800个精美的SVG图标.html","flag":"true"}
@@ -26,7 +26,7 @@
 			{"step": "文本","item":[
 				{"title":"多色描边文本效果","url":"/app/data/html5/case/svg/txt/多色描边文本效果.html","flag":"true"},
 				{"title":"广告文字模糊动画","url":"/app/data/html5/case/svg/txt/广告文字模糊动画.html","flag":"true"},
-				{"title":"火焰文字","url":"/app/json/case/svg/txt/fire/demo.html","flag":"true"}
+				{"title":"火焰文字","url":"/app/data/html5/case/svg/txt/fire/demo.html","flag":"true"}
 			]},
 			{"step": "表单","item":[
 				{"title":"css3 svg复选框选中动画","url":"/app/data/html5/case/svg/form/css3svg复选框选中动画.html","flag":"true"},
@@ -53,9 +53,9 @@
 				{"title":"圆形线条loading加载动画","url":"/app/data/html5/case/svg/animate/mline-loading-1.html","flag":"true"},
 				{"title":"下暴雨动画场景","url":"/app/data/html5/case/svg/animate/下暴雨动画场景.html","flag":"true"},
 				{"title":"SVG睡8无限循环动","url":"/app/data/html5/case/svg/animate/SVG睡8无限循环动.html","flag":"true"},
-				{"title":"图片切换马赛克过渡动画","url":"./app/json/case/svg/animate/image-pixelization/demo.html","flag":"true"},
-				{"title":"柱状图带动画","url":"./app/json/case/svg/animate/bar-chart/demo.html","flag":"true"},
-				{"title":"盛开的玫瑰花","url":"./app/json/case/svg/animate/rose/demo.html","flag":"true"}
+				{"title":"图片切换马赛克过渡动画","url":"/app/data/html5/case/svg/animate/image-pixelization/demo.html","flag":"true"},
+				{"title":"柱状图带动画","url":"./app/data/html5/case/svg/animate/bar-chart/demo.html","flag":"true"},
+				{"title":"盛开的玫瑰花","url":"./app/data/html5/case/svg/animate/rose/demo.html","flag":"true"}
 			]},
 			{"step": "游戏","item":[
 				{"title":"路径搜索游戏","url":"/app/data/html5/case/svg/game/路径搜索游戏.html","flag":"true"}
