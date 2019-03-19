@@ -1,0 +1,13 @@
+HTML, BODY {
+  height: 100%;
+}
+
+BODY {
+
+}
+
+svg {
+  width: 800px;
+  height: 532px;
+  margin:80px auto;
+}
