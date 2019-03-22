@@ -105,8 +105,14 @@
 		},
 		{
 			"name":"谷粒学院",
-			"url":"http://www.gulixueyuan.com",
+			"url":"http://www.gulixueyuan.com/",
 			"desc":"谷粒学院是国内领先的IT在线学习平台、职业教育平台。",
+			"img":"/app/study/gulixueyuan.jpg"
+		},
+		{
+			"name":"Anime动画库",
+			"url":"http://www.animejs.cc/",
+			"desc":"JavaScript动画引擎库",
 			"img":"/app/study/gulixueyuan.jpg"
 		}
 	]
