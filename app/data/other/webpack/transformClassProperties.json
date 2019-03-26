@@ -1,0 +1,1 @@
+{"sta":1,"data":{"subTitle":"babel-plugin-transform-class-properties","content":"<blockquote>class A {<br>&nbsp; &nbsp; PI = 3.1415926;//这里会报错 要在webpack.config.js设置babel-loader中的options{plugins:['transform-class-properties']}</blockquote><blockquote>&nbsp; &nbsp; add(...args){}<br>}</blockquote>"}}

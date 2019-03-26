@@ -26,7 +26,9 @@
 				{"title":"NormalModuleReplacementPlugin","url":"NormalModuleReplacementPlugin"},
 				{"title":"ProvidePlugin","url":"ProvidePlugin"},
 				{"title":"SourceMapDevToolPlugin","url":"SourceMapDevToolPlugin"},
-				{"title":"NoErrorsPlugin","url":"NoErrorsPlugin"}
+				{"title":"NoErrorsPlugin","url":"NoErrorsPlugin"},
+				{"title":"babel-plugin-transform-class-properties","url":"transformClassProperties"},
+				{"title":"babel-plugin-transform-decorators-legacy","url":"transformDecoratorsLegacy"}
 			]},
 			{"step": "阶段三：优化","item":[
 				{"title":"暂无","url":""}
