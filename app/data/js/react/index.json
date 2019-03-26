@@ -18,7 +18,8 @@
 			{"step": "阶段三：React性能优化","item":[
 				{"title":"render里面尽量减少新建变量和bind函数","url":"s3-1"},
 				{"title":"定制shouldComponentUpdate函数","url":"s3-2"},
-				{"title":"Immutable.js","url":"s3-3"}
+				{"title":"Immutable.js","url":"s3-3"},
+				{"title":"多个react组件性能优化，key的优化","url":"s3-4"}
 			]}
 		]
 	}
