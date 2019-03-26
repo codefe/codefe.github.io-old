@@ -16,7 +16,8 @@
 				
 			]},
 			{"step": "阶段三：React性能优化","item":[
-				{"title":"render里面尽量减少新建变量和bind函数","url":"s3-1"}
+				{"title":"render里面尽量减少新建变量和bind函数","url":"s3-1"},
+				{"title":"定制shouldComponentUpdate函数","url":"s3-2"}
 			]}
 		]
 	}
