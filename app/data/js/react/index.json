@@ -20,7 +20,8 @@
 				{"title":"定制shouldComponentUpdate函数","url":"s3-2"},
 				{"title":"Immutable.js","url":"s3-3"},
 				{"title":"多个react组件性能优化，key的优化","url":"s3-4"},
-				{"title":"带坑的写法","url":"s3-5"}
+				{"title":"带坑的写法","url":"s3-5"},
+				{"title":"首屏加载优化","url":"s3-6"}
 			]}
 		]
 	}
